@@ -17,17 +17,61 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/media.css"/>
 	
-<!-- 	online library -->
+<!-- 	online library
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
-<!-- 	end online library -->
-	<script src="js/script"></script>
+ 	end online library -->
+ 	
+ 	<!-- 	offline library  -->
+	<link rel="stylesheet" href="library/animate/animate.css">
+	<script type="text/javascript" src="library/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="library/jquery-validation/jquery.validate.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/slick/slick.css"/>
+	<script type="text/javascript" src="library/slick/slick.js"></script>
+	<script type="text/javascript" src="library/waypoint/jquery.waypoints.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/threesixty/threesixty.css"/>
+	<script type="text/javascript" src="library/threesixty/threesixty.min.js"></script>
+ 	<!-- end offline library -->
+
+ 	
+ 	
+ 	
+	<script src="js/script.js"></script>
+
 </head>
 <body>
+	<p id="back-top">
+    	<a href="#top"><span></span><!-- Вверх --></a>
+	</p>
+	<div class="toggle_mnu">
+					<span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
+	</div>
+	
+	<header>
+		<nav>
+			<div id="logo">
+				<h1>luvin.ua</h1>
+			</div>
+			<ul id='menu'>
+				<li><a href="#main" alt="Головна">Головна</a></li>
+				<li><a href="#benefits" alt="benefits">benefits</a></li>
+				<li><a href="#old-window" alt="old-window">old-window</a></li>
+				<li><a href="#new-window" alt="new-window">new-window</a></li>
+				<li><a href="#sectinon5" alt="section5">секція5</a></li>
+			</ul>
+			
+		</nav>
+	</header>
+	
+	
 	<section id="main" class="section main_section">
 		<div class="wrap main_wrap">
 			<div class="container main_container">
@@ -145,6 +189,17 @@
 								<li class="list-item window_list_item">Базовая защита<br>от взлома</li>
 								<li class="list-item window_list_item">Ширина профиля<br>72 мм</li>
 							</ul>
+							<div class="cont-wind">
+								<div class="threesixty product">
+						        <div class="spinner">
+						          <span>0%</span>
+						        </div>
+						        <ol class="threesixty_images"></ol>
+						      </div>
+							</div>
+							 
+
+							
 							<ul class="list new-window_list__2">
 								<li class="list-item window_list_item">Классический<br>дизайн окна</li>
 								<li class="list-item window_list_item">Солнцезащита и<br>прохлада летом</li>
