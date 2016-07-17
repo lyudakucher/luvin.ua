@@ -171,6 +171,7 @@ nav {
 
 #back-top:hover a{
 	background-image: url(../img/up-arrow_hover.png);
+	position: relative;
 }
 /*--------end-scroll-top------*/
 
