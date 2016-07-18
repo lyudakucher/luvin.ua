@@ -142,6 +142,11 @@ body {
 	display: inline-block;
 	width: 180px;
 	padding: 1% 0;
+	cursor: pointer;
+}
+
+.benefits_item:hover {
+	
 }
 
 .benefits_item-text {
@@ -162,6 +167,10 @@ body {
 	top: -13px;
 	right: 3px;
 	display: block;
+}
+
+.benefits_item-text:hover::before {
+	background-image: url('../pic/benefits-hover.png');
 }
 .benefits_item-text__garanty {
 	background-position: 0 0;
@@ -239,14 +248,16 @@ body {
 .new-window_title {
 	border: 4px solid #662382;
 	/* width: 300px; */
-	padding: 1% 0;
+	padding: 5px 0;
+	margin: 0;
 }
 
 .new-window_title-text {
 	background-color: #ffffff;
 	font-size: 1.3em;
-	padding: 5%;
+	padding: 15px 20px;
 	margin-left: -30px;
+	margin-right: 0;
 	text-align: left;
 }
 
@@ -254,6 +265,8 @@ body {
 	font-weight: 700;
 	font-family: 'Philosopher', sans-serif;
 	font-size: 1.7em;
+	padding: 0;
+	margin: 0;
 }
 
 .new-window_price {
@@ -287,7 +300,7 @@ body {
 	font-weight: 700;
 }
 
-.new-window_title-2 {
+.new-window_rightblock {
 	float: right;
 	text-align: left;
 	font-size: 1.5em;
@@ -296,7 +309,7 @@ body {
 	margin-top: 3%;
 }
 
-.new-window_title-2::before {
+.new-window_rightblock::before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -307,7 +320,7 @@ body {
 	background-color: #662382;
 }
 
-.new-window_title-2 span {
+.new-window_rightblock span {
 	font-weight: 700;
 }
 
@@ -393,4 +406,48 @@ body {
 	margin-left: -30%;
 }
 
+.new-window_more-options {
+	float: right;
+}
+
+.more-options_item {
+	color: #662382;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: right;
+	display: block;
+	text-decoration: underline;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+
+.more-options_item:hover {
+	color: #b400ff;
+	text-decoration: underline;
+}
+
+.new-window_more-options .more-options_item:nth-child(1) {
+	margin-top: 10px;
+	position: relative;
+	padding-left: 25px;
+}
+
+.new-window_more-options .more-options_item:nth-child(1)::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../pic/download.svg);
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.new-window_more-options .more-options_item:nth-child(1):hover::before {
+	background-image: url(../pic/download-hover.svg);
+}
 /* end of new-window-section styles */
