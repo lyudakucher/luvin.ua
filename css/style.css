@@ -279,8 +279,10 @@ body {
 }
 
 .title-big {
-	font-size: 3.5em;
+	font-size: 1.8em;
+	font-variant: small-caps;
 }
+
 .title__small {
 	font-size: 2em;
 	font-weight: 700;
@@ -349,10 +351,10 @@ body {
 .main_img {
 	width: 80%;
 	max-width: 500px;
-	margin: 5% 0% 2%;
+	margin: 5% 0%;
 }
 
-.title-cities {
+/* .title-cities {
 	width: 70%;
 	max-width: 700px;
 	margin: 0 auto;
@@ -367,10 +369,19 @@ body {
 	height: 72px;
 	display: block;
 	margin: 0 auto;
-}
+} */
 
 .main-description {
 	font-size: 1.2em;
+}
+
+.main-description::before {
+	content: "";
+	background: url(../pic/top-bottom-line.png) center center no-repeat;
+	width: 421px;
+	height: 72px;
+	display: block;
+	margin: 0 auto;
 }
 /* end of main-section styles */
 /* benefits-section styles */
@@ -393,6 +404,11 @@ body {
 	display: inline-block;
 	width: 180px;
 	padding: 1% 0;
+	cursor: pointer;
+}
+
+.benefits_item:hover {
+	border: 4px solid #B58AC7;
 }
 
 .benefits_item-text {
@@ -414,6 +430,11 @@ body {
 	right: 3px;
 	display: block;
 }
+
+.benefits_item-text:hover::before {
+	background-image: url('../pic/benefits-hover.png');
+}
+
 .benefits_item-text__garanty {
 	background-position: 0 0;
 }
@@ -490,14 +511,16 @@ body {
 .new-window_title {
 	border: 4px solid #662382;
 	/* width: 300px; */
-	padding: 1% 0;
+	padding: 5px 0;
+	margin: 0;
 }
 
 .new-window_title-text {
 	background-color: #ffffff;
 	font-size: 1.3em;
-	padding: 5%;
+	padding: 15px 20px;
 	margin-left: -30px;
+	margin-right: 0;
 	text-align: left;
 }
 
@@ -505,6 +528,8 @@ body {
 	font-weight: 700;
 	font-family: 'Philosopher', sans-serif;
 	font-size: 1.7em;
+	padding: 0;
+	margin: 0;
 }
 
 .new-window_price {
@@ -538,7 +563,7 @@ body {
 	font-weight: 700;
 }
 
-.new-window_title-2 {
+.new-window_rightblock {
 	float: right;
 	text-align: left;
 	font-size: 1.5em;
@@ -547,7 +572,7 @@ body {
 	margin-top: 3%;
 }
 
-.new-window_title-2::before {
+.new-window_rightblock::before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -558,7 +583,7 @@ body {
 	background-color: #662382;
 }
 
-.new-window_title-2 span {
+.new-window_rightblock span {
 	font-weight: 700;
 }
 
@@ -644,4 +669,74 @@ body {
 	margin-left: -30%;
 }
 
+.new-window_more-options {
+	text-align: right;
+}
+
+.more-options_item {
+	color: #662382;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: right;
+	display: block;
+	text-decoration: underline;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+
+.more-options_item:hover {
+	color: #b400ff;
+	text-decoration: underline;
+}
+
+.new-window_more-options .more-options_item:nth-child(1) {
+	margin-top: 10px;
+	position: relative;
+	padding-left: 25px;
+	display: inline-block;
+}
+
+.new-window_more-options .more-options_item:nth-child(1)::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../pic/download.svg);
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.new-window_more-options .more-options_item:nth-child(1):hover::before {
+	background-image: url(../pic/download-hover.svg);
+}
+
+.read-more_wrap {
+	background: url(../img/luvin-light-big.jpg) no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	padding-top: 8%;
+	margin: 0;
+}
+
+.read-more_title {
+	font-size: 1.5em;
+	text-align: left;
+	margin: 0;
+	padding-bottom: 2%;
+}
+
+.read-more_description {
+	width: 70%;
+}
+
+.read-more_description p {
+	text-align: left;
+	padding-bottom: 10px;
+}
 /* end of new-window-section styles */
