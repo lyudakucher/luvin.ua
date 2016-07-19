@@ -19,16 +19,21 @@ $(document).ready(function() {
  });   
 */
 
-
+$('.read-more_wrap').hide();
+$(".readMoreOption").click(function() {
+	$(".read-more_wrap").slideToggle( "slow", function() {
+  });
+	
+});
 	
 $(".toggle_mnu").click(function() {
 	$(".sandwich").toggleClass("active");
-	$('#menu').toggleClass('trust-exp').css('display','');
+	$('.menu').toggleClass('trust-exp').css('display','');
 });
 
 function trutime() {
   
-  var deadline = 'july 18 2016 14:20:59 GMT+03:00';
+  var deadline = 'july 30 2016 14:20:59 GMT+03:00';
   
   initializeClock('clock', deadline);
   
@@ -87,6 +92,7 @@ function trutime() {
 };
 
 trutime();
+/*
 
  $(document).on("scroll", onScroll);
     
@@ -128,6 +134,7 @@ trutime();
         }
     }
     );};
+*/
 
 
 /*
