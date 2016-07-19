@@ -18,6 +18,76 @@ $(document).ready(function() {
 	offset:'30%'	 
  });   
 */
+
+
+	
+$(".toggle_mnu").click(function() {
+	$(".sandwich").toggleClass("active");
+	$('#menu').toggleClass('trust-exp').css('display','');
+});
+
+function trutime() {
+  
+  var deadline = 'july 18 2016 14:20:59 GMT+03:00';
+  
+  initializeClock('clock', deadline);
+  
+  //Initialize clock
+  function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    updateClock(endtime); 
+    var timeinterval = setInterval(function() {
+      var t = getTimeRemaining(endtime);
+      updateClock(endtime);
+      if ( t.total <= 0) {
+        clearInterval(timeinterval);
+        console.log('time end');
+         $('.rem').show();
+		  $('.rem_first').hide();
+      } 
+    }, 1000);
+  }
+  
+  //Calculate time remaining
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+     if ( t <= 0) {
+       // $('#clock').hide();
+         $('.rem_first').hide();
+         $('.rem').show();
+		 t=0;
+      } 
+
+    var days = Math.floor( t/(1000*60*60*24) );
+    var hours = Math.floor( (t/(1000*60*60)) %  24 );
+    var minutes = Math.floor( (t/1000/60) % 60 );
+    var seconds = Math.floor( (t/1000) % 60 );
+    
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function updateClock(endtime) {
+    var t = getTimeRemaining(endtime);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');  
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = t.hours;
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);      
+  }  
+};
+
+trutime();
+
  $(document).on("scroll", onScroll);
     
     //smoothscroll
@@ -100,33 +170,7 @@ $('#scroll').click(function () {
         return false;
     });
 
-function fulltime () { 
-var time=new Date(); 
-var newYear=new Date("dec,21,2012,11:11:00"); 
-var totalRemains=(newYear.getTime()-time.getTime()); 
 
-if (totalRemains>1){ 
-
-var RemainsSec = (parseInt(totalRemains/1000)); 
-var RemainsFullDays=(parseInt(RemainsSec)); 
-var secInLastDay=RemainsSec-RemainsFullDays*24*3600; 
-var RemainsFullHours=(parseInt(secInLastDay/3600)); 
-if (RemainsFullHours<10){RemainsFullHours="0"+RemainsFullHours}; 
-var secInLastHour=secInLastDay-RemainsFullHours*3600; 
-var RemainsMinutes=(parseInt(secInLastHour/60)); 
-if (RemainsMinutes<10){RemainsMinutes="0"+RemainsMinutes}; 
-var lastSec=secInLastHour-RemainsMinutes*60; 
-if (lastSec<10){lastSec="0"+lastSec}; 
-
-document.getElementById("RemainsFullDays").innerHTML=RemainsFullDays+" секунд"; 
-setTimeout('fulltime()',10) 
-} 
-
-else{ 
-document.getElementById("clock").innerHTML="Поз дравляем с Новой Эрой!"; 
-} 
-}
- fulltime () ;
 });
 
 window.onload = init;
