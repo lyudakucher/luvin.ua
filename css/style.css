@@ -1111,11 +1111,19 @@ body {
 }
 /* end of old-window-section styles */
 /* new-window-section styles */
+.new-window_wrap {
+	padding-bottom: 0;
+}
+
 .new-window_titleblock {
 	padding-left: 30px;
 	max-width: 650px;
 	margin: 0 auto;
 	padding-top: 5%;
+}
+
+.new-window_item_wrap {
+	padding: 0;
 }
 
 .new-window_leftblock {
