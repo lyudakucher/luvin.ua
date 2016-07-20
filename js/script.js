@@ -211,39 +211,19 @@ $('.clickMap').on('click', function () {
 		      type: 'inline'
 		  }, 
 		  {	
-		      src: 'city/popUp-donetsk.html',
-		      type: 'ajax'
+		      src: '#ivanofrankovskPopUp',
+		      type: 'inline'
 		  },
 		 
 		  {	
-		     src: 'city/popUp-zaporizhza.html',
-		      type: 'ajax'
+		     src: '#zhytomurPopUp',
+		      type: 'inline'
 		  },
 		  
 		  {
-		     
-		     src: 'city/popUp-zhutomyr.html',
-		      type: 'ajax'
-		  }, 
-		  {	
-		     src: 'city/popUp-frankivsk.html',
-		      type: 'ajax'
-		  }, 
-		  {	
-		      src: 'city/popUp-volyn.html',
-		      type: 'ajax'
-		  },
-		 
-		  {	
-		     src: 'city/popUp-vinnutsa.html',
-		      type: 'ajax'
-		  },
-		  
-		  {	
-		     src: 'city/popUp-cherkasy.html',
-		      type: 'ajax'
+		     src: '#kirovogradPopUp',
+		      type: 'inline'
 		  }
-		
 		];
 
    

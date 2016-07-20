@@ -12,9 +12,6 @@
 }
 .cityPopUp p{
 	margin-top:10px; 
-	width: 33%;
-	display: block;
-	float: left;
 }
 
 .cityPopUp h3{
@@ -92,6 +89,14 @@
 .rect-color{
 	fill: white;
 	
+}
+
+path.clickMap{
+	fill: #FFDEAD;
+}
+
+path.clickMap:hover{
+	fill: #F4A460;
 }
 
 .map-cam-icon{
