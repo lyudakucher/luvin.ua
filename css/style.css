@@ -1,4 +1,539 @@
 /* main styles */
+
+/* map styles */
+.map-on-site{
+	width:100%;
+	min-height: 100%;
+	
+}
+#map{
+	width:100%;
+		min-height: 100%;
+}
+
+ /*----------fill-map------*/
+.on {
+		stroke-width:1px;
+		stroke: red;
+		fill: pink;
+		
+}
+.highcharts-name-{
+	cursor: pointer;
+	fill: url(#rgrad);
+	stroke:silver;
+	stroke-dasharray:1;
+	
+}
+
+
+
+.highcharts-name-:hover{
+	
+	fill:#DCDCDC;
+}
+
+.no-color{
+	opacity: 0;
+}
+
+#map tspan.text{	
+	font-weight:100;
+	font-size: 7px;
+	cursor: default;
+	stroke:none;
+	fill: #662382;
+	text-rendering: geometricprecision;
+	}
+
+#map-svg{
+	transform:         scale(2.3); 
+ -moz-transform:    scale(2.3); 
+ -webkit-transform: scale(2.3); 
+ -o-transform:      scale(2.3); 
+ -ms-transform:     scale(2.3);
+}
+
+.rect-color{
+	fill: white;
+}
+
+.map-cam-icon{
+	
+	transform:    scale(.8) translate(62px,96px); 
+ -moz-transform:  scale(.8) translate(62px,96px);
+ -webkit-transform:scale(.8)translate(62px,96px); 
+ -o-transform:    scale(.8) translate(40px,60px); 
+ -ms-transform:   scale(.8) translate(40px,60px);
+}
+
+
+.map-fot-icon{
+	transform:    scale(.8) translate(8px,25px); 
+ -moz-transform:  scale(.8) translate(8px,25px);
+ -webkit-transform:scale(.8)translate(8px,25px); 
+ -o-transform:    scale(.8) translate(8px,25px); 
+ -ms-transform:   scale(.8) translate(8px,25px);
+}
+
+
+
+/*------name-ic-transform----------*/
+.name-kyiv{
+	transform:translate(265px,68px); 
+	-moz-transform:translate(265px,68px);
+	-webkit-transform:translate(265px,68px); 
+	-o-transform:translate(265px,68px); 
+	-ms-transform:translate(265px,68px);
+}
+
+.name-lygansk{
+	display:none;
+	transform:translate(440px,100px); 
+	-moz-transform:translate(440px,100px);
+	-webkit-transform:translate(440px,100px); 
+	-o-transform:translate(440px,100px); 
+	-ms-transform:translate(440px,100px);
+}
+
+.name-dnipro{
+	transform:translate(356px,126px); 
+	-moz-transform:translate(356px,126px);
+	-webkit-transform:translate(356px,126px); 
+	-o-transform:translate(356px,126px); 
+	-ms-transform:translate(356px,126px);
+}
+
+.name-zaporizhzhia{
+	transform:translate(370px,166px); 
+	-moz-transform:translate(370px,166px);
+	-webkit-transform:translate(370px,166px); 
+	-o-transform:translate(370px,166px); 
+	-ms-transform:translate(370px,166px);
+}
+
+.name-krym{
+	transform:translate(345px,235px); 
+	-moz-transform:translate(345px,235px);
+	-webkit-transform:translate(345px,235px); 
+	-o-transform:translate(345px,235px); 
+	-ms-transform:translate(345px,235px);
+}
+
+.name-vinnitsa{
+	transform:translate(218px,113px); 
+	-moz-transform:translate(218px,113px);
+	-webkit-transform:translate(218px,113px); 
+	-o-transform:translate(218px,113px); 
+	-ms-transform:translate(218px,113px);
+}
+
+.name-frankivsk{
+	transform:translate(130px,110px); 
+	-moz-transform:translate(130px,110px);
+	-webkit-transform:translate(130px,110px); 
+	-o-transform:translate(130px,110px); 
+	-ms-transform:translate(130px,110px);
+}
+
+.name-lviv{
+	transform:translate(124px,70px); 
+	-moz-transform:translate(124px,70px);
+	-webkit-transform:translate(124px,70px); 
+	-o-transform:translate(124px,70px); 
+	-ms-transform:translate(124px,70px);
+}
+
+.name-poltava{
+	display:none;
+	transform:translate(327px,80px); 
+	-moz-transform:translate(327px,80px);
+	-webkit-transform:translate(327px,80px); 
+	-o-transform:translate(327px,80px); 
+	-ms-transform:translate(327px,80px);
+}
+
+.name-odesa{
+	transform:translate(255px,175px); 
+	-moz-transform:translate(255px,175px);
+	-webkit-transform:translate(255px,175px); 
+	-o-transform:translate(255px,175px); 
+	-ms-transform:translate(255px,175px);
+}
+
+.name-harkiv{
+	transform:translate(390px,85px); 
+	-moz-transform:translate(390px,85px);
+	-webkit-transform:translate(390px,85px); 
+	-o-transform:translate(390px,85px); 
+	-ms-transform:translate(390px,85px);
+}
+
+.name-zhytomyr{
+	transform:translate(218px,43px); 
+	-moz-transform:translate(218px,43px);
+	-webkit-transform:translate(218px,43px); 
+	-o-transform:translate(218px,43px); 
+	-ms-transform:translate(218px,43px);
+}
+
+.name-volyn{
+	transform:translate(148px,24px); 
+	-moz-transform:translate(148px,24px);
+	-webkit-transform:translate(148px,24px); 
+	-o-transform:translate(148px,24px); 
+	-ms-transform:translate(148px,24px);
+}
+
+.name-сherkassy{
+	transform:translate(276px,105px); 
+	-moz-transform:translate(276px,105px);
+	-webkit-transform:translate(276px,105px); 
+	-o-transform:translate(276px,105px); 
+	-ms-transform:translate(276px,105px);
+}
+
+.name-donetsk{
+	transform:translate(418px,141px); 
+	-moz-transform:translate(418px,141px);
+	-webkit-transform:translate(418px,141px); 
+	-o-transform:translate(418px,141px); 
+	-ms-transform:translate(418px,141px);
+}
+/*------name-ic-transform----------*/
+
+/*------map-ic-transform----------*/
+.cam-ic, .fot-ic{
+	fill:#662382;
+}
+
+.cam-ic:hover, .fot-ic:hover{
+	fill:#D2691E;
+
+}
+
+
+.kyiv-cam-ic{
+	transform:translate(185px,-77px); 
+	-moz-transform:translate(185px,-77px);
+	-webkit-transform:translate(185px,-77px); 
+	-o-transform:translate(185px,-77px); 
+	-ms-transform:translate(185px,-77px);
+}
+
+.kyiv-fot-ic{
+	transform:translate(239px,-34px); 
+	-moz-transform:translate(239px,-34px);
+	-webkit-transform:translate(239px,-34px); 
+	-o-transform:translate(239px,-34px); 
+	-ms-transform:translate(239px,-34px);
+	
+}
+
+.lviv-fot-ic{
+	transform:translate(99px,-34px); 
+	-moz-transform:translate(99px,-34px);
+	-webkit-transform:translate(99px,-34px); 
+	-o-transform:translate(99px,-34px); 
+	-ms-transform:translate(99px,-34px);
+}
+
+.lviv-cam-ic{
+	transform:translate(45px,-77px); 
+	-moz-transform:translate(45px,-77px);
+	-webkit-transform:translate(45px,-77px); 
+	-o-transform:translate(45px,-77px); 
+	-ms-transform:translate(45px,-77px);
+
+}
+
+.odesa-cam-ic{
+	transform:translate(180px,33px); 
+	-moz-transform:translate(180px,33px);
+	-webkit-transform:translate(180px,33px); 
+	-o-transform:translate(180px,33px); 
+	-ms-transform:translate(180px,33px);
+}
+
+.odesa-fot-ic{
+	transform:translate(234px,76px); 
+	-moz-transform:translate(234px,76px);
+	-webkit-transform:translate(234px,76px); 
+	-o-transform:translate(234px,76px); 
+	-ms-transform:translate(234px,76px);
+}
+
+.harkiv-cam-ic{
+	transform:translate(316px,-58px); 
+	-moz-transform:translate(316px,-58px);
+	-webkit-transform:translate(316px,-58px); 
+	-o-transform:translate(316px,-58px); 
+	-ms-transform:translate(316px,-58px);
+}
+
+.harkiv-fot-ic{
+	transform:translate(370px,-15px); 
+	-moz-transform:translate(370px,-15px);
+	-webkit-transform:translate(370px,-15px); 
+	-o-transform:translate(370px,-15px); 
+	-ms-transform:translate(370px,-15px);
+}
+
+.krym-cam-ic{
+	transform:translate(270px,90px); 
+	-moz-transform:translate(270px,90px);
+	-webkit-transform:translate(270px,90px); 
+	-o-transform:translate(270px,90px); 
+	-ms-transform:translate(270px,90px);
+}
+
+.krym-fot-ic{
+	transform:translate(324px,133px); 
+	-moz-transform:translate(324px,133px);
+	-webkit-transform:translate(324px,133px); 
+	-o-transform:translate(324px,133px); 
+	-ms-transform:translate(324px,133px);
+}
+/*
+.zap-fot-ic{
+	transform:translate(40px,60px); 
+	-moz-transform:translate(40px,60px);
+	-webkit-transform:translate(40px,60px); 
+	-o-transform:translate(40px,60px); 
+	-ms-transform:translate(40px,60px);
+}
+*/
+
+.dnipro-cam-ic{
+	transform:translate(279px,-13px); 
+	-moz-transform:translate(279px,-13px);
+	-webkit-transform:translate(279px,-13px); 
+	-o-transform:translate(279px,-13px); 
+	-ms-transform:translate(279px,-13px);
+}
+
+.dnipro-fot-ic{
+	transform:translate(333px,30px); 
+	-moz-transform:translate(333px,30px);
+	-webkit-transform:translate(333px,30px); 
+	-o-transform:translate(333px,30px); 
+	-ms-transform:translate(333px,30px);
+}
+
+.donetsk-cam-ic{
+	transform:translate(341px,1px); 
+	-moz-transform:translate(341px,1px);
+	-webkit-transform:translate(341px,1px); 
+	-o-transform:translate(341px,1px); 
+	-ms-transform:translate(341px,1px);
+}
+
+.donetsk-fot-ic{
+	transform:translate(395px,44px); 
+	-moz-transform:translate(395px,44px);
+	-webkit-transform:translate(395px,44px); 
+	-o-transform:translate(395px,44px); 
+	-ms-transform:translate(395px,44px);
+}
+
+.zaporizhzhia-cam-ic{
+	transform:translate(292px,28px); 
+	-moz-transform:translate(292px,28px);
+	-webkit-transform:translate(292px,28px); 
+	-o-transform:translate(292px,28px); 
+	-ms-transform:translate(292px,28px);
+}
+
+.zaporizhzhia-fot-ic{
+	transform:translate(346px,71px); 
+	-moz-transform:translate(346px,71px);
+	-webkit-transform:translate(346px,71px); 
+	-o-transform:translate(346px,71px); 
+	-ms-transform:translate(346px,71px);
+}
+
+
+.zhytomyr-cam-ic{
+	transform:translate(142px,-96px); 
+	-moz-transform:translate(142px,-96px);
+	-webkit-transform:translate(142px,-96px); 
+	-o-transform:translate(142px,-96px); 
+	-ms-transform:translate(142px,-96px);
+}
+
+.frankivsk-cam-ic{
+	transform:translate(53px,-30px); 
+	-moz-transform:translate(53px,-30px);
+	-webkit-transform:translate(53px,-30px); 
+	-o-transform:translate(53px,-30px); 
+	-ms-transform:translate(53px,-30px);
+
+}
+
+.volyn-cam-ic{
+	transform:translate(71px,-116px); 
+	-moz-transform:translate(71px,-116px);
+	-webkit-transform:translate(71px,-116px); 
+	-o-transform:translate(71px,-116px); 
+	-ms-transform:translate(71px,-116px);
+
+}
+
+
+.vinnitsa-cam-ic{
+	transform:translate(143px,-26px); 
+	-moz-transform:translate(143px,-26px);
+	-webkit-transform:translate(143px,-26px); 
+	-o-transform:translate(143px,-26px); 
+	-ms-transform:translate(143px,-26px);
+
+}
+
+.сherkassy-cam-ic{
+	transform:translate(199px,-34px); 
+	-moz-transform:translate(199px,-34px);
+	-webkit-transform:translate(199px,-34px); 
+	-o-transform:translate(199px,-34px); 
+	-ms-transform:translate(1199px,-34px);
+}
+/*------map-ic-transform----------*/
+
+/*------popUp-open----------*/
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 0px;
+  width:auto;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.videoCity{
+	width:100%;
+	margin:0;
+	display: block;
+height:auto;
+position: relative;
+z-index: 99;	
+}
+
+.white-popup p{
+	padding: 10px;
+}
+
+.cityPopUp{
+	background: white ;
+/* 	z-index: 999999 !important; */
+	position: relative;
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+/*
+.mfp-ajax-holder{
+	z-index: 999999 !important;
+	width: 80% ;
+	margin: auto;
+}
+*/
+
+/*
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+*/
+
+/*------popUp-close----------*/
+
+@media screen and (max-width:1200px) { 
+#map-svg{
+	transform:         scale(1.9) translate(-10px);
+ -moz-transform:    scale(1.9) translate(-10px); 
+ -webkit-transform: scale(1.9) translate(-10px); 
+ -o-transform:      scale(1.9) translate(-10px); 
+ -ms-transform:     scale(1.9) translate(-10px); 
+ 
+
+ 
+}
+}
+
+@media screen and (max-width:900px) { 
+#map-svg{
+	transform:         scale(1.6) translate(-30px); 
+ -moz-transform:    scale(1.6) translate(-30px); 
+ -webkit-transform: scale(1.6) translate(-30px);
+ -o-transform:      scale(1.6) translate(-30px); 
+ -ms-transform:     scale(1.6) translate(-30px); 
+}
+}
+
+@media screen and (max-width:700px) { 
+#map-svg{
+	transform:         scale(1.4) translate(-70px); 
+ -moz-transform:    scale(1.4) translate(-70px); 
+ -webkit-transform: scale(1.4) translate(-70px);
+ -o-transform:      scale(1.4) translate(-70px); 
+ -ms-transform:     scale(1.4) translate(-70px); 
+}
+}
+
+
+@media screen and (max-width:500px) { 
+#map-svg{
+	transform:         scale(1.2)  translate(-90px); 
+ -moz-transform:    scale(1.2)  translate(-90px); 
+ -webkit-transform: scale(1.2)  translate(-90px);
+ -o-transform:      scale(1.2)  translate(-90px); 
+ -ms-transform:     scale(1.2)  translate(-90px); 
+}
+}
+
+@media screen and (max-width:300px) { 
+#map-svg{
+	transform:          translate(-100px); 
+ -moz-transform:      translate(-100px); 
+ -webkit-transform:   translate(-100px);
+ -o-transform:      translate(-100px); 
+ -ms-transform:       translate(-100px); 
+}
+}
+
+
+
+/* end map styles */
+
+
+
 .new-window_content{
 	position: relative;
 }
