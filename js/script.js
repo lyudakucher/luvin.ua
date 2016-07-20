@@ -244,10 +244,42 @@ $('.clickMap').on('click', function () {
 
 window.onload = init;
 
-    var product;
+    var product1, product2, product3;
     function init(){
 
-      product = $('.product').ThreeSixty({
+      product1 = $('.product1').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-light/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+      
+       product2 = $('.product2').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-standart/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+	  	
+	  	product3 = $('.product3').ThreeSixty({
         totalFrames: 20,
         endFrame: 20,
         currentFrame: 1,
@@ -262,6 +294,7 @@ window.onload = init;
         navigation: false,
         
       });     
+
 
     };
  
