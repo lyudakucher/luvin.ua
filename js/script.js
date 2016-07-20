@@ -184,8 +184,8 @@ $('.clickMap').on('click', function () {
 	var db0=[
        	{
 		     
-		     src: 'city/popUp-kyiv.html',
-		      type: 'ajax'
+		     src: '#kyivPopUp',
+		      type: 'inline'
 		  }, 
 		  {	
 		     src: 'city/popUp-odesa.html',
@@ -199,7 +199,7 @@ $('.clickMap').on('click', function () {
 		  {	
 		     src: 'city/popUp-sevastopol.html',
 		      type: 'ajax'
-		  },
+			  },
 		  
 		  {
 		     
