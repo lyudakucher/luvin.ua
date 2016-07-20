@@ -178,6 +178,88 @@ $('#scroll').click(function () {
     });
 
 
+$('.clickMap').on('click', function () {
+    var value=$(this).attr('data-atr');
+    var a=Number(value);
+	var db0=[
+       	{
+		     
+		     src: 'city/popUp-kyiv.html',
+		      type: 'ajax'
+		  }, 
+		  {	
+		     src: 'city/popUp-odesa.html',
+		      type: 'ajax'
+		  }, 
+		  {	
+		      src: 'city/popUp-lviv.html',
+		      type: 'ajax'
+		  },
+		 
+		  {	
+		     src: 'city/popUp-sevastopol.html',
+		      type: 'ajax'
+		  },
+		  
+		  {
+		     
+		     src: 'city/popUp-dnipro.html',
+		      type: 'ajax'
+		  }, 
+		  {	
+		     src: 'city/popUp-harkiv.html',
+		      type: 'ajax'
+		  }, 
+		  {	
+		      src: 'city/popUp-donetsk.html',
+		      type: 'ajax'
+		  },
+		 
+		  {	
+		     src: 'city/popUp-zaporizhza.html',
+		      type: 'ajax'
+		  },
+		  
+		  {
+		     
+		     src: 'city/popUp-zhutomyr.html',
+		      type: 'ajax'
+		  }, 
+		  {	
+		     src: 'city/popUp-frankivsk.html',
+		      type: 'ajax'
+		  }, 
+		  {	
+		      src: 'city/popUp-volyn.html',
+		      type: 'ajax'
+		  },
+		 
+		  {	
+		     src: 'city/popUp-vinnutsa.html',
+		      type: 'ajax'
+		  },
+		  
+		  {	
+		     src: 'city/popUp-cherkasy.html',
+		      type: 'ajax'
+		  }
+		
+		];
+
+   
+    var db= new Object (db0);
+    var db1=db.splice(a);
+    var db2=db1.concat(db);
+    $.magnificPopup.open({
+          items: db2,
+	    gallery: {
+	      enabled: true,
+	    },
+	    type: 'image' 
+    });			  
+});
+	
+
 });
 
 window.onload = init;
