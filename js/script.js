@@ -19,17 +19,28 @@ $(document).ready(function() {
  });   
 */
 
-$('.read-more_wrap').hide();
-$(".readMoreOption").click(function() {
-	$(".read-more_wrap").slideToggle( "slow", function() {
+$('.read-more_wrap1').hide();
+$('.read-more_wrap2').hide();
+$('.read-more_wrap3').hide();
+$(".readMoreOption1").click(function() {
+	$(".read-more_wrap1").slideToggle( "slow", function() {
   });
-	
+});
+$(".readMoreOption2").click(function() {
+	$(".read-more_wrap2").slideToggle( "slow", function() {
+  });
+});
+$(".readMoreOption3").click(function() {
+	$(".read-more_wrap3").slideToggle( "slow", function() {
+  });
 });
 	
+/*
 $(".toggle_mnu").click(function() {
 	$(".sandwich").toggleClass("active");
 	$('.menu').toggleClass('trust-exp').css('display','');
 });
+*/
 
 function trutime() {
   
@@ -136,94 +147,67 @@ trutime();
     );};
 */
 
-
-/*
-var scroll = $('#scroll');
-	$("#back-top").hide();
-	
+$("#back-top").hide();	
 $(window).scroll(function(){
-		var scroll_top = $(this).scrollTop();
- 
-        if (scroll_top<500){
-			$('#logo-pps').css({'top':(mapPosition-scroll_top*1.2+mapheight/2)});
-			$('#back-top').fadeOut();
-		//	scroll.css({'opacity':scroll_top*(scroll_top/mapPosition)});
-		//	scroll.fadeOut(1000);
-			    videodiv.removeClass('no-fixed').addClass('fixed');
-		}
-		else if (scroll_top>500 && scroll_top < full*2.5 ){
-			 $('#back-top').fadeIn();
-			     videodiv.removeClass('no-fixed').addClass('fixed');
-		//	 scroll.fadeOut(slow);
-		}
-		else if (scroll_top >= full*2.5){
-			$('#back-top').fadeIn();
-			  videodiv.removeClass('fixed').addClass('no-fixed');		
-		}    
+	var scroll_top = $(this).scrollTop();
+    if (scroll_top<500){	
+		$('#back-top').fadeOut();			  
+	}
+	else {
+		 $('#back-top').fadeIn();
+	}
 });
-*/
-
 
 $('#back-top a').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    });
-$('#scroll').click(function () {
-        $('body,html').animate({
-            scrollTop: 800
-        }, 800);
-        return false;
-    });
+	$('body,html').animate({
+	    scrollTop: 0
+	}, 800);
+	return false;
+});
+
 
 
 $('.clickMap').on('click', function () {
     var value=$(this).attr('data-atr');
     var a=Number(value);
 	var db0=[
-       	{
-		     
-		     src: '#kyivPopUp',
-		      type: 'inline'
-		  }, 
-		  {	
-		      src: '#odessaPopUp',
-		      type: 'inline'
-		  }, 
-		  {	
-		      src: '#lvovPopUp',
-		      type: 'inline'
-		  },
-		 
-		  {	
-		     src: '#vinnitcaPopUp',
-		      type: 'inline'
-			},
-		  
-		  {
-		     
-		     src: '#сherkassyPopUp',
-		      type: 'inline'
-		  }, 
-		  {	
-		     src: '#khmelnytskyiPopUp',
-		      type: 'inline'
-		  }, 
-		  {	
-		      src: '#ivanofrankovskPopUp',
-		      type: 'inline'
-		  },
-		 
-		  {	
-		     src: '#zhytomurPopUp',
-		      type: 'inline'
-		  },
-		  
-		  {
-		     src: '#kirovogradPopUp',
-		      type: 'inline'
-		  }
+				{
+				 src: '#kyivPopUp',
+				  type: 'inline'
+				}, 
+				{	
+				  src: '#odessaPopUp',
+				  type: 'inline'
+				}, 
+				{	
+				  src: '#lvovPopUp',
+				  type: 'inline'
+				},
+				{	
+				 src: '#vinnitcaPopUp',
+				  type: 'inline'
+				},
+				{
+				 src: '#сherkassyPopUp',
+				  type: 'inline'
+				}, 
+				{	
+				 src: '#khmelnytskyiPopUp',
+				  type: 'inline'
+				}, 
+				{	
+				  src: '#ivanofrankovskPopUp',
+				  type: 'inline'
+				},
+				
+				{	
+				 src: '#zhytomurPopUp',
+				  type: 'inline'
+				},
+				{
+				 src: '#kirovogradPopUp',
+				  type: 'inline'
+				}
 		];
 
    

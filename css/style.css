@@ -622,11 +622,13 @@ path.clickMap:hover{
 .cont-wind {
 	position: absolute;
 
+
 /*
 	top: 58%;
 	left: 50%;
 */
 
+	cursor :e-resize;
 	top: 0;
 	left: calc(50% - 200px);
 	left: -moz-calc(50% - 200px);
@@ -1367,13 +1369,23 @@ body {
 	background-image: url(../pic/download-hover.svg);
 }
 
-.read-more_wrap {
+.read-more_wrap1, .read-more_wrap2, .read-more_wrap3 {
 	background: url(../img/luvin-light-big.jpg) center top no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
 	padding-top: 10px;
 	margin: 0;
+}
+
+.read-more_wrap2{
+	background: url(../img/luvin-standart-big.jpg) center top no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	padding-top: 10px;
+	margin: 0;
+
 }
 
 .read-more {
