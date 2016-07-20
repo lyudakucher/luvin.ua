@@ -1146,6 +1146,10 @@ body {
 	padding: 0;
 }
 
+.new-window_wrap .new-window_item_wrap:last-child {
+	padding-bottom: 7%;
+}
+
 .new-window_leftblock {
 	float: left;
 }
@@ -1392,3 +1396,15 @@ body {
 	padding-bottom: 10px;
 }
 /* end of new-window-section styles */
+/* payment-section styles */
+
+/* end of payment-section styles */
+/* managers-section styles */
+.managers_title span {
+	font-weight: 400;
+	font-family: 'PT Sans', sans-serif;
+}
+/* end of managers-section styles */
+/* feedback-section styles */
+
+/* end of feedback-section styles */
