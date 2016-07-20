@@ -1291,7 +1291,13 @@ body {
 	padding-bottom: 2%;
 }
 
-.read-more_description {
+.read-more_description::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #bebebe;
+	margin-bottom: 10px;
 }
 
 .read-more_description p {
