@@ -1,17 +1,38 @@
 /* main styles */
 
 /* map content styles */
-.cityPopUp{
+.contactCityPopUp{
 	display: none;
 }
 .cityPopUp img{
 	width: 323px;
 	height: 321px;
+	float:left;
+	
+}
+.cityPopUp p{
+	margin-top:10px; 
+	width: 33%;
+	display: block;
+	float: left;
+}
+
+.cityPopUp h3{
+	margin-top:20px;
+	clear: both; 
+}
+
+.cityPopUp h3:first-child{
+	margin-top:20px;
+	clear: inherit; 
 }
 
 
+.cityPopUp span{
+	font-style:oblique;
+	display:block;
+}
 /* end map content styles */
-
 
 
 /* map styles */
@@ -70,6 +91,7 @@
 
 .rect-color{
 	fill: white;
+	
 }
 
 .map-cam-icon{
@@ -465,16 +487,12 @@
   margin: 20px auto;
 }
 
-.videoCity{
-	width:100%;
-	margin:0;
-	display: block;
-height:auto;
-position: relative;
-z-index: 99;	
-}
 
 .white-popup p{
+	padding: 10px;
+}
+
+.white-popup h3{
 	padding: 10px;
 }
 
@@ -598,10 +616,12 @@ z-index: 99;
 
 .cont-wind {
 	position: absolute;
-<<<<<<< HEAD
+
+/*
 	top: 58%;
 	left: 50%;
-=======
+*/
+
 	top: 0;
 	left: calc(50% - 200px);
 	left: -moz-calc(50% - 200px);
@@ -613,7 +633,7 @@ z-index: 99;
 	/* position: absolute;
 	top: 50%;
 	left: 50%; */
->>>>>>> origin/gh-pages
+
 	width: 100%;
 	/* height: 500px; */
 	text-align: left;
