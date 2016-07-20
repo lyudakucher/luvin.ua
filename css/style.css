@@ -1,5 +1,19 @@
 /* main styles */
 
+/* map content styles */
+.cityPopUp{
+	display: none;
+}
+.cityPopUp img{
+	width: 323px;
+	height: 321px;
+}
+
+
+/* end map content styles */
+
+
+
 /* map styles */
 .map-on-site{
 	width:100%;
@@ -79,6 +93,11 @@
 
 
 /*------name-ic-transform----------*/
+.name-lygansk, .name-dnipro, .name-zaporizhzhia, .name-krym, .name-poltava, .name-harkiv, .name-volyn, .name-donetsk{
+		display:none;
+
+}
+
 .name-kyiv{
 	transform:translate(265px,68px); 
 	-moz-transform:translate(265px,68px);
@@ -88,7 +107,6 @@
 }
 
 .name-lygansk{
-	display:none;
 	transform:translate(440px,100px); 
 	-moz-transform:translate(440px,100px);
 	-webkit-transform:translate(440px,100px); 
@@ -127,6 +145,15 @@
 	-o-transform:translate(218px,113px); 
 	-ms-transform:translate(218px,113px);
 }
+
+.name-khmelnytskyi{
+	transform:translate(190px,85px); 
+	-moz-transform:translate(190px,85px);
+	-webkit-transform:translate(190px,85px); 
+	-o-transform:translate(190px,85px); 
+	-ms-transform:translate(190px,85px);
+}
+
 
 .name-frankivsk{
 	transform:translate(130px,110px); 
@@ -193,6 +220,14 @@
 	-ms-transform:translate(276px,105px);
 }
 
+.name-kirovograd{
+	transform:translate(306px,125px); 
+	-moz-transform:translate(306px,125px);
+	-webkit-transform:translate(306px,125px); 
+	-o-transform:translate(306px,125px); 
+	-ms-transform:translate(306px,125px);
+}
+
 .name-donetsk{
 	transform:translate(418px,141px); 
 	-moz-transform:translate(418px,141px);
@@ -209,6 +244,10 @@
 
 .cam-ic:hover, .fot-ic:hover{
 	fill:#D2691E;
+
+}
+.lygansk-cam-ic, .dnipro-cam-ic, .zaporizhzhia-cam-ic, .krym-cam-ic, .poltava-cam-ic, .harkiv-cam-ic, .volyn-cam-ic, .donetsk-cam-ic, .lygansk-fot-ic, .dnipro-fot-ic, .zaporizhzhia-fot-ic, .krym-fot-ic, .poltava-fot-ic, .harkiv-fot-ic, .volyn-fot-ic, .donetsk-fot-ic{
+		display:none;
 
 }
 
@@ -379,6 +418,14 @@
 
 }
 
+.khmelnytskyi-cam-ic{
+	transform:translate(113px,-53px); 
+	-moz-transform:translate(113px,-53px);
+	-webkit-transform:translate(113px,-53px); 
+	-o-transform:translate(113px,-53px); 
+	-ms-transform:translate(113px,-53px);
+
+}
 
 .vinnitsa-cam-ic{
 	transform:translate(143px,-26px); 
@@ -394,8 +441,17 @@
 	-moz-transform:translate(199px,-34px);
 	-webkit-transform:translate(199px,-34px); 
 	-o-transform:translate(199px,-34px); 
-	-ms-transform:translate(1199px,-34px);
+	-ms-transform:translate(199px,-34px);
 }
+
+.kirovograd-cam-ic{
+	transform:translate(231px,-14px); 
+	-moz-transform:translate(231px,-14px);
+	-webkit-transform:translate(231px,-14px); 
+	-o-transform:translate(231px,-14px); 
+	-ms-transform:translate(231px,-14px);
+}
+
 /*------map-ic-transform----------*/
 
 /*------popUp-open----------*/
@@ -531,15 +587,13 @@ z-index: 99;
 
 /* end map styles */
 
-
-
 .new-window_content{
 	position: relative;
 }
 
 .cont-wind { /*конфлікт з  класом container*/
 	position: absolute;
-	top: 50%;
+	top: 58%;
 	left: 50%;
 	width: 100%;
 	height: 500px;

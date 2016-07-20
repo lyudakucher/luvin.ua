@@ -188,27 +188,27 @@ $('.clickMap').on('click', function () {
 		      type: 'inline'
 		  }, 
 		  {	
-		     src: 'city/popUp-odesa.html',
-		      type: 'ajax'
+		      src: '#odessaPopUp',
+		      type: 'inline'
 		  }, 
 		  {	
-		      src: 'city/popUp-lviv.html',
-		      type: 'ajax'
+		      src: '#lvovPopUp',
+		      type: 'inline'
 		  },
 		 
 		  {	
-		     src: 'city/popUp-sevastopol.html',
-		      type: 'ajax'
-			  },
+		     src: '#vinnitcaPopUp',
+		      type: 'inline'
+			},
 		  
 		  {
 		     
-		     src: 'city/popUp-dnipro.html',
-		      type: 'ajax'
+		     src: '#сherkassyPopUp',
+		      type: 'inline'
 		  }, 
 		  {	
-		     src: 'city/popUp-harkiv.html',
-		      type: 'ajax'
+		     src: '#khmelnytskyiPopUp',
+		      type: 'inline'
 		  }, 
 		  {	
 		      src: 'city/popUp-donetsk.html',
@@ -277,8 +277,8 @@ window.onload = init;
         imagePath:'img/windows/luvin-premium/',
         filePrefix: '',
         ext: '.png',
-        height: 600,
-        width: 600,
+        height: 400,
+        width: 400,
         navigation: false,
         
       });     
