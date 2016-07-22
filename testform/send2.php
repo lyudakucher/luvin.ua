@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
@@ -7,12 +6,12 @@
 	<script src="script1.js"></script>
 </head>
 <body>
-	<form id="form" method="post">
+	<form action='#' id="form" method="post" name="form">
 	    <input type="text" name="name" required="required"/>
 	    <input type="text" name="phone" required="required"/>
-	    <input type="submit" value="Заказать звонок"/>
+	    <input name="submit" type="submit" value="Заказать звонок"/>
 	</form>
-	
-	
+	<h3><?php include "send-php.php"?></h3>
+		
 </body>
 </html>
