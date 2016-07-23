@@ -165,7 +165,16 @@ $('#back-top a').click(function () {
 	return false;
 });
 
-
+$('.butContrCont').on('click', function () {
+    var value=$(this).attr('data-atcont');
+	$('.butContrCont').removeClass('activeContCont');
+	$(this).addClass('activeContCont');
+    $('.cityPopUpAll').addClass('showCityContact');;
+     $('.cityPopUpStyle').css('display','none');
+   // $('.cityPopUpStyle').get(value).addClass('showCityContact');
+   $('.cityPopUpStyle').eq(value).css('display','block');;
+    
+});
 
 $('.clickMap').on('click', function () {
     var value=$(this).attr('data-atr');
