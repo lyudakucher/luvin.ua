@@ -165,15 +165,25 @@ $('#back-top a').click(function () {
 	return false;
 });
 
+	$('.butContrCont').eq(3).addClass('activeContCont');
+	 $('.cityPopUpAll').addClass('showCityContact');;
+     $('.cityPopUpStyle').addClass('contCityDisplayNone');
+     $('.cityPopUpStyle').eq(3).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');
+
+
 $('.butContrCont').on('click', function () {
     var value=$(this).attr('data-atcont');
 	$('.butContrCont').removeClass('activeContCont');
 	$(this).addClass('activeContCont');
     $('.cityPopUpAll').addClass('showCityContact');;
-     $('.cityPopUpStyle').css('display','none');
-   // $('.cityPopUpStyle').get(value).addClass('showCityContact');
-   $('.cityPopUpStyle').eq(value).css('display','block');;
-    
+     
+/*
+     $('.cityPopUpStyle').each(function(){
+	  $(this).removeClass('contCityDisplayBlock').addClass('contCityDisplayNone');
+     });
+*/
+      $('.cityPopUpStyle').removeClass('contCityDisplayBlock').addClass('contCityDisplayNone');
+     $('.cityPopUpStyle').eq(value).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');    
 });
 
 $('.clickMap').on('click', function () {
