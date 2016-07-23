@@ -252,9 +252,10 @@ body {
 
 .new-window_titleblock {
 	padding-left: 30px;
-	max-width: 650px;
+	/* max-width: 750px; */
 	margin: 0 auto;
 	padding-top: 5%;
+	vertical-align: middle;
 }
 
 .new-window_item_wrap {
@@ -263,10 +264,6 @@ body {
 
 .new-window_wrap .new-window_item_wrap:last-child {
 	padding-bottom: 7%;
-}
-
-.new-window_leftblock {
-	float: left;
 }
 
 .new-window_title {
@@ -324,13 +321,22 @@ body {
 	font-weight: 700;
 }
 
+.new-window_leftblock, 
 .new-window_rightblock {
-	float: right;
+	width: 48%;
+	max-width: 300px;
+	
+}
+
+.new-window_leftblock {
+	float: left;
+}
+.new-window_rightblock {
 	text-align: left;
 	font-size: 1.5em;
 	position: relative;
 	padding-left: 20px;
-	margin-top: 3%;
+	float: right;
 }
 
 .new-window_rightblock::before {
