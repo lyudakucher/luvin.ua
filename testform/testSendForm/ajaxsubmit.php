@@ -31,6 +31,24 @@ $to = 'andriy.ilin90@gmail.com, andy@andy.s-host.net, kucherlyuda@gmail.com'; //
         $headers .= "From: andy@andy.s-host.net\r\n"; //Наименование и почта отправителя
  
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+         
+         $message1 = '
+                <html>
+                    <head>
+                        <title>'.$subject.'</title>
+                    </head>
+                    <body>
+                        <p>шановний(а) '.$name2.' </p>
+                        <p>дякуємо за замовлення</p>
+                        <p>ваше звернення опрацюється менеджером компанії</p>   
+                        <p>та Вам зателефонують за номером '.$contact2.' в найближчий час</p> 
+                          <p>з повагою, компанія</p>
+                             <a href=\'luvin.ua \'>luvin.ua</a>                   
+                    </body>
+                </html>'; //Текст нащ
+         $headers1  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
+        $headers1 .= "From: luvin.ua \r\n";
+        mail($email2, $subject, $message1, $headers1);
         echo "Your mail has been sent successfuly ! Thank you for your feedback";
 
 
