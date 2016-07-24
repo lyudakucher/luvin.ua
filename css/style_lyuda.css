@@ -325,7 +325,6 @@ body {
 .new-window_rightblock {
 	width: 48%;
 	max-width: 300px;
-	
 }
 
 .new-window_leftblock {
@@ -337,6 +336,7 @@ body {
 	position: relative;
 	padding-left: 20px;
 	float: right;
+	line-height: 1.2em;
 }
 
 .new-window_rightblock::before {
@@ -539,3 +539,6 @@ body {
 /* feedback-section styles */
 
 /* end of feedback-section styles */
+/* montague-sections styles */
+
+/* end of montague-sections styles */
