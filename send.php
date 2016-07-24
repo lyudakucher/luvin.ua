@@ -99,12 +99,15 @@ mail($to, $subject, $message, $headers);
                             <table bgcolor="#eeeaf3" cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="padding: 5% 10%;">
                                 <tr>
                                     <td>
-                                        <span style="color: #3a3a3a; font: 12px/15px  Arial,helvetica,sans-serif!important; display: inline-block; width: 49%; min-width: 200px;">
-                                            <span style="line-height: 24px"></style><strong>Наша адреса</strong></span><br>ТОВ «Євровікна» - <strong>LUVIN<sup>tm</sup></strong><br>м. Вінниця, вул. Чехова, 7Б
-                                        </span>
-                                        <span style="color: #3a3a3a; font: 12px/15px  Arial,helvetica,sans-serif!important; display: inline-block; width: 49%; min-width: 200px;">
-                                        <span style="line-height: 24px"><strong>Телефон для консультацій</strong></span><br><span style="text-decoration: 0; color: #3a3a3a !important;">&#173;+38 &#173;067 &#173;433 &#173;2234</span><br>пн-пт: з 9.00 до 18.00
-                                        </span>
+                                       <span style="color: #3a3a3a; font: 12px/16px  Arial,helvetica,sans-serif!important; display: inline-block; width: 49%; min-width: 200px;">
+                                       		<span style="line-height: 24px"></style><strong>Наша адреса</strong></span><br>ТОВ «Євровікна» - <strong>LUVIN<sup>tm</sup></strong><br>м. Вінниця, вул. Чехова, 7Б
+	                                    </span>
+	                                    <span style="color: #3a3a3a; font: 12px/16px  Arial,helvetica,sans-serif!important; display: inline-block; width: 49%; min-width: 200px;">
+	                                        <span style="line-height: 24px">
+	                                            <strong>Телефон для консультацій</strong></span><br>
+	                                        <a href="tel:067 ­433 ­2234" value="+380674332234" target="_blank" style="text-decoration: none; color: #3a3a3a !important;">+38 ­067 ­433 ­2234</a>
+	                                        <br>пн-пт: з 9.00 до 18.00
+	                                    </span>
                                     </td>
                                 </tr>
                             </table>

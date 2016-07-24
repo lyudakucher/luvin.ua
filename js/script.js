@@ -18,6 +18,17 @@ $(document).ready(function() {
 	offset:'30%'	 
  });   
 */
+$('.num').waypoint(function(direction) {
+$('.num').animate({ num: 115784 - 10000/* - начало */ }, {
+    duration: 1500,
+    step: function (num){
+        this.innerHTML = (num + 10000).toFixed(0) // + '%'
+    }
+})},{ 
+  offset: '99%'
+
+});
+
 
 $('.read-more_wrap1').hide();
 $('.read-more_wrap2').hide();
