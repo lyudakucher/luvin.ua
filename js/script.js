@@ -201,6 +201,41 @@ $('.showForm').on('click', function () {
 	});		
 });
 
+$("#submit").click(function(){
+	var name = $("#name").val();
+	var email = $("#email").val();
+	var phone = $("#phone").val();
+	var subject = $('.nameForm').html();
+	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
+	//console.log(dataString);
+
+	if(name==''||email==''||phone=='')
+	{
+		$('.valid').css('display','block');
+		//alert("Please Fill All Fields");
+	}
+	else
+	{
+		$.ajax({
+		type: "POST",
+		url: "send.php",
+		data: dataString,
+		cache: false,
+		success: function(result){
+			$("#name").val('');
+			$("#email").val('');
+			$("#phone").val('');
+			$('.valid').css('display','none');
+			//alert(result);
+	}
+	});
+	}
+	return false;
+
+});
+
+
+
 
 
 $('.clickMap').on('click', function () {
