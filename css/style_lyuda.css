@@ -540,5 +540,50 @@ body {
 
 /* end of feedback-section styles */
 /* montague-sections styles */
+.montague_list {
+	margin: 5% 0 0 0;
+	color: #662382;
+}
 
+.montague_list_item {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-family: 'Philosopher', sans-serif;
+	font-weight: 700;
+	position: relative;
+}
+
+.montague_list .montague_list_item:nth-child(2) {
+	padding: 0 5px;
+}
+
+.montague_list .montague_list_item::before {
+	font-size: 16px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	position: absolute;
+	top: 90%;
+	left: 0;
+	color: #662382;
+}
+
+.montague_list .montague_list_item:nth-child(1)::before {
+	content: "окно";
+}
+
+.montague_list .montague_list_item:nth-child(3)::before {
+	content: "монтаж";
+}
+
+/* .montague_content__item {
+	display: inline-block;
+	width: 50%;
+}
+
+.montague_content .montague_content__item:nth-child(1) {
+	
+} */
 /* end of montague-sections styles */
