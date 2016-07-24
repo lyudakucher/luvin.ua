@@ -231,8 +231,8 @@ $("#submit").click(function(){
 			$("#phone").val('');
 			$('.valid').css('display','none');
 			$('.formStyle').hide();
-			$('.nameForm').show();
-	$('.nameFormComent').show();
+			$('.nameForm').hide();
+	$('.nameFormComent').hide();
 			$('.formThanxStyle').show();
 			//alert("Дякуємо за замовлення");
 			setTimeout(function() { magnificPopup.close(); }, 4000);
@@ -305,11 +305,17 @@ $('.clickMap').on('click', function () {
 	    type: 'image' 
     });			  
 });
-	
+	init();
+	init1();
+	init2()
 
 });
 
+/*
 window.onload = init;
+window.onload = init1;
+window.onload = init2;
+*/
 
     var product1, product2, product3;
     function init(){
@@ -329,7 +335,9 @@ window.onload = init;
         navigation: false,
         
       });     
-      
+    };
+    function init1(){
+
        product2 = $('.product2').ThreeSixty({
         totalFrames: 20,
         endFrame: 20,
@@ -345,7 +353,10 @@ window.onload = init;
         navigation: false,
         
       });     
-	  	
+	};
+	
+	function init2(){
+ 	
 	  	product3 = $('.product3').ThreeSixty({
         totalFrames: 20,
         endFrame: 20,
