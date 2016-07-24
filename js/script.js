@@ -186,6 +186,9 @@ $('.butContrCont').on('click', function () {
      $('.cityPopUpStyle').eq(value).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');    
 });
 
+
+
+
 $('.clickMap').on('click', function () {
     var value=$(this).attr('data-atr');
     var a=Number(value);

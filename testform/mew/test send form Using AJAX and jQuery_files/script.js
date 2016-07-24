@@ -9,8 +9,8 @@ var contact = $("#contact").val();
 var dataString = 'name1='+ name + '&email1='+ email + '&password1='+ password + '&contact1='+ contact;
 if(name==''||email==''||password==''||contact=='')
 {
-	$('.valid').css('display','block');
-//alert("Please Fill All Fields");
+//	$('.valid').css('display','block');
+alert("Please Fill All Fields");
 }
 else
 {
@@ -21,14 +21,11 @@ url: "ajaxsubmit.php",
 data: dataString,
 cache: false,
 success: function(result){
-
 	$("#name").val('');
 	$("#email").val('');
 	$("#password").val('');
 	$("#contact").val('');
-	$('.valid').css('display','none');
-
-//alert(result);
+alert(result);
 }
 });
 }
