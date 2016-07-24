@@ -1,4 +1,33 @@
 /* map content styles */
+/* button send form styles */
+.formPopUp{
+	background: white;
+	
+}
+
+.formStyle{
+	margin: auto;
+	margin-top: 20px;
+}
+.showForm{
+	margin: 20px;
+	padding: 10px;
+	background: grey;
+	display:block;
+	width: 200px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.showForm:hover{
+	cursor: pointer;
+	background: silver;
+	color: rgba(0,0,0,.8);
+}
+/* end button send form styles */
+
+
+
 .activeContCont{
 	color:red;
 	font-weight: 700;

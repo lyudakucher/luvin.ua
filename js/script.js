@@ -186,6 +186,20 @@ $('.butContrCont').on('click', function () {
      $('.cityPopUpStyle').eq(value).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');    
 });
 
+$('.showForm').on('click', function () {
+	console.log($(this).contents());
+	console.log($('.nameForm').contents());
+
+	var content=$(this).contents().val();
+	$('.nameForm').text( $(this).html());
+	console.log($('.nameForm').contents());
+	$.magnificPopup.open({
+          items: {
+		      src: '#formPopUp'
+		    },
+		  type: 'inline' 
+	});		
+});
 
 
 
