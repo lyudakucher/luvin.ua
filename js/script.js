@@ -212,12 +212,30 @@ $("#submit").click(function(){
 	var subject = $('.nameForm').html();
 	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
 	//console.log(dataString);
-
+	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{
+		 $('.valid').text("* це поле обов'язкове для заповнення");
+
 		$('.valid').css('display','block');
 		//alert("Please Fill All Fields");
-	}
+	}	
+          else  if(!(pattern.test(email))){
+//                $("#email").css({'border' : '1px solid #569b44'});
+                $('.valid').eq(1).text('Не вірно вказаний e-mail');
+                $('.valid').eq(0).hide();
+                $('.valid').eq(2).hide();
+
+                
+            } /*
+else if(pattern.test(email)) {
+               $("#email").css({'border' : '1px solid #ff0000'});
+                $('.valid').eq(1).text('Не верно');
+            }
+*/
+       
+	
+	
 	else
 	{
 		$.ajax({
