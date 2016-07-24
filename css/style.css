@@ -4,6 +4,11 @@
 		display: none;
 		color:red;
 	}
+	
+.formThanxStyle{
+	background: WHITE;
+	font-size: 30px;
+}
 
 #submit{
 	background: aqua;
