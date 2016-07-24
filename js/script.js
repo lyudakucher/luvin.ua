@@ -187,8 +187,10 @@ $('.butContrCont').on('click', function () {
 });
 
 $('.showForm').on('click', function () {
-	console.log($(this).contents());
-	console.log($('.nameForm').contents());
+	$('.formStyle').show();
+	$('.formPopUp p').show();
+	$('.formPopUp h3').show();
+	$('.formThanxStyle').hide();
 
 	var content=$(this).contents().val();
 	$('.nameForm').text( $(this).html());
@@ -201,6 +203,10 @@ $('.showForm').on('click', function () {
 	});		
 });
 
+var magnificPopup = $.magnificPopup.instance; 
+// save instance in magnificPopup variable
+
+$('.formThanxStyle').hide();
 $("#submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
@@ -226,7 +232,15 @@ $("#submit").click(function(){
 			$("#email").val('');
 			$("#phone").val('');
 			$('.valid').css('display','none');
-			//alert(result);
+			$('.formStyle').hide();
+			$('.formPopUp p').hide();
+			$('.formPopUp h3').hide();
+			$('.formThanxStyle').show();
+			//alert("Дякуємо за замовлення");
+			setTimeout(function() { magnificPopup.close(); }, 4000);
+
+			
+
 	}
 	});
 	}

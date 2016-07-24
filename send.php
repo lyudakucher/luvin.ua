@@ -4,6 +4,8 @@ $name2=$_POST['name1'];
 $email2=$_POST['email1'];
 $phone2=$_POST['phone1'];
 //$contact2=$_POST['contact1'];
+$date1 = date("d.m.y"); 
+$time1 = date("H:i:s"); 
 
 		$to = 'andriy.ilin90@gmail.com, andy@andy.s-host.net'; 
         $subject = $_POST['subject1'];
@@ -17,6 +19,8 @@ $phone2=$_POST['phone1'];
                         <p>E-mail: '.$email2.'</p>   
                         <p> Телефон: '.$phone2.'</p>
                         <p> Cуть звернення: '.$subject.'</p>
+                        <p> Дата та час замовлення: '.$date1.' / '.$time1.'</p>
+
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
@@ -31,7 +35,7 @@ mail($to, $subject, $message, $headers);
                     <body>
                         <p>шановний(а) '.$name2.' </p>
                         <p>дякуємо за замовлення</p>
-                        <p>ви звернулись до компанії з приводу "'.$subject.'"</p> 
+                        <p>ви звернулись до компанії '.$date1.' о '.$time1.' з приводу "'.$subject.'"</p> 
                         <p>ваше звернення опрацюється менеджером компанії</p>   
                         <p>та Вам зателефонують за номером '.$phone2.' в найближчий час</p> 
                           <p>з повагою, компанія</p>
