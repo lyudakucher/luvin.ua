@@ -578,12 +578,152 @@ body {
 	content: "монтаж";
 }
 
-/* .montague_content__item {
-	display: inline-block;
-	width: 50%;
+.feedback-slider_container {
+    max-width: none;
 }
 
-.montague_content .montague_content__item:nth-child(1) {
+.feedback-slider_content {
+	margin: 7% 0;
+	background-color: rgba(190, 190, 190, 0.04);
+}
+
+.slider {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.slider-title {
+	font-size: 1.5em;
+	padding: 5% 0;
+}
+
+.slider_gallery {
+	width: 45%;
+	display: inline-block;
+	margin: 0 2%;
+}
+
+.gallery_img_main {
+	width: 100%;
+	cursor: pointer;
+}
+
+.gallery_img_previev {
+	width: 15%;
+	margin: 2% 1% 0;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.slider_feedback {
+	width: 46%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	margin: 0 2%;
+}
+
+.feedback-slider_description {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.slider_feedback_name {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.slider_feedback_job {
+	font-style: italic;
+	border-bottom: solid 4px #c5c5c5;
+}
+
+.slider_feedback_text {
+	padding-top: 5%;
+}
+
+.slider_description {
+	padding-bottom: 5%;
+}
+
+.slider_descriptional_title {
+	font-size: 1.2em;
+	text-align: left;
+	padding: 3% 0;
+	margin: 0;
+}
+
+.option__item-icon {
+	width: 30px;
+	margin: 0;
+	padding: 5px;
+	display: inline-block;
+	height: 28px;
+	border: solid 3px #662382;
+	background-image: url('../pic/icons-gallery_feedback.png');
+}
+
+.option__item:nth-child(1) .option__item-icon {
+	background-position: -12px 0px;
+}
+
+.option__item:nth-child(2) .option__item-icon {
+	background-position: -12px -62px;
+}
+
+.option__item {
 	
-} */
+}
+
+.option__item p {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin-left: 5%;
+	vertical-align: top;
+}
+
+.option__item-term::after {
+	content: "площадь работ";
+	display: block;
+	font-size: 0.8em;
+	font-weight: 400;
+	line-height: 12px;
+}
+
+.option__item-square::after {
+	content: "срок выполнения";
+	display: block;
+	font-size: 0.8em;
+	font-weight: 400;
+	line-height: 12px;
+}
+
+
+.slider_descriptional_option {
+	display: inline-block;
+	width: 30%;
+	text-align: left;
+}
+
+.slider_descriptional_text {
+	display: inline-block;
+	width: 67%;
+	position: relative;
+	text-align: left;
+	padding-left: 2%;
+	vertical-align: top;
+}
+
+.slider_descriptional_text::before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 4px;
+	height: 100%;
+	background-color: #662382;
+	top: 0;
+	left: 0;
+}
+
 /* end of montague-sections styles */
