@@ -4,10 +4,14 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	background: url('../pic/logo_bgr.png') center center repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
 }
 
 .wrap {
-	padding: 8% 0 7%;
+	padding: 5% 0 7%;
 }
 
 .container {
@@ -76,6 +80,14 @@ body {
 	display: table;
 	clear: both;
 }
+
+.title-block_bg {
+	background: url('../pic/luvin.ua.png') center center no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	padding: 5% 0;
+}
 /* end of main styles */
 
 /* main-section styles */
@@ -84,8 +96,8 @@ body {
 
 .main_section {
 	background:
-	url(../img/top-window.png) center center no-repeat,
-	url(../img/top-wrap.jpg) center center no-repeat;
+	url('../img/top-window.png') center center no-repeat,
+	url('../img/top-wrap.jpg') center center no-repeat;
 	height: 100vh;
 }
 
@@ -126,7 +138,7 @@ body {
 
 .main-description::before {
 	content: "";
-	background: url(../pic/top-bottom-line.png) center center no-repeat;
+	background: url('../pic/top-bottom-line.png') center center no-repeat;
 	width: 421px;
 	height: 72px;
 	display: block;
@@ -246,8 +258,12 @@ body {
 }
 /* end of old-window-section styles */
 /* new-window-section styles */
-.new-window_wrap {
+/* .new-window_wrap {
 	padding-bottom: 0;
+} */
+
+#new-window {
+	margin: 5% 0;
 }
 
 .new-window_titleblock {
@@ -535,6 +551,55 @@ body {
 	font-weight: 400;
 	font-family: 'PT Sans', sans-serif;
 }
+
+.managers_wrap {
+	z-index: -1;
+	background: url('../img/block-manager-bg.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.managers_content {
+	position: relative;
+	margin: 5% auto 0;
+	background: none;
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+.managers_form {
+	width: 60%;
+	display: inline-block;
+}
+
+.managers_options p {
+	font-size: 1em;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.managers_options {
+	width: 40%;
+	display: inline-block;
+}
+
+.managers_images {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.managers_images img {
+	width: 20%;
+	margin-right: -30px;
+}
+
+
 /* end of managers-section styles */
 /* feedback-section styles */
 
@@ -577,7 +642,9 @@ body {
 .montague_list .montague_list_item:nth-child(3)::before {
 	content: "монтаж";
 }
+/* end of montague-sections styles */
 
+/* feedback-sections styles */
 .feedback-slider_container {
     max-width: none;
 }
@@ -727,5 +794,4 @@ body {
 	top: 0;
 	left: 0;
 }
-
-/* end of montague-sections styles */
+/* end of feedback-sections styles */
