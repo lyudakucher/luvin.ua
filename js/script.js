@@ -20,12 +20,13 @@ $(document).ready(function() {
 */
 
 $('.feedback-slider_content').slick({
- dots: true,
+// dots: true,
   infinite: true,
   slidesToShow: 1,
   adaptiveHeight: true,
   prevArrow: '<div class="slick-prev"></div>',
   nextArrow: '<div class="slick-next"></div>',
+//   appendDots: $('.slick-dots'),
 /*
   autoplay: true,
   autoplaySpeed: 2000,

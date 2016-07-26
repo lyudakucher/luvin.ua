@@ -1,6 +1,6 @@
 /* map content styles */
 .feedback-slider_container{
-	width: 900px;
+	width: 850px;
 	margin: 0 auto;
 }
 .slick-dots{
@@ -24,6 +24,8 @@ background: none;
 }
 
 
+
+
 .slick-active button{
 	color:red;
 }
@@ -31,12 +33,12 @@ background: none;
 
 
 .slick-prev {
-    left: 0px;
+    left: -25px;
     background: url(../pic/left-arrow.svg) !important;
     
 }
 .slick-next {
-    right: 0px;
+    right: -25px;
     background: url(../pic/right-arrow.svg) !important
 }
 .slick-prev, .slick-next {
