@@ -1,4 +1,64 @@
 /* map content styles */
+.feedback-slider_container{
+	width: 900px;
+	margin: 0 auto;
+}
+.slick-dots{
+	display: block;
+		width: 20%;
+margin: 0 auto;	
+}
+
+.slick-dots>li{
+float: left;
+width: 20px;
+	display: block;
+
+
+}
+.slick-active button{
+	color:red;
+}
+
+/*
+
+.slick-prev {
+    left: 50px;
+}
+.slick-next {
+    right: 50px;
+}
+.slick-prev, .slick-next {
+    background: none;
+    border: medium none;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    height: 20px;
+    line-height: 0;
+    margin-top: -10px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+.slick-prev:before {
+    content: "";
+}
+.slick-next:before {
+    content: "";
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { color: #fff; }
+*/
+
+
+
+
+
+
+
 /* button send form styles */
 .valid{
 		display: none;

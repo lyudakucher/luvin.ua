@@ -18,6 +18,19 @@ $(document).ready(function() {
 	offset:'30%'	 
  });   
 */
+
+$('.feedback-slider_content').slick({
+ dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+/*
+  autoplay: true,
+  autoplaySpeed: 2000,
+*/
+});
+
+
 $('.num').waypoint(function(direction) {
 $('.num').animate({ num: 115784 - 10000/* - начало */ }, {
     duration: 1500,

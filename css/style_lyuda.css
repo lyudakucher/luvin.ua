@@ -587,10 +587,12 @@ body {
 	background-color: rgba(190, 190, 190, 0.04);
 }
 
+/*
 .slider {
 	max-width: 900px;
 	margin: 0 auto;
 }
+*/
 
 .slider-title {
 	font-size: 1.5em;
@@ -611,7 +613,7 @@ body {
 .gallery_img_previev {
 	width: 15%;
 	margin: 2% 1% 0;
-	display: inline-block;
+	display: inline-block !important;
 	cursor: pointer;
 }
 
