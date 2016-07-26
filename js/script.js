@@ -24,6 +24,8 @@ $('.feedback-slider_content').slick({
   infinite: true,
   slidesToShow: 1,
   adaptiveHeight: true,
+  prevArrow: '<div class="slick-prev"></div>',
+  nextArrow: '<div class="slick-next"></div>',
 /*
   autoplay: true,
   autoplaySpeed: 2000,
