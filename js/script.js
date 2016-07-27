@@ -19,6 +19,24 @@ $(document).ready(function() {
  });   
 */
 
+$('.feedback_slider').slick({
+//	dots: true,
+  infinite: true,
+  slidesToShow: 2,
+  
+  slidesToScroll: 2,
+
+  adaptiveHeight: true,
+  prevArrow: '<div class="slick-prev"></div>',
+  nextArrow: '<div class="slick-next"></div>',
+//   appendDots: $('.slick-dots'),
+/*
+  autoplay: true,
+  autoplaySpeed: 2000,
+*/
+});
+
+
 $('.feedback-slider_content').slick({
 // dots: true,
   infinite: true,

@@ -1,4 +1,16 @@
 /* map content styles */
+/*---------video-youtube------*/
+.videoYoutube{
+	width: 100%;
+}
+/*--------end-video-youtube------*/
+
+/*---------img-slider-feedback-------*/
+
+
+/*-----end-img-slider-feedback-------*/
+
+
 .slideBlockColor{
 	width: 100%;
 	background: rgba(190, 190, 190, 0.04);
