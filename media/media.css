@@ -132,7 +132,7 @@
 		width: 100%;
 		display: block;
 		text-align: left;
-		padding: 0;
+		padding: 0 0 5px 0;
 	}
 
 	.window_list_item::before {

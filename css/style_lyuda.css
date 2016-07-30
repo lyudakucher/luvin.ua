@@ -340,6 +340,14 @@ body {
 	line-height: 1.2em;
 }
 
+.new-window_rightblock_1 {
+	margin-top: 25px;
+}
+
+.new-window_rightblock_2 {
+	margin-top: 15px;
+}
+
 .new-window_rightblock::before {
 	position: absolute;
 	display: block;
