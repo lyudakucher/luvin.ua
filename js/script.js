@@ -33,7 +33,19 @@ $('.feedback_slider').slick({
 /*
   autoplay: true,
   autoplaySpeed: 2000,
-*/
+*/responsive: [
+    
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 
@@ -296,7 +308,7 @@ else if(pattern.test(email)) {
 			$('.formStyle').hide();
 			$('.nameForm').hide();
 	$('.nameFormComent').hide();
-			$('.formThanxStyle').show();
+			$('.formThanxStyle2').show();
 			//alert("Дякуємо за замовлення");
 			setTimeout(function() { magnificPopup.close(); }, 4000);
 
@@ -309,6 +321,66 @@ else if(pattern.test(email)) {
 
 });
 
+$('.formThanxStyle2').hide();
+
+$("#submitOpenForm").click(function(){
+	var name = $("#name_man").val();
+	var email = $("#email_man").val();
+	var phone = $("#phone_man").val();
+	var subject = $("#cont_man").val();
+	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
+	console.log(dataString);
+	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+	if(name==''||email==''||phone=='')
+	{
+		 $('.valid').text("* це поле обов'язкове для заповнення");
+
+		$('.valid').css('display','block');
+		//alert("Please Fill All Fields");
+	}	
+          else  if(!(pattern.test(email))){
+//                $("#email").css({'border' : '1px solid #569b44'});
+                $('.valid').eq(1).text('Не вірно вказаний e-mail');
+                $('.valid').eq(0).hide();
+                $('.valid').eq(2).hide();
+
+                
+            } /*
+else if(pattern.test(email)) {
+               $("#email").css({'border' : '1px solid #ff0000'});
+                $('.valid').eq(1).text('Не верно');
+            }
+*/
+       
+	
+	
+	else
+	{
+		$.ajax({
+		type: "POST",
+		url: "sendtomanager.php",
+		data: dataString,
+		cache: false,
+		success: function(result){
+			$("#name_man").val('');
+			$("#email_man").val('');
+			$("#phone_man").val('');
+			$("#cont_man").val('');
+			$('.valid').css('display','none');
+			$('.formStyle').hide();
+//			$('.nameForm').hide();
+//	$('.nameFormComent').hide();
+			$('.formThanxStyle2').show();
+			setTimeout(function() { $('.formStyle').show();$('.formThanxStyle2').hide();; }, 4000);
+
+			
+
+	}
+	});
+	}
+	return false;
+
+});
 
 
 
