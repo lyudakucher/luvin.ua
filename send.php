@@ -3,7 +3,7 @@
 $name2=$_POST['name1'];
 $email2=$_POST['email1'];
 $phone2=$_POST['phone1'];
-//$contact2=$_POST['contact1'];
+//$con2=$_POST['contact1'];
 $date1 = date("d.m.y"); 
 $time1 = date("H:i:s"); 
 

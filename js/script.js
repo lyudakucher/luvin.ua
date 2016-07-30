@@ -222,10 +222,12 @@ $('#back-top a').click(function () {
 	return false;
 });
 
+/*
 	$('.butContrCont').eq(3).addClass('activeContCont');
 	 $('.cityPopUpAll').addClass('showCityContact');;
      $('.cityPopUpStyle').addClass('contCityDisplayNone');
      $('.cityPopUpStyle').eq(3).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');
+*/
 
 
 $('.butContrCont').on('click', function () {
