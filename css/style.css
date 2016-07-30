@@ -1,4 +1,4 @@
-/* map content styles */
+.cont-wind/* map content styles */
 /*---------video-youtube------*/
 .videoYoutube{
 	width: 100%;
@@ -821,7 +821,7 @@ path.clickMap:hover{
 	left: -moz-calc(50% - 200px);
 	left: -o-calc(50% - 200px);
 	left: -webkit-calc(50% - 200px);
-	left: 30%;
+	/* left: 30%; */
 }
 .cont-wind .product { /*конфлікт з  класом container*/
 	/* position: absolute;

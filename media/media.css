@@ -1,0 +1,134 @@
+@media screen and (min-width:600px) {
+	.new-window_list__1 {
+		float: left;
+		width: 200px;
+		text-align: right;
+	}
+
+	.new-window_list__1 .window_list_item {
+		text-align: right;
+		padding-left: 0;
+	}
+
+	.new-window_list__2 {
+		float: right;
+		width: 200px;
+		text-align: left;
+	}
+
+	.window_list_item {
+		margin: 10% 0;
+		position: relative;
+		padding: 0 8px;
+		width: 200px;
+	}
+	.new-window_list__1 .window_list_item::before {
+		left: 100%;
+	}
+
+	.new-window_list__1 .window_list_item:nth-child(1) {
+		margin-left: 30%;
+	}
+
+	.new-window_list__1 .window_list_item:nth-child(2) {
+		margin-left: 15%;
+	}
+
+	.new-window_list__1 .window_list_item:nth-child(4) {
+		margin-left: 15%;
+	}
+
+	.new-window_list__1 .window_list_item:nth-child(5) {
+		margin-left: 30%;
+	}
+
+	.new-window_list__2 .window_list_item:nth-child(1) {
+		margin-left: -30%;
+	}
+
+	.new-window_list__2 .window_list_item:nth-child(2) {
+		margin-left: -15%;
+	}
+
+	.new-window_list__2 .window_list_item:nth-child(4) {
+		margin-left: -15%;
+	}
+
+	.new-window_list__2 .window_list_item:nth-child(5) {
+		margin-left: -30%;
+	}
+}
+
+
+@media screen and (max-width:1920px) {
+	
+}
+
+@media screen and (max-width:1440px) {
+	
+}
+
+@media screen and (max-width:1024px) {
+}
+
+@media screen and (max-width:989px) {
+	/* Андрій, тут потрібен твій хелп, бо так не працює) */
+	.slick-prev, .slick-next, .slick-arrow {
+		display: none;
+	}
+}
+
+@media screen and (max-width:920px) {
+	.new-window_more-options {
+		padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.list-item,
+	.benefits_item-text,
+	.montague_list .montague_list_item::before {
+		font-size: 14px;
+	}
+
+	.montague_list_item {
+		font-size: 26.25px;
+	}
+
+	.window_list_item {
+		width: 160px;
+	}
+}
+
+@media screen and (max-width:700px) {
+	.new-window_rightblock::before {
+		display: none;
+	}
+
+	.new-window_rightblock {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width:480px) {
+	body {
+		font-size: 12px;
+	}
+
+	.list-item,
+	.benefits_item-text,
+	.montague_list .montague_list_item::before {
+		font-size: 12px;
+	}
+
+	.montague_list_item {
+		font-size: 22.5px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	}

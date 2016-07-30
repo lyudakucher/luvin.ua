@@ -3,12 +3,14 @@
   overflow: hidden;
   margin: 0 auto;
 }
+
 .threesixty .threesixty_images {
   display: none;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .threesixty .threesixty_images img {
   position: absolute;
   top: 0;
@@ -16,6 +18,7 @@
   height: auto;
   left: 0;
 }
+
 .threesixty .threesixty_images img.previous-image {
   visibility: hidden;
   /*
@@ -25,6 +28,7 @@
         */
 
 }
+
 .threesixty .threesixty_images img.current-image {
   visibility: visible;
   /*
@@ -34,6 +38,7 @@
         */
 
 }
+
 .threesixty .spinner {
   width: 60px;
   display: block;
@@ -45,6 +50,7 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
 .threesixty .spinner span {
   font-family: Arial, "MS Trebuchet", sans-serif;
   font-size: 12px;
@@ -54,12 +60,14 @@
   line-height: 30px;
   display: block;
 }
+
 .threesixty .nav_bar {
   position: absolute;
   top: 10px;
   right: 10px;
   z-index: 11;
 }
+
 .threesixty .nav_bar a {
   display: block;
   width: 32px;
@@ -68,9 +76,11 @@
   background: url(/assets/sprites.png) no-repeat;
   text-indent: -99999px;
 }
+
 .threesixty .nav_bar a.nav_bar_play {
   background-position: 0 0 !important;
 }
+
 .threesixty .nav_bar a.nav_bar_previous {
   background-position: 0 -73px !important;
 }

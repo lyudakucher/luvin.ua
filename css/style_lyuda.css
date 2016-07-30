@@ -99,6 +99,7 @@ body {
 	url('../img/top-window.png') center center no-repeat,
 	url('../img/top-wrap.jpg') center center no-repeat;
 	height: 100vh;
+	background-size: cover;
 }
 
 .main_container {
@@ -114,23 +115,6 @@ body {
 	max-width: 500px;
 	margin: 5% 0%;
 }
-
-/* .title-cities {
-	width: 70%;
-	max-width: 700px;
-	margin: 0 auto;
-	padding-top: 2%;
-	font-size: 1.5em;
-}
-
-.title-cities::after {
-	content: "";
-	background: url(../pic/top-bottom-line.png) center center no-repeat;
-	width: 421px;
-	height: 72px;
-	display: block;
-	margin: 0 auto;
-} */
 
 .main-description {
 	font-size: 1.2em;
@@ -276,6 +260,7 @@ body {
 
 .new-window_item_wrap {
 	padding: 0;
+	box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.14);
 }
 
 .new-window_wrap .new-window_item_wrap:last-child {
@@ -377,32 +362,8 @@ body {
 	margin: 0 auto;
 }
 
-/* .new-window_image {
-	float: left;
-	width: 200px;
-} */
-
-.new-window_list__1 {
-	float: left;
-	width: 200px;
-	text-align: right;
-}
-
-.new-window_list__1 .window_list_item {
-	text-align: right;
-}
-
-.new-window_list__2 {
-	float: right;
-	width: 200px;
-	text-align: left;
-}
-
-.window_list_item {
-	margin: 10% 0;
-	position: relative;
-	padding: 0 8px;
-	width: 200px;
+.new-window_list__2 .window_list_item {
+	padding-right: 0;
 }
 
 .window_list_item::before {
@@ -416,44 +377,9 @@ body {
 	content: "";
 }
 
-.new-window_list__1 .window_list_item::before {
-	left: 100%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(1) {
-	margin-left: 30%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(2) {
-	margin-left: 15%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(4) {
-	margin-left: 15%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(5) {
-	margin-left: 30%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(1) {
-	margin-left: -30%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(2) {
-	margin-left: -15%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(4) {
-	margin-left: -15%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(5) {
-	margin-left: -30%;
-}
-
 .new-window_more-options {
 	text-align: right;
+	padding-bottom: 30px;
 }
 
 .more-options_item {
