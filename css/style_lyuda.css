@@ -223,6 +223,13 @@ body {
 	margin: 5% auto 0;
 }
 
+.old-window_img {
+	display: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 300px;
+}
+
 .old-window_list__left {
 	float: left;
 	width: 25%;

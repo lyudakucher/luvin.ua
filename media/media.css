@@ -172,6 +172,31 @@
 	.montague_list_item {
 		font-size: 22.5px;
 	}
+	
+	.old-window_img {
+		display: block;
+	}
+
+	.old-window__content {
+		background: none;
+	}
+	
+	.old-window__content {
+		margin: 5% 0;
+	}
+
+
+	.old-window_list__left, .old-window_list__right {
+		width: 90%;
+		margin: 0 auto;
+		text-align: right;
+		padding: 0;
+		float: none;
+	}
+	
+	.old-window_list__left li, .old-window_list__right li {
+		padding: 0 0 5px 0;
+	}
 
 	.new-window_leftblock, .new-window_rightblock {
 		width: 90%;
