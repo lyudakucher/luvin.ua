@@ -421,15 +421,20 @@ $('.clickMap').on('click', function () {
 				},
 				
 				{	
-				 src: '#zhytomurPopUp',
+				 src: '#rivnePopUp',
 				  type: 'inline'
 				},
 				{
 				 src: '#kirovogradPopUp',
 				  type: 'inline'
+				},
+				{
+				 src: '#chernivtsiPopUp',
+				  type: 'inline'
 				}
 		];
-
+//162px,124px
+//83px,-16px
    
     var db= new Object (db0);
     var db1=db.splice(a);

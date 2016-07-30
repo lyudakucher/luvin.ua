@@ -408,6 +408,14 @@ path.clickMap:hover{
 	-ms-transform:translate(218px,43px);
 }
 
+.name-rivne{
+	transform:translate(187px,32px); 
+	-moz-transform:translate(187px,32px);
+	-webkit-transform:translate(187px,32px); 
+	-o-transform:translate(187px,32px); 
+	-ms-transform:translate(187px,32px);
+}
+
 .name-volyn{
 	transform:translate(148px,24px); 
 	-moz-transform:translate(148px,24px);
@@ -438,6 +446,14 @@ path.clickMap:hover{
 	-webkit-transform:translate(418px,141px); 
 	-o-transform:translate(418px,141px); 
 	-ms-transform:translate(418px,141px);
+}
+
+.name-chernivtsi{
+	transform:translate(162px,124px); 
+	-moz-transform:translate(162px,124px);
+	-webkit-transform:translate(162px,124px); 
+	-o-transform:translate(162px,124px); 
+	-ms-transform:translate(162px,124px);
 }
 /*------name-ic-transform----------*/
 
@@ -596,12 +612,22 @@ path.clickMap:hover{
 }
 
 
+/*
 .zhytomyr-cam-ic{
 	transform:translate(142px,-96px); 
 	-moz-transform:translate(142px,-96px);
 	-webkit-transform:translate(142px,-96px); 
 	-o-transform:translate(142px,-96px); 
 	-ms-transform:translate(142px,-96px);
+}
+*/
+
+.rivne-cam-ic{
+	transform:translate(109px,-107px); 
+	-moz-transform:translate(109px,-107px);
+	-webkit-transform:translate(109px,-107px); 
+	-o-transform:translate(109px,-107px); 
+	-ms-transform:translate(109px,-107px);
 }
 
 .frankivsk-cam-ic{
@@ -656,6 +682,13 @@ path.clickMap:hover{
 	-ms-transform:translate(231px,-14px);
 }
 
+.chernivtsi-cam-ic{
+	transform:translate(83px,-16px); 
+	-moz-transform:translate(83px,-16px);
+	-webkit-transform:translate(83px,-16px); 
+	-o-transform:translate(83px,-16px); 
+	-ms-transform:translate(83px,-16px);
+}
 /*------map-ic-transform----------*/
 
 /*------popUp-open----------*/
