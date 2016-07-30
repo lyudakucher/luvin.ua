@@ -63,6 +63,24 @@ $('.feedback-slider_content').slick({
 */
 });
 
+$('h2.title').each(function() {
+  $(this).waypoint(function() {
+  // console.log($(this));
+    $(this.element).next().animate({ width: "30%"}, 1100);
+ //   this.destroy();
+},{ 
+  offset: '99%'
+  });
+});
+
+
+
+$('.benefits_item').waypoint(function(direction) {
+$('.benefits_item').addClass('animated flash');
+},{ 
+  offset: '99%'
+
+});
 
 $('.num').waypoint(function(direction) {
 $('.num').animate({ num: 115784 - 10000/* - начало */ }, {
@@ -101,7 +119,7 @@ $(".toggle_mnu").click(function() {
 
 function trutime() {
   
-  var deadline = 'july 30 2016 14:20:59 GMT+03:00';
+  var deadline = 'july 31 2016 14:20:59 GMT+03:00';
   
   initializeClock('clock', deadline);
   
@@ -114,7 +132,7 @@ function trutime() {
       updateClock(endtime);
       if ( t.total <= 0) {
         clearInterval(timeinterval);
-        console.log('time end');
+      //  console.log('time end');
          $('.rem').show();
 		  $('.rem_first').hide();
       } 
