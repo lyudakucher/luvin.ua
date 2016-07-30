@@ -147,7 +147,7 @@ body {
 	margin: 40px 0 0 40px;
 	border: 4px solid #662382;
 	display: inline-block;
-	width: 180px;
+	width: 230px;
 	padding: 1% 0;
 	cursor: pointer;
 }
@@ -167,43 +167,36 @@ body {
 
 .benefits_item-text::before {
 	content: "";
-	width: 75px;
-	height: 75px;
-	background-image: url('../pic/benefits.png');
+	width: 50px;
+	height: 50px;
 	position: absolute;
-	top: -13px;
-	right: 3px;
+	top: 9%;
+	right: 4%;
 	display: block;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
 }
 
-.benefits_item-text:hover::before {
-	background-image: url('../pic/benefits-hover.png');
-}
-
-.benefits_item-text__garanty {
-	background-position: 0 0;
+.benefits_item-text__garanty::before {
+	background-image: url('../pic/page-quality.svg');
 }
 .benefits_item-text__professional::before {
-	background-position: -260px 0;
+	background-image: url('../pic/people.svg');
 }
 .benefits_item-text__color::before {
-	background-position: -520px 0;
-}
-.benefits_item-text__texture::before {
-	background-position: -772px 0;
+	background-image: url('../pic/paint-swatch.svg');
 }
 .benefits_item-text__forms::before {
-	background-position: 0 -150px;
+	background-image: url('../pic/mind-gears.svg');
 }
 .benefits_item-text__years::before {
-	background-position: -260px -150px;
+	background-image: url('../pic/checked-calendar.svg');
 }
 .benefits_item-text__energo::before {
-	background-position: -514px -152px;
+	background-image: url('../pic/smart-home.svg');
 }
-.benefits_item-text__db::before {
-	background-position: -776px -152px;
-}
+
 /* end of benefits-section styles */
 /* old-window-section styles */
 #old-window {
