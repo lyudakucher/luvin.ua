@@ -90,9 +90,25 @@ newImg.animate(css, SPEED, function() {
     (callback || function() {})();
 });
 */
-
+$('.benefits_item').css('opacity', '0');
 $('.benefits_item').waypoint(function(direction) {
-$('.benefits_item').addClass('animated flash');
+$('.benefits_item').eq(0).addClass('animated fadeInUp');
+setTimeout(function() { 
+	$('.benefits_item').eq(1).addClass('animated fadeInUp');
+	}, 200);
+setTimeout(function() { 
+	$('.benefits_item').eq(2).addClass('animated fadeInUp');
+	}, 400);
+setTimeout(function() { 
+	$('.benefits_item').eq(3).addClass('animated fadeInUp');
+	}, 600);
+setTimeout(function() { 
+	$('.benefits_item').eq(4).addClass('animated fadeInUp');
+	}, 800);
+setTimeout(function() { 
+	$('.benefits_item').eq(5).addClass('animated fadeInUp');
+	}, 1000);
+
 },{ 
   offset: '99%'
 
