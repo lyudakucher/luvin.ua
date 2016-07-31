@@ -87,6 +87,89 @@ body {
 /* end of main styles */
 
 /* main-section styles */
+header {
+	background-color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.header-item {
+	display: inline-block;
+}
+
+.logo {
+	position: relative;
+}
+
+.logo img {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.logo span {
+	position: absolute;
+	right: 4px;
+	bottom: -5px;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+.slogan {
+	width: 280px;
+	padding-left: 10px;
+	position: relative;
+	margin-left: 10px;
+}
+
+.slogan::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #662382;
+}
+
+.languages {
+	font-size: 1.3em;
+	color: #662382;
+}
+
+.languages .languages-item:nth-child(1)::after {
+	content: "|";
+	font-size: 1em;
+	color: #662382;
+	text-align: right;
+	padding-left: 7px;
+}
+
+.languages-item {
+	color: #662382;
+}
+
+.tel {
+	float: right;
+	text-align: right;
+	width: 180px;
+}
+
+.number {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.show_form {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dashed #662382;
+	color: #662382;
+	font-weight: 400;
+}
+
 #main {
 }
 
@@ -326,6 +409,32 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	font-weight: 700;
 }
 
+.around_icon {
+	position: absolute;
+	bottom: 0px;
+	right: 150px;
+}    
+
+.around_icon_item {
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+}
+
+.around_icon .around_icon_item:nth-child(2) {
+	margin-top: 7px;
+	width: 40px;
+	height: 40px;
+}
+
+.around_icon .around_icon_item:nth-child(1) {
+	margin-right: 5px;
+}
+
+.around_icon .around_icon_item:nth-child(3) {
+	margin-left: -10px;
+}
+
 .new-window_leftblock, 
 .new-window_rightblock {
 	width: 48%;
@@ -502,10 +611,12 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	position: relative;
 	margin: 5% auto 0;
 	background: none;
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ff3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,.9)), color-stop(60%, rgba(255,255,255,0.5)), color-stop(70%, rgba(255,255,255,0.1)), color-stop(100%, rgba(255,255,255,0) 100%))); /* safari4+,chrome */
+	background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* safari5.1+,chrome10+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* opera 11.10+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ie10+ */
+	background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%);
 }
 
 .managers_options {
@@ -522,6 +633,18 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 .managers_form {
 	width: 40%;
 	display: inline-block;
+}
+
+.form_title {
+	font-size: 1.7em;
+	padding-bottom: 3%;
+}
+
+.form_description {
+	color: #3C3A3A;
+	font-size: 0.9em;
+	line-height: 1.2;
+	padding: 0 5%;
 }
 
 .open_form {
@@ -541,7 +664,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	border: 1px solid #662382;
+	border: 1px solid #ffb400;
 	background-color: rgba(255, 255, 255, 0.4);
 	color: #662382;
 }
