@@ -27,12 +27,12 @@ img {
 }
 
 a {
-	color: #12c;
+	color: #662382;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #12c;
+	color: rgba(118, 30, 133, 0.51);
 	text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ input,
 select, 
 textarea {
 	display: block;
-	border:  1px solid #666;
+	border:  1px solid #ffb400;
 	font-family: serif;
 	outline: none;
 	vertical-align: top;

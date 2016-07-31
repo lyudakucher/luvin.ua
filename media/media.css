@@ -1,3 +1,7 @@
+@media screen and (min-width:1024px) {
+/* для hover ефектів */
+}
+
 @media screen and (min-width:600px) {
 	.new-window_list__1 {
 		float: left;
@@ -119,6 +123,20 @@
 }
 
 @media screen and (max-width:600px) {
+	.header-container {
+		text-align: center;
+	}
+
+	.left-header-item {
+		float: none;
+		padding-top: 10px;
+	}
+
+	.slogan {
+		width: 50%;
+		text-align: left;
+	}
+
 	.threesixty .threesixty_images img {
 		top: -40px;
 	}
@@ -201,6 +219,14 @@
 	}
 
 @media screen and (max-width:480px) {
+	.slogan {
+		width: 50%;
+	}
+	
+	.logo img {
+		width: 100px;
+	}
+
 	body {
 		font-size: 12px;
 	}
