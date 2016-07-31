@@ -11,7 +11,7 @@ body {
 }
 
 .wrap {
-	padding: 5% 0 7%;
+	padding: 5% 0% 7%;
 }
 
 .container {
@@ -82,12 +82,12 @@ body {
 /* end of main styles */
 
 /* main-section styles */
+.main_wrap {
+	padding-top: 0;
+}
+
 header {
 	background-color: rgba(255, 255, 255, 0.7);
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
 }
 
 .header-container {
@@ -194,7 +194,6 @@ header {
 	background:
 	url('../img/top-window.png') center center no-repeat,
 	url('../img/top-wrap.jpg') center center no-repeat;
-	height: 100vh;
 	background-size: cover;
 }
 
@@ -222,12 +221,15 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 
 .main-description {
 	font-size: 1.2em;
+	padding-bottom: 10%;
 }
 
 .main-description::before {
 	content: "";
 	background: url('../pic/top-bottom-line.png') center center no-repeat;
-	width: 421px;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
 	height: 72px;
 	display: block;
 	margin: 0 auto;
