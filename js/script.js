@@ -490,12 +490,11 @@ $('.clickMap').on('click', function () {
 
 
 window.onload = init;
-window.onload = init1;
-window.onload = init2;
 
 
-    var product1, product2, product3;
+
     function init(){
+    var product1, product2, product3;
 
       product1 = $('.product1').ThreeSixty({
         totalFrames: 20,
@@ -511,8 +510,42 @@ window.onload = init2;
         width: 400,
         navigation: false,
         
+      });   
+      
+      product2 = $('.product2').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-standart/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
       });     
+      
+      	product3 = $('.product3').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-premium/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+        
     };
+/*
     function init1(){
 
        product2 = $('.product2').ThreeSixty({
@@ -553,3 +586,4 @@ window.onload = init2;
 
     };
  
+*/
