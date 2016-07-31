@@ -484,17 +484,15 @@ $('.clickMap').on('click', function () {
 	    type: 'image' 
     });			  
 });
-	init();
-	init1();
-	init2()
+
 
 });
 
-/*
+
 window.onload = init;
 window.onload = init1;
 window.onload = init2;
-*/
+
 
     var product1, product2, product3;
     function init(){
