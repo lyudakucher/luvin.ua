@@ -3,6 +3,10 @@
 $name2=$_POST['name1'];
 $email2=$_POST['email1'];
 $phone2=$_POST['phone1'];
+
+$vendor2=$_POST['vendor1'];
+$userAgent2=$_POST['userAgent1'];
+$someInfo=$_SERVER['HTTP_USER_AGENT'];
 //$con2=$_POST['contact1'];
 $date1 = date("d.m.y"); 
 $time1 = date("H:i:s"); 
@@ -20,7 +24,10 @@ $time1 = date("H:i:s");
                         <p> Телефон: '.$phone2.'</p>
                         <p> Cуть звернення: '.$subject.'</p>
                         <p> Дата та час замовлення: '.$date1.' / '.$time1.'</p>
-
+                        <p> </p>
+                        <p> Замовлення було зроблено з девайса: '.$vendor2.'</p>
+                        <p> Інформація про браузер замовника: '.$userAgent2.'</p>
+						 <p> Інформація php: '.$someInfo.'</p>
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
