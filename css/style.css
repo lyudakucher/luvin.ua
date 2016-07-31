@@ -929,21 +929,12 @@ path.clickMap:hover{
 
 .cont-wind {
 	position: absolute;
-
-
-/*
-	top: 58%;
-	left: 50%;
-*/
-
-	/* cursor :e-resize; */
 	cursor: pointer;
 	top: 0;
 	left: calc(50% - 200px);
 	left: -moz-calc(50% - 200px);
 	left: -o-calc(50% - 200px);
 	left: -webkit-calc(50% - 200px);
-	/* left: 30%; */
 }
 .cont-wind .product { /*конфлікт з  класом container*/
 	/* position: absolute;
