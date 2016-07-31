@@ -936,7 +936,8 @@ path.clickMap:hover{
 	left: 50%;
 */
 
-	cursor :e-resize;
+	/* cursor :e-resize; */
+	cursor: pointer;
 	top: 0;
 	left: calc(50% - 200px);
 	left: -moz-calc(50% - 200px);
