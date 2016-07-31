@@ -185,6 +185,7 @@ header {
 	border-bottom: 1px dashed #662382;
 	color: #662382;
 	font-weight: 400;
+	cursor: pointer;
 }
 
 #main {
