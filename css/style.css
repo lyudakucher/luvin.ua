@@ -78,7 +78,7 @@
 	         transform: rotatey(0);
  }
 .button-3:hover > span{
-	color:#2ecc71;
+	color:white;
 }
 
 /*--------end-button-style---------*/

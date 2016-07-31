@@ -65,7 +65,8 @@ $('.feedback-slider_content').slick({
 
 $('h2.title').each(function() {
   $(this).waypoint(function() {
-  // console.log($(this));
+   console.log($(this.element).next()==$('.title__line')	);
+   //console.log($('.title__line')); 
     $(this.element).next().animate({ width: "30%"}, 1100);
  //   this.destroy();
 },{ 

@@ -79,9 +79,9 @@
 }
 
 @media screen and (max-width:989px) {
-	/* Андрій, тут потрібен твій хелп, бо так не працює) */
 	.slick-prev, .slick-next, .slick-arrow {
-		display: none;
+		display: none !important;
+		
 	}
 }
 
