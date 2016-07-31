@@ -73,7 +73,22 @@ $('h2.title').each(function() {
   });
 });
 
+$('.gallery_img_previev').click(function(){
+	var old_id = $(this).attr('src');
+	$(this).parent().siblings().attr('src', old_id);
+	//console.log($(this).parent().before().before());
+	//console.log($(this).parent().siblings());
+});
 
+/*
+newImg.animate(css, SPEED, function() {
+    var old_id = img.attr('id');
+    img.remove();
+    newImg.attr('id', old_id);
+    newImg.removeClass('morpher');
+    (callback || function() {})();
+});
+*/
 
 $('.benefits_item').waypoint(function(direction) {
 $('.benefits_item').addClass('animated flash');
@@ -349,7 +364,7 @@ $("#submitOpenForm").click(function(){
 	var phone = $("#phone_man").val();
 	var subject = $("#cont_man").val();
 	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
-	console.log(dataString);
+	//console.log(dataString);
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{

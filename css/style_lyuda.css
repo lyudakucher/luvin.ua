@@ -190,7 +190,7 @@ header {
 	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 */
 background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ff3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,.9)), color-stop(60%, rgba(255,255,255,0.5)), color-stop(70%, rgba(255,255,255,0.1)), color-stop(100%, rgba(255,255,255,0) 100%))); /* safari4+,chrome */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,.9)), color-stop(60%, rgba(255,255,255,0.5)), color-stop(70%, rgba(255,255,255,0.1)), color-stop(100%, rgba(255,255,255,0) 100%)); /* safari4+,chrome */
 background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* safari5.1+,chrome10+ */
 background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* opera 11.10+ */
 background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ie10+ */
