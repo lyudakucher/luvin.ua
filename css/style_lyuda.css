@@ -508,8 +508,8 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 }
 
-.managers_form {
-	width: 60%;
+.managers_options {
+	width: 59%;
 	display: inline-block;
 }
 
@@ -519,9 +519,47 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	padding-bottom: 15px;
 }
 
-.managers_options {
+.managers_form {
 	width: 40%;
 	display: inline-block;
+}
+
+.formStyle {
+	padding: 3%;
+	text-align: left;
+}
+
+.form_item {
+	
+}
+
+.form_item_input {
+	width: 100%;
+	padding: 3%;
+	margin: 2% auto;
+	font-size: 1em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	border: 1px solid #662382;
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #662382;
+}
+
+input::-webkit-input-placeholder {
+	color: #662382;
+	font-size: 0.9em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+input:-moz-placeholder {
+	color: #662382;
+	font-size: 0.9em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .managers_images {
