@@ -22,6 +22,7 @@
         -ms-flex-pack: center;
             justify-content: center;
 	border: 2px solid #f26b43;
+	
 	color: #f26b43;
 	text-transform: uppercase;
 	text-align: center;
@@ -30,6 +31,7 @@
             transition: .3s all;
 }
 .button span{
+  display: block;
   font-size: 1.2em;
 	letter-spacing: 2px;
 	margin: auto;
