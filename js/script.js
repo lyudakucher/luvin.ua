@@ -307,14 +307,16 @@ $("#submit").click(function(){
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{
-		 $('.valid').text("* це поле обов'язкове для заповнення");
+		 $('.valid').eq(0).text("укажите, как к вам обращаться");
+		 $('.valid').eq(1).text("пожалуйста, заполните поле email");
+		 $('.valid').eq(2).text("укажите телефон для связи");
 
 		$('.valid').css('display','block');
 		//alert("Please Fill All Fields");
 	}	
           else  if(!(pattern.test(email))){
 //                $("#email").css({'border' : '1px solid #569b44'});
-                $('.valid').eq(1).text('Не вірно вказаний e-mail');
+                $('.valid').eq(1).text('ваш e-mail указано не верно');
                 $('.valid').eq(0).hide();
                 $('.valid').eq(2).hide();
 
@@ -368,14 +370,16 @@ $("#submitOpenForm").click(function(){
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{
-		 $('.valid').text("* це поле обов'язкове для заповнення");
+		 $('.valid').eq(0).text("укажите, как к вам обращаться");
+		 $('.valid').eq(1).text("пожалуйста, заполните поле email");
+		 $('.valid').eq(2).text("укажите телефон для связи");
 
 		$('.valid').css('display','block');
 		//alert("Please Fill All Fields");
 	}	
           else  if(!(pattern.test(email))){
 //                $("#email").css({'border' : '1px solid #569b44'});
-                $('.valid').eq(1).text('Не вірно вказаний e-mail');
+                $('.valid').eq(1).text('ваш e-mail указано не верно');
                 $('.valid').eq(0).hide();
                 $('.valid').eq(2).hide();
 

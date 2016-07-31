@@ -1,4 +1,90 @@
-.cont-wind/* map content styles */
+/*---------button-style---------*/
+
+.button{
+	margin:0;
+	position: relative;
+/*
+	height: 150px;
+	width: 300px;
+*/	
+	padding: 15px 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: white;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	border: 2px solid #f26b43;
+	color: #f26b43;
+	text-transform: uppercase;
+	text-align: center;
+    overflow: hidden;
+    -webkit-transition: .3s all;
+            transition: .3s all;
+}
+.button span{
+  font-size: 1.2em;
+	letter-spacing: 2px;
+	margin: auto;
+    position: relative;
+    z-index: 999;
+    -webkit-transition: .3s all;
+            transition: .3s all;
+}
+.button3:hover{
+	-webkit-animation-name: button3Animated;
+	        animation-name: button3Animated;
+	-webkit-animation-duration: .7s;
+	        animation-duration: .7s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+}
+@-webkit-keyframes button3Animated{
+	25%{-webkit-transform: scale(1.3);transform: scale(1.3);}
+	50%{-webkit-transform: scale(1);transform: scale(1);}
+	75%{-webkit-transform: scale(1.3);transform: scale(1.3);}
+}
+@keyframes button3Animated{
+	25%{-webkit-transform: scale(1.3);transform: scale(1.3);}
+	50%{-webkit-transform: scale(1);transform: scale(1);}
+	75%{-webkit-transform: scale(1.3);transform: scale(1.3);}
+}
+
+.button-3:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #f26b43;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotatey(90deg);
+            transform: rotatey(90deg);
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all;
+    overflow: hidden;
+ }
+.button-3:hover:before{
+	 -webkit-transform: rotatey(0);
+	         transform: rotatey(0);
+ }
+.button-3:hover > span{
+	color:#2ecc71;
+}
+
+/*--------end-button-style---------*/
+
+
+/* map content styles */
+
+
 /*---------video-youtube------*/
 .videoYoutube{
 	width: 100%;
