@@ -49,8 +49,12 @@
 
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
-  width: 100%;
-  cursor: auto; }
+  width: 96%;
+  max-width: 650px;
+  cursor: auto;
+  border: 2px solid #662382;
+  background-color: #ffffff;
+}
 
 .mfp-ajax-cur {
   cursor: progress; }
