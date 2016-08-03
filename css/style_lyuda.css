@@ -301,12 +301,36 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 
 /* end of benefits-section styles */
 /* old-window-section styles */
+/*
 #old-window {
 	background:
 	url(../pic/old-window/veter.png) center center no-repeat,
 	url(../pic/old-window/veter_rotate.png) center center no-repeat,
 	url(../pic/dots.png),
 	url(../img/old-window_wrap.jpg) center center no-repeat;
+}
+*/
+
+#old-window {
+	overflow: hidden;
+	position: relative;
+}
+
+.old-window_wrap1{
+	background:
+	url(../pic/old-window/veter_rotate.png) center center no-repeat;
+}
+.old-window_wrap2{
+	background:
+	url(../pic/dots.png);
+}
+.old-window_wrap3{
+	background:
+	url(../img/old-window_wrap.jpg) center center no-repeat;
+}
+.old-window_wrap4{
+	background:
+	url(../pic/old-window/veter.png) center center no-repeat;
 }
 
 .old-window__content {
