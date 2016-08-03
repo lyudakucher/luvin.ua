@@ -1,3 +1,118 @@
+window.onload = init;
+
+
+
+    function init(){
+    var product1, product2, product3;
+
+      product1 = $('.product1').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-light/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });   
+      
+      product2 = $('.product2').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-standart/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+      
+      	product3 = $('.product3').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-premium/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+      
+      $('.around_icon_item_test').bind('click', function(e) {
+      
+	var old_id = $(this).attr('src');
+	var new_id = 'pic/hand.svg';
+	var old_id_s='pic/finger-an-arrow.svg';
+	//product1.play();
+	if (old_id != 'pic/finger-an-arrow.svg'){
+	  	product1.stop();
+	  	$('.around_icon_item_test').attr('src', old_id_s);			
+	} else {
+		product1.play();
+		$('.around_icon_item_test').attr('src', new_id);
+	}     
+    });
+        
+    };
+/*
+    function init1(){
+
+       product2 = $('.product2').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-standart/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+	};
+	
+	function init2(){
+ 	
+	  	product3 = $('.product3').ThreeSixty({
+        totalFrames: 20,
+        endFrame: 20,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/windows/luvin-premium/',
+        filePrefix: '',
+        ext: '.png',
+        height: 400,
+        width: 400,
+        navigation: false,
+        
+      });     
+
+
+    };
+ 
+*/
+
+
 $(document).ready(function() {
 
 /*
@@ -514,101 +629,3 @@ $('.clickMap').on('click', function () {
 });
 
 
-window.onload = init;
-
-
-
-    function init(){
-    var product1, product2, product3;
-
-      product1 = $('.product1').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-light/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });   
-      
-      product2 = $('.product2').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-standart/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });     
-      
-      	product3 = $('.product3').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-premium/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });     
-        
-    };
-/*
-    function init1(){
-
-       product2 = $('.product2').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-standart/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });     
-	};
-	
-	function init2(){
- 	
-	  	product3 = $('.product3').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-premium/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });     
-
-
-    };
- 
-*/
