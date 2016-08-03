@@ -76,12 +76,13 @@
 /*---------button-style---------*/
 
 .submit_form{
-	margin:0;
+	margin:20px auto;
 	position: relative;
 /*
 	height: 150px;
 	width: 300px;
-*/	
+*/	width: 60%;
+    min-width: 200px;
 	padding: 15px 25px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -289,7 +290,7 @@ background: none;
 .formPopUp{
 	background: white;
 	width: 80%;
-	margin: 0 auto;
+	margin: 5% auto;
 }
 
 .formStyle{

@@ -52,7 +52,7 @@
   width: 96%;
   max-width: 650px;
   cursor: auto;
-  border: 2px solid #662382;
+  border: 4px solid #662382;
   background-color: #ffffff;
 }
 
@@ -129,15 +129,17 @@ button::-moz-focus-inner {
 .mfp-close {
   width: 44px;
   height: 44px;
+  margin-top: -22px;
+  margin-right: -22px;
   line-height: 44px;
   position: absolute;
   right: 0;
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #FFF;
+  background-color: #FFD900;
+  color: #662382;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace; }
@@ -148,7 +150,9 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #333; }
+  background-color: #FFD900;
+  -webkit-border-radius: 100%;
+           border-radius: 100%; }
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {

@@ -957,6 +957,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
+	margin-bottom: 5%;
 }
 
 .formStyle {
@@ -967,16 +968,36 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	font-size: 1.2em;
 }
 
+.formPopUp_item {
+	margin-bottom: 1%;
+}
+
 .formStyle_input {
 	width: 60%;
 	padding: 2%;
-	/* margin: 2% auto; */
-	font-size: 1em;
+	margin: 2% auto;
+	font-size: 15px;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	border: 1px solid #ffb400;
 	background-color: rgba(255, 255, 255, 0.4);
 	color: #662382;
+}
+
+.formStyle_input::-webkit-input-placeholder {
+	color: rgba(102, 35, 131, 0.63);
+	font-size: 0.9em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.formStyle_input::-moz-placeholder {
+	color: rgba(102, 35, 131, 0.63);
+	font-size: 0.9em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
 /* end of showForm_elements */

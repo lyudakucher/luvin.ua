@@ -1552,14 +1552,19 @@
 		   	<h3 class="nameForm"></h3>
 		   	<p class="nameFormComent">Заполните короткую форму ниже и мы скоро вам перезвоним!</p>
 		   	<form action="" class="formStyle" id="">
-		   		<label for="name" class="lab1">Как к вам обращаться<span class='valid'>* це поле обов'язкове для заповнення</span></label>
-		   		<input type="text" name="name" id="name" class="formStyle_input" />
-		   		<label for="email" class="lab2">Укажите свой email<span class='valid'>* це поле обов'язкове для заповнення</span></label>
-		   		<input type="email" name="email" id="email" class="formStyle_input" />
-		   		<label for="phone" class="lab3">Добавьте телефон для связи<span class='valid'>* це поле обов'язкове для заповнення</span></label>
-		   		<input type="text" name="phone" id="phone" class="formStyle_input" />
-<!-- 		   		<input type="submit" name="submit" id="submit" value='submit' class="" /> -->
-				<label id="submit" class="submit_form">Написать</label>
+		   		<div class="formPopUp_item">
+		   			<span class='valid'>Укажыте как к вам обращаться</span>
+		   			<input placeholder="Ваше имя" type="text" name="name" id="name" class="formStyle_input" />
+		   		</div>
+		   		<div class="formPopUp_item">
+		   			<span class='valid'>добавьте телефон, и мы перезвоним</span>
+		   			<input placeholder="Ваш телефон" type="text" name="phone" id="phone" class="formStyle_input" />
+		   		</div>
+		   		<div class="formPopUp_item">
+		   			<span class='valid'>введите свой email</span>
+		   			<input placeholder="Ваш email" type="email" name="email" id="email" class="formStyle_input"/>
+		   		</div>
+				<button id="submit" class="submit_form"><span>Перезвонить</span></button>
 		   	</form>
 		   	<div class="formThanxStyle">
 		   		<p>Спасибо за обращение! Ваш запрос отправлен в отдел консультаций и продаж. Скоро с вами свяжется наш специалист.</p>
@@ -1567,3 +1572,4 @@
 	   	</div>
    	</div>  	
 </body>
+
