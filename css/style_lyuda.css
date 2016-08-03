@@ -312,10 +312,12 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 */
 
 #old-window {
+	}
+.old-window_wrap{
 	overflow: hidden;
 	position: relative;
-}
 
+}
 .old-window_wrap1{
 	background:
 	url(../pic/old-window/veter_rotate.png) center center no-repeat;
@@ -343,7 +345,9 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	position: relative;
 	z-index: 2;
 }
-
+.posrel{
+	position: relative;
+}
 .old-window_img {
 	display: none;
 	padding: 0;
