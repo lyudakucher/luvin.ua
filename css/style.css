@@ -78,6 +78,7 @@
 .submit_form{
 	margin:20px auto;
 	position: relative;
+	cursor: pointer;
 /*
 	height: 150px;
 	width: 300px;
@@ -88,7 +89,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background: white;
+    background: #ffaa00;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -97,9 +98,9 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-	border: 2px solid #f26b43;
+	border: 2px solid #ffd900;
 	
-	color: #f26b43;
+	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
     overflow: hidden;
@@ -139,7 +140,7 @@
     content: "";
     position: absolute;
     height: 100%;
-    background-color: #f26b43;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
     top: 0;
@@ -154,7 +155,7 @@
 	         transform: rotatey(0);
  }
 .submit_form:hover > span{
-	color:white;
+	color: #ffaa00;
 }
 
 /*--------end-button-style---------*/
@@ -288,7 +289,6 @@ background: none;
 }
 
 .formPopUp{
-	background: white;
 	width: 80%;
 	margin: 5% auto;
 }

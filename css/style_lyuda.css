@@ -949,6 +949,19 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	padding: 10px 5%;
 }
 
+.nameForm::after {
+	content: "";
+	display: block;
+	width: 30%;
+	height: 4px;
+	background-color: #662382;
+	margin: 2% auto;
+}
+
+.nameForm::first-letter {
+	text-transform: uppercase;
+}
+
 .nameFormComent {
 	color: #3C3A3A;
 	font-size: 0.9em;
@@ -975,29 +988,34 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 .formStyle_input {
 	width: 60%;
 	padding: 2%;
-	margin: 2% auto;
+	margin: 0 auto 2%;
 	font-size: 15px;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	border: 1px solid #ffb400;
+	border: 3px solid #bebebe;
 	background-color: rgba(255, 255, 255, 0.4);
 	color: #662382;
 }
 
 .formStyle_input::-webkit-input-placeholder {
-	color: rgba(102, 35, 131, 0.63);
+	color: #bebebe;
 	font-size: 0.9em;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
-	font-style: italic;
 }
 
 .formStyle_input::-moz-placeholder {
-	color: rgba(102, 35, 131, 0.63);
+	color: #bebebe;
 	font-size: 0.9em;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
-	font-style: italic;
+}
+
+.formPopUp_item .valid {
+	width: 60%;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #ff6200;
 }
 /* end of showForm_elements */
