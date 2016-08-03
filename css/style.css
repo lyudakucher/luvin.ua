@@ -76,7 +76,7 @@
 /*---------button-style---------*/
 
 .submit_form{
-	margin:20px auto;
+	margin:20px auto 0;
 	position: relative;
 	cursor: pointer;
 	width: 60%;

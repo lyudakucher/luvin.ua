@@ -576,7 +576,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-image: url(../pic/download.svg);
+	background-image: url('../pic/download.svg');
 	-webkit-background-size: contain;
 	     -o-background-size: contain;
 	        background-size: contain;
@@ -586,11 +586,11 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 }
 
 .new-window_more-options .more-options_item:nth-child(1):hover::before {
-	background-image: url(../pic/download-hover.svg);
+	background-image: url('../pic/download-hover.svg');
 }
 
 .read-more_wrap1, .read-more_wrap2, .read-more_wrap3 {
-	background: url(../img/luvin-light-big.jpg) center top no-repeat;
+	background: url('../img/luvin-light-big.jpg') center top no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
@@ -599,7 +599,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 }
 
 .read-more_wrap2{
-	background: url(../img/luvin-standart-big.jpg) center top no-repeat;
+	background: url('../img/luvin-standart-big.jpg') center top no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
@@ -651,7 +651,6 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 }
 
 .managers_content {
-	position: relative;
 	margin: 5% auto 0;
 	background: none;
 	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ff3.6+ */
@@ -663,19 +662,77 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 }
 
 .managers_options {
-	width: 59%;
-	display: inline-block;
-}
-
-.managers_options p {
 	font-size: 1em;
 	text-align: left;
 	padding-bottom: 15px;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.managers_options li {
+	display: inline-block;
+	width: 39%;
+	font-size: 0.9em;
+	padding-left: 8%;
+	vertical-align: top;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.managers_options li::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 15%;
+	height: 55%;
+	top: 0;
+	left: 0;
+}
+
+.managers_options li:nth-child(1)::before {
+	background: url('../pic/managers_acsesories.png') center center no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+.managers_options li:nth-child(2)::before {
+	background: url('../pic/managers_zhaluzi.png') center center no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+.managers_options li:nth-child(3)::before {
+	background: url('../pic/managers_question.png') center center no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+.managers_options li:nth-child(4)::before {
+	background: url('../pic/managers_design.png') center center no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+.managers_options li:nth-child(2),
+.managers_options li:nth-child(4) {
+	margin-left: 5%;
+}
+
+.managers_options_atr {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.managers_images img {
+	width: 100%;
+	border-bottom: 10px solid #ffffff;
 }
 
 .managers_form {
-	width: 40%;
+	width: 100%;
 	display: inline-block;
+	margin-top: 5%;
 }
 
 .form_title {
@@ -690,8 +747,15 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	padding: 0 5%;
 }
 
+.managers_form_input,
+.managers_form_textaling{
+	width: 49%;
+	display: inline-block;
+}
+
 .open_form {
 	padding: 3%;
+	padding-bottom: 0;
 	text-align: left;
 }
 
@@ -724,19 +788,15 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	font-style: italic;
 }
 
-.managers_images {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+.open_form_item .valid {
+	font-size: 0.7em;
+	color: #ff6200;
 }
 
-.managers_images img {
-	width: 20%;
-	margin-right: -30px;
+#submitOpenForm {
+	min-width: 220px;
+	max-width: 300px;
 }
-
 
 /* end of managers-section styles */
 /* feedback-section styles */
@@ -970,7 +1030,6 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
-	margin-bottom: 5%;
 }
 
 .formStyle {
@@ -1017,7 +1076,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	width: 58%;
 	min-width: 215px;
 	margin: 0 auto;
-	font-size: 14px;
+	font-size: 0.7em;
 	color: #ff6200;
 }
 /* end of showForm_elements */
