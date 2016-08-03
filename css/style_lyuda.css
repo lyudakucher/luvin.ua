@@ -303,8 +303,8 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 /* old-window-section styles */
 #old-window {
 	background:
-	url(../pic/veter.png) center center no-repeat,
-	url(../pic/veter_rotate.png) center center no-repeat,
+	url(../pic/old-window/veter.png) center center no-repeat,
+	url(../pic/old-window/veter_rotate.png) center center no-repeat,
 	url(../pic/dots.png),
 	url(../img/old-window_wrap.jpg) center center no-repeat;
 }
@@ -316,6 +316,8 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	width: 95%;
 	max-width: 800px;
 	margin: 5% auto 0;
+	position: relative;
+	z-index: 2;
 }
 
 .old-window_img {

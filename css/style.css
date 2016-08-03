@@ -1,3 +1,78 @@
+.leavesMotino{
+	position: relative;
+}
+
+.leaves{
+	position: absolute;
+	top:60px;
+	left:21%;
+	z-index: 1
+}
+.leaves2{
+	top:293px ;
+	left:25.6%;
+}
+.leaves3{
+	top:180px;
+	left:30%;
+}
+.leaves4{
+	top:50px ;
+	left:75.6%;
+}
+.leaves5{
+	top:200px;
+	left:80%;
+}
+.leaves6{
+	top:23px ;
+	left:20%;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5, #Polygon-6 {
+  -webkit-animation: float 3s infinite ease-in-out alternate;
+          animation: float 3s infinite ease-in-out alternate;
+          position: absolute;
+}
+#Polygon-2 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+#Polygon-3 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s; 
+}
+#Polygon-4 {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s; 
+}
+
+#Polygon-5{
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s; 
+        
+}
+#Polygon-6{
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s; 
+        
+}
+
+@-webkit-keyframes float {
+	100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes float {
+	100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+
 /*---------button-style---------*/
 
 .submit_form{
