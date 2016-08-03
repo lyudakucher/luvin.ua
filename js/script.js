@@ -315,8 +315,8 @@ $('.showForm').on('click', function () {
 
 var magnificPopup = $.magnificPopup.instance; 
 // save instance in magnificPopup variable
-var vendor=window.navigator.userAgent.toString();
-var userAgent=window.navigator.vendor.toString();
+//var vendor=window.navigator.userAgent.toString();
+//var userAgent=window.navigator.vendor.toString();
  console.log(window.window);
 $("#submit").click(function(){
 	var name = $("#name").val();
@@ -326,9 +326,9 @@ $("#submit").click(function(){
 	//var vendor=window.navigator.vendor.toString();
 	//var userAgent=window.navigator.userAgent.toString();
 	
-
-	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject+ '&vendor1='+ vendor + '&userAgent1='+ userAgent;
-	console.log(dataString);
+	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
+	//var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject+ '&vendor1='+ vendor + '&userAgent1='+ userAgent;
+	//console.log(dataString);
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{

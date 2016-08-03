@@ -6,6 +6,18 @@ $phone2=$_POST['phone1'];
 //$con2=$_POST['contact1'];
 $date1 = date("d.m.y"); 
 $time1 = date("H:i:s"); 
+$out = array();
+$string = $_SERVER['HTTP_USER_AGENT'];
+$ip=$_SERVER['REMOTE_ADDR'];
+ $s_part = explode("/", $string);
+ 
+ foreach($s_part as $s)
+{
+     if($s != "")
+     {
+           $out[] = $s;
+     }
+}
 
 		$to = 'andriy.ilin90@gmail.com, andy@andy.s-host.net'; 
         $subject = $_POST['subject1'];
@@ -20,7 +32,14 @@ $time1 = date("H:i:s");
                         <p> Телефон: '.$phone2.'</p>
                         <p> Cуть звернення: '.$subject.'</p>
                         <p> Дата та час замовлення: '.$date1.' / '.$time1.'</p>
-
+                        <br><br>
+                         <p> Пристрій клієнта з якого було зроблено замовлення: '.$out[1].'</p>
+						 <p>Версія та назва браузера клієнта: '.$out[3].'</p>
+						 <p> вся інформація по клієнту: '.$string.'</p>
+						 <p> інформація по IP клієнта: '.$ip.'</p><br>
+						 <p> для визначення геолокації замовника по IP скористайтесь наступними посиланнями</p>
+						 <a href="https://www.maxmind.com/ru/home?pkit_lang=ru" alt="www.maxmind.com">www.maxmind.com</a><br>
+						 <a href="http://webmasters.ru/tools/location" alt="webmasters.ru">webmasters.ru</a>
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
