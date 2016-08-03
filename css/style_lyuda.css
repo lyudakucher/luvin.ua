@@ -987,6 +987,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 
 .formStyle_input {
 	width: 60%;
+	min-width: 220px;
 	padding: 2%;
 	margin: 0 auto 2%;
 	font-size: 15px;
@@ -1013,7 +1014,8 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 }
 
 .formPopUp_item .valid {
-	width: 60%;
+	width: 58%;
+	min-width: 215px;
 	margin: 0 auto;
 	font-size: 14px;
 	color: #ff6200;
