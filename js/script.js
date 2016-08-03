@@ -52,23 +52,27 @@ window.onload = init;
         navigation: false,
         
       });     
-      
-      $('.around_icon_item_test').bind('click', function(e) {
+    playSlider($('.around_icon_item_test').eq(0), product1 );
+    playSlider($('.around_icon_item_test').eq(1), product2 );
+    playSlider($('.around_icon_item_test').eq(2), product3 );
+    function playSlider(domElem, productItems )  {
+      domElem.bind('click', function(e) {
       
 	var old_id = $(this).attr('data-atr');
 	var new_id = 'pause';
 	var old_id_s='play';
 	//product1.play();
 	if (old_id !== old_id_s){
-	  	product1.stop();
-	  	$('.around_icon_item_test').removeClass('pause_around_icon_item_test');	
-	  	$('.around_icon_item_test').attr('data-atr', old_id_s);	
+	  	productItems.stop();
+	  	domElem.removeClass('pause_around_icon_item_test');	
+	  	domElem.attr('data-atr', old_id_s);	
 	} else {
-		product1.play();
-		$('.around_icon_item_test').addClass('pause_around_icon_item_test');	
-		$('.around_icon_item_test').attr('data-atr', new_id);		
+		productItems.play();
+		domElem.addClass('pause_around_icon_item_test');	
+		domElem.attr('data-atr', new_id);		
 	}     
     });
+    };
         
     };
 /*
