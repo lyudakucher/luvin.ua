@@ -457,6 +457,11 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
 	width: 50px;
 	height: 50px;
 	vertical-align: top;
+	background: url(../pic/finger-an-arrow2.svg);
+}
+
+.pause_around_icon_item_test {
+	background: url(../pic/pause.svg) !important;
 }
 
 /* .around_icon .around_icon_item:nth-child(2) {

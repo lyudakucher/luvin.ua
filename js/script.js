@@ -55,16 +55,18 @@ window.onload = init;
       
       $('.around_icon_item_test').bind('click', function(e) {
       
-	var old_id = $(this).attr('src');
-	var new_id = 'pic/hand.svg';
-	var old_id_s='pic/finger-an-arrow.svg';
+	var old_id = $(this).attr('data-atr');
+	var new_id = 'pause';
+	var old_id_s='play';
 	//product1.play();
-	if (old_id != 'pic/finger-an-arrow.svg'){
+	if (old_id !== old_id_s){
 	  	product1.stop();
-	  	$('.around_icon_item_test').attr('src', old_id_s);			
+	  	$('.around_icon_item_test').removeClass('pause_around_icon_item_test');	
+	  	$('.around_icon_item_test').attr('data-atr', old_id_s);	
 	} else {
 		product1.play();
-		$('.around_icon_item_test').attr('src', new_id);
+		$('.around_icon_item_test').addClass('pause_around_icon_item_test');	
+		$('.around_icon_item_test').attr('data-atr', new_id);		
 	}     
     });
         
@@ -432,7 +434,6 @@ var magnificPopup = $.magnificPopup.instance;
 // save instance in magnificPopup variable
 //var vendor=window.navigator.userAgent.toString();
 //var userAgent=window.navigator.vendor.toString();
- console.log(window.window);
 $("#submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
