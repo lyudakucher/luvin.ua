@@ -753,7 +753,9 @@ header {
 
 .managers_images img {
 	width: 100%;
-	border-bottom: 10px solid #ffffff;
+	border-bottom: 4px solid #662382;
+	-webkit-box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.14);
+	        box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.14);
 }
 
 .managers_form {
@@ -765,6 +767,7 @@ header {
 .form_title {
 	font-size: 1.7em;
 	padding-bottom: 3%;
+	
 }
 
 .form_description {
@@ -1046,7 +1049,7 @@ header {
 .nameFormComent {
 	color: #3C3A3A;
 	font-size: 0.9em;
-	padding: 0 5%;
+	padding: 0 5% 3%;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -1059,6 +1062,18 @@ header {
 	font-style: normal;
 	text-align: left;
 	font-size: 1.2em;
+}
+
+.form_title::after {
+	display: none;
+}
+
+.form_title {
+	padding-bottom: 2%;
+}
+
+.form_description {
+	padding-bottom: 0;	
 }
 
 .formPopUp_item {
@@ -1101,3 +1116,10 @@ header {
 	color: #ff6200;
 }
 /* end of showForm_elements */
+/* pop-up element */
+#map .mfp-content {
+	max-width: 900px;
+	height: 85%;
+	overflow: hidden;
+}
+/* end of pop-up element */
