@@ -884,31 +884,19 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255
     max-width: none;
 }
 
-.feedback-slider_content {
-	/* margin: 7% 0;
- *//* 	background-color: rgba(190, 190, 190, 0.04); */
-}
-
-/*
-.slider {
-	max-width: 900px;
-	margin: 0 auto;
-}
-*/
-
 .feedback-slider_wrap {
 	padding: 0;
 }
 
 .slider-title {
-	font-size: 1.5em;
+	font-size: 1.5em !important;
 	padding: 5% 0;
+	
 }
 
 .slider_gallery {
 	width: 45%;
 	display: inline-block;
-	margin: 0 2%;
 }
 
 .gallery_img_main {

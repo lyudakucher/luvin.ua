@@ -79,9 +79,16 @@
 }
 
 @media screen and (max-width:989px) {
-	.slick-prev, .slick-next, .slick-arrow {
-		display: none !important;
-		
+	.feedback-slider_container {
+		width: 800px;
+	}
+
+	.feedback_container .slick-prev {
+		left: -10px;
+	}
+
+	.feedback_container .slick-next {
+		right: -10px;
 	}
 }
 
@@ -89,6 +96,10 @@
 	.new-window_more-options {
 		padding-right: 15px;
     }
+
+	.feedback-slider_container {
+		width: 650px;
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -112,6 +123,10 @@
 
 	.benefits_item {
 		width: 200px;
+	}
+
+	.feedback-slider_container {
+		width: 600px;
 	}
 }
 
@@ -142,16 +157,15 @@
 	.new-window_rightblock {
 		width: 45%;
 	}
+
+	.feedback-slider_container {
+		width: 510px;
+	}
 }
 
 @media screen and (max-width:600px) {    
 	.header-container {
 		text-align: center;
-	}
-
-	.left-header-item {
-		float: none;
-		padding-top: 10px;
 	}
 
 	.slogan {
@@ -264,14 +278,38 @@
 		display: block;
 		margin: 0 auto;
 	}
+
+	.feedback-slider_container {
+		width: 400px;
+	}
+
+	.slick-prev, .slick-next {
+		height: 40px;
+		width: 40px;
+	}
+
+	.slider_gallery,
+	.slider_feedback {
+		display: block;
+		width: 100%;
+	}
+
+	.slider_feedback {
+		padding-top: 10px;
+	}
+
+	.slider_description {
+		display: none;
+	}
 }
+
 @media screen and (max-width:480px) {
 	.title-big {
 		font-size: 1.5em;
 	}
 
 	.slogan {
-		width: 50%;
+		display: none;
 	}
 	
 	.logo img {
@@ -336,6 +374,8 @@
 
 	.new-window_title {
 		padding-left: 20px;
+		width: 200px;
+		margin: 0 auto;
 	}
 
 	.new-window_rightblock {
@@ -354,13 +394,19 @@
 		padding-left: 15%;
 	}
 
-/* 	.managers_options li:nth-child(2),
-	.managers_options li:nth-child(4) {
-	margin-left: 5%;
-} */
-
+	.feedback-slider_container {
+		width: 365px;
+	}
 }
+@media screen and (max-width:400px) {
+	.feedback-slider_container {
+		width: 310px;
+	}
 
+	.slider-title {
+		font-size: 1.4em !important;
+	}
+}
 @media screen and (max-width:320px) {
 	.title-big {
 		font-size: 1.3em;
@@ -369,16 +415,14 @@
 	.title__small {
 		font-size: 1.4em;
 	}
-	
-	.slogan {
-		display: none;
-	}
 
 	.tel {
 		text-align: center;
 	}
-
+	
 	.left-header-item {
+		float: none;
+		padding-top: 10px;
 		text-align: center;
 	}
 
@@ -388,5 +432,16 @@
 
 	.old-window_img {
 		width: 90%;
+	}
+
+	.feedback-slider_container {
+		width: 200px;
+	}
+
+	.slick-prev {
+		left: -35px;
+	}
+	.slick-next {
+		right: -35px;
 	}
 }
