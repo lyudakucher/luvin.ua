@@ -198,7 +198,11 @@
 	.videoYoutube{
 		width: 600px;
 		height: 340px;
-	}	
+	}
+
+	.formPopUp {
+		width: 550px;
+	}
 }
 
 @media screen and (max-width:600px) {    
@@ -344,7 +348,11 @@
 	.videoYoutube{
 		width: 480px;
 		height: 272px;
-	}	
+	}
+
+	.formPopUp {
+		width: 400px;
+	}
 }
 
 @media screen and (max-width:480px) {
@@ -457,7 +465,11 @@
 	.videoYoutube {
 		width: 400px;
 		height: 226px;
-	}	
+	}
+
+	.formPopUp {
+		width: 350px;
+	}
 }
 
 @media screen and (max-width:400px) {
@@ -472,7 +484,11 @@
 	.videoYoutube{
 		width: 320px;
 		height: 180px;
-	}	
+	}
+
+	.formPopUp {
+		width: 300px;
+	}
 }
 @media screen and (max-width:320px) {
 	.title-big {
@@ -515,5 +531,9 @@
 	.videoYoutube{
 		width: 230px;
 		height: 130px;
+	}
+
+	.formPopUp {
+		width: 220px;
 	}
 }

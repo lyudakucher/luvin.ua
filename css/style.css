@@ -2,15 +2,19 @@
 /*--------popUp-window-----*/
 
 .cityPopUp{
-	width:900px;
+	width: 98%;
+	max-width:900px;
 	height: 600px;
 	overflow-y: scroll;
-	
+	background: white ;
+	position: relative;
+	display: block;
+	margin: auto;
 }
 
-.formPopUp{
-	width:600px;
-
+.formPopUp {
+	width: 650px;
+	margin: 5% auto;
 }
 
 /*-------end-popUp-window-----*/
@@ -317,11 +321,6 @@ background: none;
 	width:70%; */
 }
 
-.formPopUp{
-	width: 80%;
-	margin: 5% auto;
-}
-
 .formStyle{
 	margin: auto;
 	
@@ -401,13 +400,14 @@ background: none;
 
 
 /* map styles */
-.map-on-site{
-	width:100%;
+.map-on-site {
+	width: 100%;
 	height: 500px;
 }
-#map{
-	width:100%;
-		min-height: 100%;
+
+#map {
+	width: 100%;
+	min-height: 100%;
 }
 
  /*----------fill-map------*/
@@ -901,14 +901,6 @@ path.clickMap:hover{
 	padding: 10px;
 }
 
-.cityPopUp{
-	background: white ;
-/* 	z-index: 999999 !important; */
-	position: relative;
-	display: block;
-/* 	width: 80%; */
-	margin: auto;
-}
 /*
 .mfp-ajax-holder{
 	z-index: 999999 !important;
