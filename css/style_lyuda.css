@@ -1125,7 +1125,7 @@ header {
 } */
 
 .contactCityPopUp .mfp-inline-holder .mfp-content{
-	width: 300px !important;
+	width: 300px;
 }
 
 #kyivPopUp {
