@@ -142,6 +142,7 @@ header {
 .languages {
 	font-size: 1.3em;
 	color: #662382;
+	margin-left: 17%;
 }
 
 .languages .languages-item:nth-child(1)::after {
@@ -168,7 +169,7 @@ header {
 }
 
 .tel {
-	/* float: right; */
+	float: right;
 	text-align: right;
 	width: 180px;
 }
@@ -1117,9 +1118,17 @@ header {
 }
 /* end of showForm_elements */
 /* pop-up element */
-#map .mfp-content {
+/* #map .mfp-content {
 	max-width: 900px;
 	height: 85%;
 	overflow: hidden;
+} */
+
+.contactCityPopUp .mfp-inline-holder .mfp-content{
+	width: 300px !important;
+}
+
+#kyivPopUp {
+	width: 300px;
 }
 /* end of pop-up element */

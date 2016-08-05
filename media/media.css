@@ -106,6 +106,16 @@
 		width: 768px;
 		height: 439px;
 	}	
+
+	.languages {
+		margin-left: 8%;
+	}
+}
+
+@media screen and (max-width:820px) {
+	.languages {
+		margin-left: 3%;
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -139,6 +149,18 @@
 		width: 700px;
 		height: 395px;
 	}	
+
+	.left-header-item {
+		float: none;
+	}
+
+	.languages {
+		margin-left: 0;
+	}
+
+	.tel {
+		float: none;
+	}
 }
 
 @media screen and (max-width:700px) {
@@ -350,6 +372,10 @@
 
 	.montague_list_item {
 		font-size: 22.5px;
+	}
+	
+	.tel {
+		text-align: center;
 	}
 
 	.benefits_item {
