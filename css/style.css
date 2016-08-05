@@ -1,3 +1,19 @@
+
+/*--------popUp-window-----*/
+
+.cityPopUp{
+	width:900px;
+	height: 600px;
+	overflow-y: scroll;
+	
+}
+
+.formPopUp{
+	width:600px;
+
+}
+
+/*-------end-popUp-window-----*/
 .parallax,.old-window_wrap2, .old-window_wrap3{
 	 position:absolute;
   bottom:0;
@@ -890,7 +906,7 @@ path.clickMap:hover{
 /* 	z-index: 999999 !important; */
 	position: relative;
 	display: block;
-	width: 80%;
+/* 	width: 80%; */
 	margin: auto;
 }
 /*

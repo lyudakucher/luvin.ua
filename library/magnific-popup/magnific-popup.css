@@ -49,8 +49,10 @@
 
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
+/*
   width: 96%;
   max-width: 650px;
+*/
   cursor: auto;
   border: 4px solid #662382;
   background-color: #ffffff;

@@ -1124,8 +1124,13 @@ header {
 	overflow: hidden;
 } */
 
+<<<<<<< Updated upstream
 .contactCityPopUp .mfp-inline-holder .mfp-content{
 	width: 300px;
+=======
+.contactCityPopUp {
+	width: 300px !important;
+>>>>>>> Stashed changes
 }
 
 #kyivPopUp {

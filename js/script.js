@@ -1,4 +1,4 @@
-window.onload = init;
+// window.onload = init;
 
 
 
@@ -644,10 +644,13 @@ $('.clickMap').on('click', function () {
 	    gallery: {
 	      enabled: true,
 	    },
-	    type: 'image' 
+	    type: 'image',
+	     
     });			  
 });
 
+
+init();
 
 });
 
