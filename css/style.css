@@ -1,15 +1,17 @@
 
 /*--------popUp-window-----*/
 
-.cityPopUp{
-	width: 98%;
-	max-width:900px;
-	height: 600px;
+.cityPopUp {
+	/* width: 98%;
+	max-width:900px; */
+	width: 700px;
+	height: 500px;
 	overflow-y: scroll;
 	background: white ;
 	position: relative;
 	display: block;
 	margin: auto;
+	padding: 10px;
 }
 
 .formPopUp {
@@ -349,41 +351,45 @@ background: none;
 	font-weight: 700;
 
 }
-.contCityDisplayNone{
+.contCityDisplayNone {
 	display: none;
 }
 
-.contCityDisplayBlock{
+.contCityDisplayBlock {
 	display: block;
 }
 
-.contactCityPopUp{
+.contactCityPopUp {
 	display: none;
 }
-.cityPopUpAll{
+
+.cityPopUpAll {
 	display: none;
 	clear: both;
 }
-.cityPopUp img{
+
+.cityPopUp img {
 	width: 323px;
 	height: 321px;
-	float:left;
-	
+	float: left;
+	margin-right: 10px;	
 }
 
-.butContrCont{
-	float:left;
+.butContrCont {
+	float: left;
 	margin: 20px;	
-		cursor: pointer;
+	cursor: pointer;
 
 }
 .cityPopUp p{
-	margin-top:10px; 
+	margin-top: 5px; 
 }
 
-.cityPopUp h3{
-	margin-top:20px;
-	clear: both; 
+.cityPopUp h3 {
+	margin-top: 20px;
+	color: #662382;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1.3em;
 }
 
 .cityPopUp h3:first-child{
@@ -393,16 +399,27 @@ background: none;
 
 
 .cityPopUp span{
-	font-style:oblique;
+	font-style:normal;
 	display:block;
+}
+
+.contactAdresa {
+	font-style: italic;
 }
 /* end map content styles */
 
 
 /* map styles */
 .map-on-site {
-	width: 100%;
-	height: 500px;
+	height: 772px;
+}
+
+#map-svg {
+	transform: scale(2.9) translate(14%);
+	-moz-transform: scale(2.9) translate(14%); 
+	-webkit-transform: scale(2.9) translate(14%); 
+	-o-transform: scale(2.9) translate(14%); 
+	-ms-transform: scale(2.9) translate(14%);
 }
 
 #map {
@@ -444,14 +461,6 @@ background: none;
 	fill: #662382;
 	text-rendering: geometricprecision;
 	}
-
-#map-svg{
-	transform:         scale(2.3); 
- -moz-transform:    scale(2.3); 
- -webkit-transform: scale(2.3); 
- -o-transform:      scale(2.3); 
- -ms-transform:     scale(2.3);
-}
 
 .rect-color{
 	fill: white;
@@ -944,71 +953,6 @@ path.clickMap:hover{
 */
 
 /*------popUp-close----------*/
-
-@media screen and (max-width:1200px) { 
-#map-svg{
-	transform:         scale(1.9) translate(-10px);
- -moz-transform:    scale(1.9) translate(-10px); 
- -webkit-transform: scale(1.9) translate(-10px); 
- -o-transform:      scale(1.9) translate(-10px); 
- -ms-transform:     scale(1.9) translate(-10px); 
- 
- 
-}
-}
-
-@media screen and (max-width:900px) { 
-#map-svg{
-	transform:         scale(1.6) translate(-30px); 
- -moz-transform:    scale(1.6) translate(-30px); 
- -webkit-transform: scale(1.6) translate(-30px);
- -o-transform:      scale(1.6) translate(-30px); 
- -ms-transform:     scale(1.6) translate(-30px); 
-}
-}
-
-@media screen and (max-width:700px) { 
-#map-svg{
-	transform:         scale(1.4) translate(-70px); 
- -moz-transform:    scale(1.4) translate(-70px); 
- -webkit-transform: scale(1.4) translate(-70px);
- -o-transform:      scale(1.4) translate(-70px); 
- -ms-transform:     scale(1.4) translate(-70px); 
-}
-}
-
-
-/*
-@media screen and (max-width:500px) { 
-#map-svg{
-	transform:         scale(1.2)  translate(-90px); 
- -moz-transform:    scale(1.2)  translate(-90px); 
- -webkit-transform: scale(1.2)  translate(-90px);
- -o-transform:      scale(1.2)  translate(-90px); 
- -ms-transform:     scale(1.2)  translate(-90px); 
-}
-}
-*/
-
-@media screen and (max-width:700px) { 
-#map{
-	display:none;
-}
-.controlsContact{
-	display: block;
-}
-.showCityContact{
-	display: block !important;
-}
-
-.contactCityPopUp{
-	display: block;
-}
-
-
-}
-
-
 
 /* end map styles */
 

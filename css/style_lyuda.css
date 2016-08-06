@@ -1022,7 +1022,21 @@ header {
 	left: 0;
 }
 /* end of feedback-sections styles */
+/* map-section styles */
+.cityPopUp_item {
+	display: inline-block;
+	width: 40%;
+	padding-top: 15px;
+}
 
+.adressPopUp {
+	font-weight: 700;
+}
+
+.contactAdresa a {
+	font-size: 0.9em;
+}
+/* end of map-section styles */
 /* showForm_elements */
 .nameForm {
 	font-size: 1.7em;
@@ -1117,23 +1131,3 @@ header {
 	color: #ff6200;
 }
 /* end of showForm_elements */
-/* pop-up element */
-/* #map .mfp-content {
-	max-width: 900px;
-	height: 85%;
-	overflow: hidden;
-} */
-
-/* <<<<<<< Updated upstream
-.contactCityPopUp .mfp-inline-holder .mfp-content{
-	width: 300px;
-=======
-.contactCityPopUp {
-	width: 300px !important;
->>>>>>> Stashed changes
-}
-
-#kyivPopUp {
-	width: 300px;
-} */
-/* end of pop-up element */
