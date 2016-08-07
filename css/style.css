@@ -347,7 +347,7 @@ background: none;
 
 
 .activeContCont{
-	color:red;
+	/* color:red; */
 	font-weight: 700;
 
 }
@@ -375,12 +375,6 @@ background: none;
 	margin-right: 10px;	
 }
 
-.butContrCont {
-	float: left;
-	margin: 20px;	
-	cursor: pointer;
-
-}
 .cityPopUp p{
 	margin-top: 5px; 
 }

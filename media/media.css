@@ -65,8 +65,11 @@
 		margin-left: -30%;
 	}
 }
+@media screen and (min-width:1440px) {
+	.main_section {
+		height: initial;
+	}
 
-@media screen and (min-width:1440px) and (max-width:2205px) {
 	.tel {
 		width: 254px;
 	}
@@ -116,6 +119,58 @@
 	.window_list_item {
 		width: 200px;
 	}
+}
+
+@media screen and (min-width:1440px) and (max-width:2205px) {
+	/* .tel {
+		width: 254px;
+	}
+
+	.logo img {
+		width: 230px;
+	}
+
+	body {
+		font-size: 24px;
+	}
+	.title-description,
+	.title,
+	.container,
+	.feedback-slider_description,
+	.old-window__content {
+		max-width: 1400px;
+	}
+
+	.feedback-slider_container {
+		width: 1400px;
+	}
+
+	.benefits_item {
+		width: 364px;
+	}
+
+	.benefits_item-text::before {
+		width: 70px;
+		height: 70px;
+    }
+
+    .new-window_leftblock, .new-window_rightblock {
+		max-width: 500px;
+    }
+
+	.list-item,
+	.benefits_item-text,
+	.montague_list .montague_list_item::before {
+		font-size: 24px;
+	}
+
+	.montague_list_item {
+		font-size: 34px;
+	}
+
+	.window_list_item {
+		width: 200px;
+	} */
 }
 
 @media screen and (max-width:2205px) {
@@ -283,6 +338,10 @@
 		-o-transform: scale(1.7) translate(-11%);
 		-ms-transform: scale(1.7) translate(-11%);
 	}
+
+	.cityPopUp {
+		width: 600px;
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -340,6 +399,15 @@
 		-o-transform: scale(1.6) translate(-12%);
 		-ms-transform: scale(1.6) translate(-12%);
 	}
+
+	.cityPopUp {
+		width: 500px;
+	}
+
+	.cityPopUp img {
+		width: 280px;
+		height: 280px;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -388,11 +456,11 @@
 	}
 
 	#map-svg {
-		transform: scale(1.5) translate(-13%);
-		-moz-transform: scale(1.5) translate(-13%);
-		-webkit-transform: scale(1.5) translate(-13%);
-		-o-transform: scale(1.5) translate(-13%);
-		-ms-transform: scale(1.5) translate(-13%);
+		transform: scale(1.5) translate(-19%);
+		-moz-transform: scale(1.5) translate(-19%);
+		-webkit-transform: scale(1.5) translate(-19%);
+		-o-transform: scale(1.5) translate(-19%);
+		-ms-transform: scale(1.5) translate(-19%);
 	}
 }
 
@@ -548,6 +616,11 @@
 	#map{
 		display:none;
 	}
+
+	.map-on-site {
+		display: none;
+	}
+
 	.controlsContact{
 		display: block;
 	}
@@ -557,6 +630,28 @@
 
 	.contactCityPopUp{
 		display: block;
+	}
+
+	.cityPopUp img {
+		display: none;
+	}
+
+	.cityPopUp_item {
+		display: block;
+		width: 100%;
+	}
+
+	.cityPopUp {
+		height: 100%;
+		background-color: #f8f8f8;
+		margin: 0 auto;
+		width: 60%;
+		min-width: 200px;
+	}
+
+	.contCityDisplayBlock {
+		background-color: rgba(248, 248, 248, 0.39);
+		margin: 3% 0;
 	}
 }
 
