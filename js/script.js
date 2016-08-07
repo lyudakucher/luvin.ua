@@ -256,10 +256,10 @@ setTimeout(function() {
 //alert(window.navigator.vendor);
 //console.log(window.navigator);
 $('.num').waypoint(function(direction) {
-$('.num').animate({ num: 115784 - 10000/* - начало */ }, {
+$('.num').animate({ num: 115784 - 100000/* - начало */ }, {
     duration: 1500,
     step: function (num){
-        this.innerHTML = (num + 10000).toFixed(0) // + '%'
+        this.innerHTML = (num + 100000).toFixed(0) // + '%'
     }
 })},{ 
   offset: '99%'
