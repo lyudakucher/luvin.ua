@@ -52,9 +52,9 @@
         navigation: false,
         
       });     
-    playSlider($('.around_icon_item_test').eq(0), product1 );
-    playSlider($('.around_icon_item_test').eq(1), product2 );
-    playSlider($('.around_icon_item_test').eq(2), product3 );
+    playSlider($('.around_icon_item').eq(0), product1 );
+    playSlider($('.around_icon_item').eq(1), product2 );
+    playSlider($('.around_icon_item').eq(2), product3 );
     function playSlider(domElem, productItems )  {
       domElem.bind('click', function(e) {
       
@@ -64,11 +64,11 @@
 	//product1.play();
 	if (old_id !== old_id_s){
 	  	productItems.stop();
-	  	domElem.removeClass('pause_around_icon_item_test');	
+	  	domElem.removeClass('pause_around_icon_item');	
 	  	domElem.attr('data-atr', old_id_s);	
 	} else {
 		productItems.play();
-		domElem.addClass('pause_around_icon_item_test');	
+		domElem.addClass('pause_around_icon_item');	
 		domElem.attr('data-atr', new_id);		
 	}     
     });

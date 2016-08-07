@@ -457,57 +457,24 @@ header {
 	position: absolute;
 	bottom: 0px;
 	right: 150px;
-}    
+}
 
 .around_icon_item {
-	width: 20px;
-	height: 20px;
-	vertical-align: top;
-}
-
-.around_icon span {
-	font-size: 12px;
-	line-height: 12px;
-	color: #662382;
-	text-align: center;
-	    top: -19px;
-    right: 61px;
-    position: absolute;
-}
-
-.around_icon_test {
-	right: 110px;
-}
-
-.around_icon_item_test {
 	margin-top: 7px;
 	width: 50px;
 	height: 50px;
 	vertical-align: top;
-	background: url(../pic/finger-an-arrow2.svg);
+	background: url('../pic/swipe-right.svg');
+	background-size: contain;
 }
 
-.pause_around_icon_item_test {
-	background: url(../pic/pause.svg) !important;
-}
-
-/* .around_icon .around_icon_item:nth-child(2) {
+.pause_around_icon_item {
+	background: url('../pic/tap-button.svg') !important;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	vertical-align: top;
 	margin-top: 7px;
-	width: 40px;
-	height: 40px;
-} */
-
-.around_icon .around_icon_item:nth-child(1) {
-	/* margin-right: 5px; */
-	    margin-right: 44px;
-    margin-top: -11px;
-}
-
-.around_icon .around_icon_item:nth-child(3) {
-	/* margin-left: -10px; */
-	    margin-right: 44px;
-    margin-top: -11px;
-
 }
 
 .new-window_leftblock, 
@@ -552,7 +519,6 @@ header {
 }
 
 .new-window_list {
-	/* font-weight: 700; */
 	width: 95%;
 	max-width: 900px;
 	margin: 0 auto;
