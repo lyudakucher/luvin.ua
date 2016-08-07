@@ -79,6 +79,10 @@ body {
 	        background-size: contain;
 	padding: 5% 0;
 }
+
+.violet {
+	color: #662382;
+}
 /* end of main styles */
 
 /* main-section styles */
@@ -110,7 +114,7 @@ header {
 	margin: 0;
 	padding: 0;
 }
-.logo span {
+.logo>span {
 	position: absolute;
 	right: 4px;
 	bottom: -5px;
