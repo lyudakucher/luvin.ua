@@ -165,12 +165,12 @@ header {
 	color: rgba(118, 30, 133, 0.51);
 }
 
-.languages-item:hover {
+/* .languages-item:hover {
 	color: rgba(118, 30, 133, 0.51);
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-}
+} */
 
 .tel {
 	float: right;
@@ -557,10 +557,10 @@ header {
 	cursor: pointer;
 }
 
-.more-options_item:hover {
-	color: #b400ff;
+/* .more-options_item:hover {
+	color: rgba(118, 30, 133, 0.51);
 	text-decoration: underline;
-}
+} */
 
 .new-window_more-options .more-options_item:nth-child(1) {
 	margin-top: 10px;
@@ -583,9 +583,9 @@ header {
 	left: 0;
 }
 
-.new-window_more-options .more-options_item:nth-child(1):hover::before {
+/* .new-window_more-options .more-options_item:nth-child(1):hover::before {
 	background-image: url('../pic/download-hover.svg');
-}
+} */
 
 .read-more_wrap1, .read-more_wrap2, .read-more_wrap3 {
 	background: url('../img/luvin-light-big.jpg') center top no-repeat;
@@ -1071,17 +1071,18 @@ header {
     overflow: hidden;
  }
 
-.butContrCont:hover {
+/* .butContrCont:hover {
 		border: 2px solid #662382;
 }
 
 .butContrCont:hover:before {
 	 -webkit-transform: rotatey(0);
 	         transform: rotatey(0);
- }
-.butContrCont:hover > span {
+ } */
+
+/* .butContrCont:hover > span {
 	color: #662382;
-}
+} */
 /*end of map-button-style*/
 /* end of map-section styles */
 
@@ -1204,10 +1205,20 @@ footer {
 	text-align: left;
 	background: #FFFfff;
 }
+
+.footer-container {
+	padding: 0 2%;
+	width: 96%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
 footer .tel {
 	display: inline-block;
 	width: 30%;
+	line-height: 250%;
 	vertical-align: middle;
+	float: right;
 }
 
 .copywrite {

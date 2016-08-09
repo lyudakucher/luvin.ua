@@ -184,13 +184,13 @@
             transition: 0.3s all;
     overflow: hidden;
  }
-.submit_form:hover:before{
+/* .submit_form:hover:before{
 	 -webkit-transform: rotatey(0);
 	         transform: rotatey(0);
  }
 .submit_form:hover > span{
 	color: #ffaa00;
-}
+} */
 
 /*--------end-button-style---------*/
 
@@ -439,7 +439,6 @@ background: none;
 
 
 .highcharts-name-:hover{
-	
 	fill:#DCDCDC;
 }
 
@@ -1160,9 +1159,9 @@ nav {
  	text-decoration: none;
 }
 
-#back-top:hover {
+/* #back-top:hover {
 	background-color: rgba(248, 248, 248, 1);
-}
+} */
 /*--------end-scroll-top------*/
 /*--------sale------*/
 

@@ -31,10 +31,10 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
 	color: rgba(118, 30, 133, 0.51);
 	text-decoration: none;
-}
+} */
 
 a:visited, 
 a:active {
