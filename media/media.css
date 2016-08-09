@@ -50,6 +50,10 @@
 	#back-top:hover {
 		background-color: rgba(248, 248, 248, 1);
 	}
+
+	.faq_question:hover {
+		color: #662382;
+	}
 }
 
 @media screen and (min-width:601px) {
@@ -112,7 +116,7 @@
 		margin-left: -30%;
 	}
 }
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1441px) {
 	.main_section {
 		height: initial;
 	}
@@ -132,7 +136,8 @@
 	.title,
 	.container,
 	.feedback-slider_description,
-	.old-window__content {
+	.old-window__content,
+	.footer-container {
 		max-width: 1400px;
 	}
 
@@ -168,59 +173,11 @@
 	}
 }
 
-@media screen and (min-width:1440px) and (max-width:2205px) {
-	/* .tel {
-		width: 254px;
+@media screen and (min-width:1440px) {
+	.num {
+		width: 155px;
 	}
 
-	.logo img {
-		width: 230px;
-	}
-
-	body {
-		font-size: 24px;
-	}
-	.title-description,
-	.title,
-	.container,
-	.feedback-slider_description,
-	.old-window__content {
-		max-width: 1400px;
-	}
-
-	.feedback-slider_container {
-		width: 1400px;
-	}
-
-	.benefits_item {
-		width: 364px;
-	}
-
-	.benefits_item-text::before {
-		width: 70px;
-		height: 70px;
-    }
-
-    .new-window_leftblock, .new-window_rightblock {
-		max-width: 500px;
-    }
-
-	.list-item,
-	.benefits_item-text,
-	.montague_list .montague_list_item::before {
-		font-size: 24px;
-	}
-
-	.montague_list_item {
-		font-size: 34px;
-	}
-
-	.window_list_item {
-		width: 200px;
-	} */
-}
-
-@media screen and (max-width:2205px) {
 	.map-on-site {
 		height: 870px;
 	}
@@ -233,6 +190,24 @@
 		-ms-transform: scale(3.3) translate(9%);
 	}
 }
+
+/* @media screen and (min-width:2205px) {
+	.num {
+		width: 150px;
+	}
+
+	.map-on-site {
+		height: 870px;
+	}
+
+	#map-svg {
+		transform: scale(3.3) translate(9%);
+		-moz-transform: scale(3.3) translate(9%); 
+		-webkit-transform: scale(3.3) translate(9%); 
+		-o-transform: scale(3.3) translate(9%); 
+		-ms-transform: scale(3.3) translate(9%);
+	}
+} */
 
 @media screen and (max-width:1920px) {
 	.map-on-site {
@@ -263,6 +238,10 @@
 }
 
 @media screen and (max-width:1440px) {
+	.num {
+		width: 150px;
+	}
+
 	.map-on-site {
 		height: 640px;
 	}
@@ -277,6 +256,10 @@
 }
 
 @media screen and (max-width:1200px) { 
+	.num {
+		width: 100px;
+	}
+
 	#map-svg{
 		transform: scale(1.9) translate(5%);
 		-moz-transform: scale(1.9) translate(5%); 
@@ -286,6 +269,10 @@
 	}
 }
 @media screen and (max-width:1024px) {
+	.num {
+		width: 96px;
+	}
+
 	.map-on-site {
 		height: 510px;
 	}
@@ -519,6 +506,10 @@
 	.slogan {
 		width: 50%;
 		text-align: left;
+	}
+
+	.num {
+		width: 86px;
 	}
 
 	.threesixty .threesixty_images img {

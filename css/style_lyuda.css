@@ -31,6 +31,11 @@ body {
 	margin: 0 auto;
 }
 
+.title-block_bg .description {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
 .title-big {
 	font-size: 1.8em;
 	font-variant: small-caps;
@@ -383,10 +388,14 @@ header {
 
 .new-window_titleblock {
 	padding-left: 30px;
-	/* max-width: 750px; */
 	margin: 0 auto;
 	padding-top: 5%;
 	vertical-align: middle;
+}
+
+.num {
+	display: inline-block;
+	width: 96px;
 }
 
 .new-window_item_wrap {
@@ -1180,13 +1189,40 @@ header {
 	color: #ff6200;
 }
 /* end of showForm_elements */
+/* faq section */
+.faq_content
+
+.faq_item {
+	padding: 2% 0;
+	text-align: left;
+}
+
+.faq_question {
+	font-size: 1.2em;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.faq_answer {
+	padding-top: 2%;
+}
+
+.roll_up {
+	text-decoration: underline;
+	color: #662382;
+	font-size: 0.9em;
+	cursor: pointer;
+	padding-top: 1%;
+}
+
+/* end of faq section */
 /* last form-section */
 .last_question_wrap {
     background-color: rgba(253, 253, 253, 0.82);
 }
 
 .last_form_title {
-	display: none;
+	display: none !important;
 }
 
 .last_form {
