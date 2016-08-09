@@ -71,12 +71,19 @@ textarea {
 	outline: none;
 	vertical-align: top;
     box-sizing:  border-box;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 textarea {
 	resize: none;
 	overflow-x: hidden;
 	overflow-y: auto;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
 }
 
 sub, sup {
