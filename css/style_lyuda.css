@@ -1001,6 +1001,106 @@ header {
 	left: 0;
 }
 /* end of feedback-sections styles */
+/* step-section styles */
+.steps_content {}
+
+.steps_list {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 100px;
+}
+
+.steps_list_item {
+	text-align: left;
+	display: inline-block;
+	width: 19%;
+	font-size: 14px;
+	vertical-align: bottom;
+	position: relative;
+}
+
+.steps_list .steps_list_item:nth-child(5) .steps_item_title::after {
+	display: none;
+}
+
+.steps_list_item::before {
+	position: absolute;
+	display: block;
+	content: "";
+	font-size: 1.7em;
+	font-weight: 700;
+	color: #662382;
+	bottom: 0;
+	left: 0;
+}
+
+.steps_list .steps_list_item:nth-child(1)::before {
+	content: "1";
+}
+.steps_list .steps_list_item:nth-child(2)::before {
+	content: "2";
+}
+.steps_list .steps_list_item:nth-child(3)::before {
+	content: "3";
+}
+.steps_list .steps_list_item:nth-child(4)::before {
+	content: "4";
+}
+.steps_list .steps_list_item:nth-child(5)::before {
+	content: "5";
+}
+
+.steps_item_title {
+	font-size: 1.2em;
+	position: relative;
+	padding: 0 5px 10px 30px;
+}
+
+.steps_item_title::before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 100%;
+	        border-radius: 100%;
+	background-color: #662382;
+	top: 100%;
+	left: 0;
+}
+
+.steps_item_title::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #662382;
+	top: calc(100% + 7.5px);
+	top: -webkit-calc(100% + 7.5px);
+	top: -moz-calc(100% + 7.5px);
+	top: -ms-calc(100% + 7.5px);
+	top: -o-calc(100% + 7.5px);
+	left: 0;
+}
+
+.steps_item_description {
+	position: absolute;
+	font-size: 0.9em;
+	top: calc(100% + 20px);
+	top: -webkit-calc(100% + 20px);
+	top: -moz-calc(100% + 20px);
+	top: -ms-calc(100% + 20px);
+	top: -o-calc(100% + 20px);
+	left: 0;
+	padding: 0 5px;
+}
+
+.steps_item_number {
+
+}
+/* end of step-section styles */
 /* map-section styles */
 .cityPopUp_item {
 	display: inline-block;
