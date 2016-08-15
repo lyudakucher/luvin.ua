@@ -120,6 +120,7 @@
 
 
 $(document).ready(function() {
+/*
 
 
 $(window).on('mousemove', function(e) {
@@ -139,6 +140,7 @@ $(window).on('mousemove', function(e) {
             });
         });
     });
+*/
 /*
   var navli = $('ul#menu li');
 
@@ -229,6 +231,8 @@ newImg.animate(css, SPEED, function() {
     (callback || function() {})();
 });
 */
+/*
+
 $('.benefits_item').css('opacity', '0');
 $('.benefits_item').waypoint(function(direction) {
 $('.benefits_item').eq(0).addClass('animated fadeInUp');
@@ -252,6 +256,7 @@ setTimeout(function() {
   offset: '99%'
 
 });
+*/
 //alert(window.navigator.userAgent);
 //alert(window.navigator.vendor);
 //console.log(window.navigator);
@@ -260,6 +265,17 @@ $('.num').animate({ num: 115784 - 100000/* - начало */ }, {
     duration: 1500,
     step: function (num){
         this.innerHTML = (num + 100000).toFixed(0) // + '%'
+    }
+})},{ 
+  offset: '99%'
+
+});
+
+$('.num2').waypoint(function(direction) {
+$('.num2').animate({ num: 10 - 1/* - начало */ }, {
+    duration: 700,
+    step: function (num){
+        this.innerHTML = (num + 1).toFixed(0) // + '%'
     }
 })},{ 
   offset: '99%'
@@ -425,7 +441,7 @@ $('.butContrCont').on('click', function () {
     var value=$(this).attr('data-atcont');
 	$('.butContrCont').removeClass('activeContCont');
 	$(this).addClass('activeContCont');
-    $('.cityPopUpAll').addClass('showCityContact');;
+    $('.cityPopUpAll').addClass('showCityContact');
      
 /*
      $('.cityPopUpStyle').each(function(){
@@ -470,16 +486,17 @@ $("#submit").click(function(){
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{
-		 $('.valid').eq(0).text("укажите, как к вам обращаться");
-		 $('.valid').eq(1).text("пожалуйста, заполните поле email");
-		 $('.valid').eq(2).text("укажите телефон для связи");
+		// console.log($('.valid').eq(0));
+		$(this).siblings().children('.valid').eq(0).text("укажите, как к вам обращаться");
+		 $(this).siblings().children('.valid').eq(1).text("пожалуйста, заполните поле email");
+		 $(this).siblings().children('.valid').eq(2).text("укажите телефон для связи");
 
 		$('.valid').css('display','block');
 		//alert("Please Fill All Fields");
 	}	
           else  if(!(pattern.test(email))){
 //                $("#email").css({'border' : '1px solid #569b44'});
-                $('.valid').eq(1).text('ваш e-mail указано не верно');
+                $(this).siblings().children('.valid').eq(1).text('ваш e-mail указано не верно');
                 $('.valid').eq(0).hide();
                 $('.valid').eq(2).hide();
 
@@ -523,7 +540,7 @@ else if(pattern.test(email)) {
 
 $('.formThanxStyle2').hide();
 
-$("#submitOpenForm").click(function(){
+$(".submitOpenForm").click(function(){
 	var name = $("#name_man").val();
 	var email = $("#email_man").val();
 	var phone = $("#phone_man").val();
@@ -531,18 +548,22 @@ $("#submitOpenForm").click(function(){
 	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
 	//console.log(dataString);
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+					 console.log($(this).siblings().children().children('.valid').eq(0));
+
 	if(name==''||email==''||phone=='')
 	{
-		 $('.valid').eq(0).text("укажите, как к вам обращаться");
-		 $('.valid').eq(1).text("пожалуйста, заполните поле email");
-		 $('.valid').eq(2).text("укажите телефон для связи");
+
+
+		 $(this).siblings().children().children('.valid').eq(0).text("укажите, как к вам обращаться");
+		 $(this).siblings().children().children('.valid').eq(1).text("пожалуйста, заполните поле email");
+		 $(this).siblings().children().children('.valid').eq(2).text("укажите телефон для связи");
+
 
 		$('.valid').css('display','block');
-		//alert("Please Fill All Fields");
 	}	
           else  if(!(pattern.test(email))){
 //                $("#email").css({'border' : '1px solid #569b44'});
-                $('.valid').eq(1).text('ваш e-mail указано не верно');
+               $(this).siblings().children('.valid').eq(1).text('ваш e-mail указано не верно');
                 $('.valid').eq(0).hide();
                 $('.valid').eq(2).hide();
 
@@ -649,9 +670,11 @@ $('.clickMap').on('click', function () {
     });			  
 });
 
+console.log($('.valid'));
 
 init();
 
 });
 
 
+	

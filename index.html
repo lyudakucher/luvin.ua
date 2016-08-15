@@ -97,8 +97,8 @@
 						лидер рынка Украины по производству и установке металлопластиковых окон
 					</p>
 						<div class="header-item languages">
-							<a class="languages-item" href="">Укр</a>
-							<a class="languages-item languages-item__active" href="">Рус</a>
+							<a class="languages-item" href="#">Укр</a>
+							<a class="languages-item languages-item__active" href="#">Рус</a>
 						</div>
 						<div class="header-item tel">
 							<span class="number">
@@ -164,6 +164,7 @@
 
 			<div class="container old-window_container">
 				<h2 class="title posrel">Каждому владельцу старых окон знакомы эты проблемы</h2>
+				<figure></figure>
 				<img class="old-window_img" src="pic/old-window.png" alt="">
 				<div class="leavesMotino">
 					<figure id='Polygon-1' class='leaves leaves1'>
@@ -515,22 +516,22 @@
 						<form action="" class="formStyle open_form" id="">
 							<div class="managers_form_input">
 								<div class="open_form_item">
-									<span class='valid'>укажите, как к вам обращаться</span>
+									<span class='valid'></span>
 									<input placeholder="Ваше имя" type="text" name="name" id="name_man" class="open_form_item_input"/>
 								</div>
 								<div class="open_form_item">
-									<span class='valid'>пожалуйста, заполните поле email</span>
+									<span class='valid'></span>
 									<input placeholder="Електронный адрес" type="email" name="email" id="email_man" class="open_form_item_input"/>
 								</div>
 								<div class="open_form_item">
-									<span class='valid'>укажите телефон для связи</span>
+									<span class='valid'></span>
 									<input placeholder="Ваш телефон" type="text" name="phone" id="phone_man" class="open_form_item_input"/>
 								</div>
 							</div>
 							<div class="open_form_item managers_form_textaling">
 								<textarea rows="6" placeholder="Добавьте вопрос или комментарий" type="textarea" name="subject" id="cont_man" class="open_form_item_input"></textarea>
 							</div>
-							<button id="submitOpenForm" class="submit_form" ><span>Написать</span></button>
+							<button class="submitOpenForm submit_form" ><span>Написать</span></button>
 						</form>
 						<div class="formThanxStyle2 thanx_open_form">
 							<p>Ваше обращение отправлено. Наш специалист скоро свяжется с вами.</p>
@@ -1145,33 +1146,17 @@
   	<div class="contactCityPopUp clearfix">
 		<div class="controlsContact clearfix">
 			<span class="contrCont_step">Выберите свой город</span>
-			<button class="butContrCont" data-atcont="0"><span>Киев</span></button>
-			<button class="butContrCont" data-atcont="1"><span>Одесса</span></button>
-			<button class="butContrCont" data-atcont="2"><span>Львов</span></button>
-			<button class="butContrCont" data-atcont="3"><span>Винница</span></button>
-			<button class="butContrCont" data-atcont="4"><span>Черкасы</span></button>
-			<button class="butContrCont" data-atcont="5"><span>Хмельницкий</span></button>
-			<button class="butContrCont" data-atcont="6"><span>Иванофранковск</span></button>
+			
+			
 			<!-- 	  		<p class="butContrCont" data-atcont="7">zhytomur</p> -->
-			<button class="butContrCont" data-atcont="7"><span>Ровно</span></button>
-			<button class="butContrCont" data-atcont="8"><span>Кировоград</span></button>
-			<button class="butContrCont" data-atcont="9"><span>Черновцы</span></button>
 		</div>
 	</div>
 		
-<<<<<<< HEAD
-		
+		<button class="contactCityPopUp butContrCont" data-atcont="0"><span>Киев</span></button>
 		<div class="cityPopUpAll">
-			<div class="cityPopUpStyle">
-				<div id="kyivPopUp" class='cityPopUp'>
-					<img src="img/map-city/luvin-kyiv.png" alt="luvin-kyiv">
-=======
-	<div class="cityPopUpAll">
 		<div class="cityPopUpStyle">
 			<div id="kyivPopUp" class='cityPopUp'>
 				<img src="img/map-city/luvin-kyiv.png" alt="luvin-kyiv">
->>>>>>> origin/gh-pages
-
 				
 				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Киев</h3>
 				<div class="cityPopUp_item">
@@ -1210,8 +1195,11 @@
 				</div>
 			</div>
 		</div>
-			
-		<div class="cityPopUpStyle">
+		</div>
+
+		<button class="contactCityPopUp butContrCont" data-atcont="1"><span>Одесса</span></button>	
+		<div class="cityPopUpAll">
+			<div class="cityPopUpStyle">
 			<div id="odessaPopUp" class='cityPopUp'>
 				<img src="img/map-city/luvin-odessa.png" alt="luvin-odessa">
 				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Одесса</h3>
@@ -1224,8 +1212,11 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="cityPopUpStyle">
+		</div>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="2"><span>Львов</span></button>
+		<div class="cityPopUpAll">
+			<div class="cityPopUpStyle">
 			<div class="cityPopUp" id="lvovPopUp">
 				<img src="img/map-city/luvin-lvov.png" alt="luvin-lvov">
 				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Львов</h3>
@@ -1239,8 +1230,11 @@
 
 			</div>
 		</div>
-			
-		<div class="cityPopUpStyle">
+		</div>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="3"><span>Винница</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
 			<div id="vinnitcaPopUp" class='cityPopUp'>
 				<img src="img/map-city/luvin-vinnitca.png" alt="luvin-vinnitca">
 
@@ -1430,137 +1424,155 @@
 				</div>		
 			</div>
 		</div>
-
-		<div class="cityPopUpStyle">
-			<div id="сherkassyPopUp" class='cityPopUp'>
-				<img src="img/map-city/luvin-uman.png" alt="luvin-uman">
-
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Умань</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">				  						  	
-						<p class="adressPopUp"><span>ул.Большая Фонтанная, 26/30</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=48.754911,30.220692" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
-					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
-				</div>
-
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">				  						  	
-						<p class="adressPopUp"><span>ул. Независимости, 11</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=48.747302,30.220314" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
-					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
-				</div>
-
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>ул. Европейская, 26-А</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=48.753159,30.21956" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
-					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
-				</div>
-			</div>	
 		</div>
-
-		<div class="cityPopUpStyle">
-			<div id="khmelnytskyiPopUp" class='cityPopUp'>
-				<img src="img/map-city/luvin-khmelnickiy.png" alt="luvin-khmelnickiy">
-
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Хмельницкий</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>ул. Свободы, 2</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=49.427139,26.991149" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="4"><span>Черкасы</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
+				<div id="сherkassyPopUp" class='cityPopUp'>
+					<img src="img/map-city/luvin-uman.png" alt="luvin-uman">
+	
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Умань</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">				  						  	
+							<p class="adressPopUp"><span>ул.Большая Фонтанная, 26/30</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=48.754911,30.220692" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
-				</div>
-
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>ул. Владимирская, 74</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=49.420447,26.981717" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+	
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">				  						  	
+							<p class="adressPopUp"><span>ул. Независимости, 11</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=48.747302,30.220314" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
-				</div>
-
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Красилов</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">				  						  	
-						<p class="adressPopUp"><span>ул. Циолковского, 9</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=49.653296,26.974162" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+	
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>ул. Европейская, 26-А</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=48.753159,30.21956" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</<spa>	</spa>n> Сб, Вс - выходные</p>
-				</div>
-
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Летичев</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>ул. Леонида Ширпала, 8/1</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=49.379273,27.616044" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+				</div>	
+			</div>
+		</div>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="5"><span>Хмельницкий</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
+				<div id="khmelnytskyiPopUp" class='cityPopUp'>
+					<img src="img/map-city/luvin-khmelnickiy.png" alt="luvin-khmelnickiy">
+	
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Хмельницкий</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>ул. Свободы, 2</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=49.427139,26.991149" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
+	
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>ул. Владимирская, 74</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=49.420447,26.981717" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
+					</div>
+	
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Красилов</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">				  						  	
+							<p class="adressPopUp"><span>ул. Циолковского, 9</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=49.653296,26.974162" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</<spa>	</spa>n> Сб, Вс - выходные</p>
+					</div>
+	
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Летичев</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>ул. Леонида Ширпала, 8/1</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=49.379273,27.616044" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="cityPopUpStyle">
-			<div id="ivanofrankovskPopUp" class='cityPopUp'>
-				<img src="img/map-city/luvin-ivanofrankovsk.png" alt="luvin-ivanofrankovsk">
-
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Ивано-Франковск</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span> Адрес уточняйте по номеру 050-441-90-70</span></p>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="6"><span>Иванофранковск</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
+				<div id="ivanofrankovskPopUp" class='cityPopUp'>
+					<img src="img/map-city/luvin-ivanofrankovsk.png" alt="luvin-ivanofrankovsk">
+	
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Ивано-Франковск</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span> Адрес уточняйте по номеру 050-441-90-70</span></p>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 				</div>
 			</div>
 		</div>
-
-		<div class="cityPopUpStyle">
-			<div id="rivnePopUp" class='cityPopUp'>
-				<img src="img/map-city/luvin-rivne.png" alt="luvin-rivne">
-				
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Ровно</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>ул. Макарова, 16</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=50.621023,26.205501" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="7"><span>Ровно</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
+				<div id="rivnePopUp" class='cityPopUp'>
+					<img src="img/map-city/luvin-rivne.png" alt="luvin-rivne">
+					
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Ровно</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>ул. Макарова, 16</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=50.621023,26.205501" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp">Режим работы:<span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp">Режим работы:<span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 				</div>
 			</div>
 		</div>
-			
-		<div class="cityPopUpStyle">
-			<div id="kirovogradPopUp" class='cityPopUp'>
-				<img src="img/map-city/luvin-kirovograd.png" alt="luvin-kirovograd">
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Кировоград</h3>
-				
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>Адрес уточняйте по номеру 067-433-22-34</span></p>
-				  	</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="8"><span>Кировоград</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
+				<div id="kirovogradPopUp" class='cityPopUp'>
+					<img src="img/map-city/luvin-kirovograd.png" alt="luvin-kirovograd">
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Кировоград</h3>
+					
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>Адрес уточняйте по номеру 067-433-22-34</span></p>
+					  	</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="cityPopUpStyle">
-			<div id="chernivtsiPopUp" class='cityPopUp'>
-				<img src="img/map-city/luvin-chernivci.png" alt="luvin-chernivtsi">
-				
-				<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Новоднестровск</h3>
-				<div class="cityPopUp_item">
-					<div class="contactAdresa">
-						<p class="adressPopUp"><span>м-н Лесной, 1/15</span></p>
-						<a href="https://maps.google.com/?hl=ru&q=48.589203,27.429878" target='_blank' class="linkMa3">посмотреть на карте</a>
+		
+		<button class="contactCityPopUp butContrCont" data-atcont="9"><span>Черновцы</span></button>
+		<div class="cityPopUpAll">	
+			<div class="cityPopUpStyle">
+				<div id="chernivtsiPopUp" class='cityPopUp'>
+					<img src="img/map-city/luvin-chernivci.png" alt="luvin-chernivtsi">
+					
+					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Новоднестровск</h3>
+					<div class="cityPopUp_item">
+						<div class="contactAdresa">
+							<p class="adressPopUp"><span>м-н Лесной, 1/15</span></p>
+							<a href="https://maps.google.com/?hl=ru&q=48.589203,27.429878" target='_blank' class="linkMa3">посмотреть на карте</a>
+						</div>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
-					<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
-				</div>
-			</div>	
-   		</div>
-	</div>
+				</div>	
+	   		</div>
+		</div>
 </section>
 	
 	<section>
@@ -1570,15 +1582,15 @@
 			   	<p class="nameFormComent">Заполните короткую форму ниже и мы скоро вам перезвоним!</p>
 			   	<form action="" class="formStyle" id="">
 			   		<div class="formPopUp_item">
-			   			<span class='valid'>Укажыте как к вам обращаться</span>
+			   			<span class='valid'></span>
 			   			<input placeholder="Ваше имя" type="text" name="name" id="name" class="formStyle_input" />
 			   		</div>
 			   		<div class="formPopUp_item">
-			   			<span class='valid'>добавьте телефон, и мы перезвоним</span>
+			   			<span class='valid'></span>
 			   			<input placeholder="Ваш телефон" type="text" name="phone" id="phone" class="formStyle_input" />
 			   		</div>
 			   		<div class="formPopUp_item">
-			   			<span class='valid'>введите свой email</span>
+			   			<span class='valid'></span>
 			   			<input placeholder="Ваш email" type="email" name="email" id="email" class="formStyle_input"/>
 			   		</div>
 					<button id="submit" class="submit_form"><span>Перезвонить</span></button>
@@ -1601,7 +1613,7 @@
 		<div class="wrap faq_wrap">
 			<div class="container faq_container">
 				<div class="title-block_bg">
-					<h2 class="title">10 самых популярных вопросов пры выборе металлопластыковых окон</h2>
+					<h2 class="title"> <span class="num2"></span>	 самых популярных вопросов пры выборе металлопластыковых окон</h2>
 					<figure class='title__line'></figure>
 					<p class="description">
 						Выбор металлопластикового окна индивидуален и зависит от пожеланий по энергосбережению, шумоизоляции, безопасности, цвету, текстуры и др.
@@ -1624,25 +1636,25 @@
 				</div>
 				<div class="managers_form last_form">
 						<h3 class="nameForm form_title last_form_title">Остался вопрос</h3>
-						<form action="" class="formStyle open_form last_open_form" id="">
+						<form  class="formStyle open_form last_open_form" id="">
 							<div class="managers_form_input">
 								<div class="open_form_item">
-									<span class='valid'>укажите, как к вам обращаться</span>
+									<span class='valid'></span>
 									<input placeholder="Ваше имя" type="text" name="name" id="name_man" class="open_form_item_input"/>
 								</div>
 								<div class="open_form_item">
-									<span class='valid'>пожалуйста, заполните поле email</span>
+									<span class='valid'></span>
 									<input placeholder="Електронный адрес" type="email" name="email" id="email_man" class="open_form_item_input"/>
 								</div>
 								<div class="open_form_item">
-									<span class='valid'>укажите телефон для связи</span>
+									<span class='valid'></span>
 									<input placeholder="Ваш телефон" type="text" name="phone" id="phone_man" class="open_form_item_input"/>
 								</div>
 							</div>
 							<div class="open_form_item managers_form_textaling">
 								<textarea rows="6" placeholder="Добавьте вопрос или комментарий" type="textarea" name="subject" id="cont_man" class="open_form_item_input"></textarea>
 							</div>
-							<button id="submitOpenForm" class="submit_form" ><span>Оставить вопрос</span></button>
+							<button class="submitOpenForm submit_form" ><span>Оставить вопрос</span></button>
 						</form>
 						<div class="formThanxStyle2 thanx_open_form">
 							<p>Ваше обращение отправлено. Наш специалист скоро свяжется с вами.</p>
