@@ -670,7 +670,25 @@ $('.clickMap').on('click', function () {
     });			  
 });
 
-console.log($('.valid'));
+
+$('.roll_up').hide();
+$('.faq_answer').hide();
+
+$('.faq_question').click(function(){
+	$('.faq_answer').slideUp();
+	$('.roll_up').slideUp();
+
+//if($(this).next()){
+//	console.log('true');}
+//	console.log($(this).next().visibility);
+	
+	$(this).siblings().show();
+});
+
+$('.roll_up').click(function(){
+	$('.faq_answer').slideUp();
+	$(this).slideUp();
+});
 
 init();
 
