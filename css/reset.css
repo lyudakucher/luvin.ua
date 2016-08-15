@@ -31,10 +31,10 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
 	color: rgba(118, 30, 133, 0.51);
 	text-decoration: none;
-}
+} */
 
 a:visited, 
 a:active {
@@ -68,15 +68,24 @@ textarea {
 	display: block;
 	border:  1px solid #ffb400;
 	font-family: serif;
-	outline: none;
 	vertical-align: top;
     box-sizing:  border-box;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 textarea {
 	resize: none;
 	overflow-x: hidden;
 	overflow-y: auto;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
 }
 
 sub, sup {

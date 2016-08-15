@@ -31,6 +31,11 @@ body {
 	margin: 0 auto;
 }
 
+.title-block_bg .description {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
 .title-big {
 	font-size: 1.8em;
 	font-variant: small-caps;
@@ -79,6 +84,10 @@ body {
 	        background-size: contain;
 	padding: 5% 0;
 }
+
+.violet {
+	color: #662382;
+}
 /* end of main styles */
 
 /* main-section styles */
@@ -110,7 +119,7 @@ header {
 	margin: 0;
 	padding: 0;
 }
-.logo span {
+.logo>span {
 	position: absolute;
 	right: 4px;
 	bottom: -5px;
@@ -161,12 +170,12 @@ header {
 	color: rgba(118, 30, 133, 0.51);
 }
 
-.languages-item:hover {
+/* .languages-item:hover {
 	color: rgba(118, 30, 133, 0.51);
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-}
+} */
 
 .tel {
 	float: right;
@@ -379,10 +388,14 @@ header {
 
 .new-window_titleblock {
 	padding-left: 30px;
-	/* max-width: 750px; */
 	margin: 0 auto;
 	padding-top: 5%;
 	vertical-align: middle;
+}
+
+.num {
+	display: inline-block;
+	width: 96px;
 }
 
 .new-window_item_wrap {
@@ -452,58 +465,25 @@ header {
 .around_icon {
 	position: absolute;
 	bottom: 0px;
-	right: 150px;
-}    
+	right: 190px;
+}
 
 .around_icon_item {
-	width: 20px;
-	height: 20px;
-	vertical-align: top;
-}
-
-.around_icon span {
-	font-size: 12px;
-	line-height: 12px;
-	color: #662382;
-	text-align: center;
-	    top: -19px;
-    right: 61px;
-    position: absolute;
-}
-
-.around_icon_test {
-	right: 110px;
-}
-
-.around_icon_item_test {
 	margin-top: 7px;
 	width: 50px;
 	height: 50px;
 	vertical-align: top;
-	background: url(../pic/finger-an-arrow2.svg);
+	background: url('../pic/swipe-right.svg');
+	background-size: contain;
 }
 
-.pause_around_icon_item_test {
-	background: url(../pic/pause.svg) !important;
-}
-
-/* .around_icon .around_icon_item:nth-child(2) {
+.pause_around_icon_item {
+	background: url('../pic/tap-button.svg') !important;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	vertical-align: top;
 	margin-top: 7px;
-	width: 40px;
-	height: 40px;
-} */
-
-.around_icon .around_icon_item:nth-child(1) {
-	/* margin-right: 5px; */
-	    margin-right: 44px;
-    margin-top: -11px;
-}
-
-.around_icon .around_icon_item:nth-child(3) {
-	/* margin-left: -10px; */
-	    margin-right: 44px;
-    margin-top: -11px;
-
 }
 
 .new-window_leftblock, 
@@ -548,7 +528,6 @@ header {
 }
 
 .new-window_list {
-	/* font-weight: 700; */
 	width: 95%;
 	max-width: 900px;
 	margin: 0 auto;
@@ -587,10 +566,10 @@ header {
 	cursor: pointer;
 }
 
-.more-options_item:hover {
-	color: #b400ff;
+/* .more-options_item:hover {
+	color: rgba(118, 30, 133, 0.51);
 	text-decoration: underline;
-}
+} */
 
 .new-window_more-options .more-options_item:nth-child(1) {
 	margin-top: 10px;
@@ -613,9 +592,9 @@ header {
 	left: 0;
 }
 
-.new-window_more-options .more-options_item:nth-child(1):hover::before {
+/* .new-window_more-options .more-options_item:nth-child(1):hover::before {
 	background-image: url('../pic/download-hover.svg');
-}
+} */
 
 .read-more_wrap1, .read-more_wrap2, .read-more_wrap3 {
 	background: url('../img/luvin-light-big.jpg') center top no-repeat;
@@ -1022,6 +1001,106 @@ header {
 	left: 0;
 }
 /* end of feedback-sections styles */
+/* step-section styles */
+.steps_content {}
+
+.steps_list {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 100px;
+}
+
+.steps_list_item {
+	text-align: left;
+	display: inline-block;
+	width: 19%;
+	font-size: 14px;
+	vertical-align: bottom;
+	position: relative;
+}
+
+.steps_list .steps_list_item:nth-child(5) .steps_item_title::after {
+	display: none;
+}
+
+.steps_list_item::before {
+	position: absolute;
+	display: block;
+	content: "";
+	font-size: 1.7em;
+	font-weight: 700;
+	color: #662382;
+	bottom: 0;
+	left: 0;
+}
+
+.steps_list .steps_list_item:nth-child(1)::before {
+	content: "1";
+}
+.steps_list .steps_list_item:nth-child(2)::before {
+	content: "2";
+}
+.steps_list .steps_list_item:nth-child(3)::before {
+	content: "3";
+}
+.steps_list .steps_list_item:nth-child(4)::before {
+	content: "4";
+}
+.steps_list .steps_list_item:nth-child(5)::before {
+	content: "5";
+}
+
+.steps_item_title {
+	font-size: 1.2em;
+	position: relative;
+	padding: 0 5px 10px 30px;
+}
+
+.steps_item_title::before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 100%;
+	        border-radius: 100%;
+	background-color: #662382;
+	top: 100%;
+	left: 0;
+}
+
+.steps_item_title::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #662382;
+	top: calc(100% + 7.5px);
+	top: -webkit-calc(100% + 7.5px);
+	top: -moz-calc(100% + 7.5px);
+	top: -ms-calc(100% + 7.5px);
+	top: -o-calc(100% + 7.5px);
+	left: 0;
+}
+
+.steps_item_description {
+	position: absolute;
+	font-size: 0.9em;
+	top: calc(100% + 20px);
+	top: -webkit-calc(100% + 20px);
+	top: -moz-calc(100% + 20px);
+	top: -ms-calc(100% + 20px);
+	top: -o-calc(100% + 20px);
+	left: 0;
+	padding: 0 5px;
+}
+
+.steps_item_number {
+
+}
+/* end of step-section styles */
 /* map-section styles */
 .cityPopUp_item {
 	display: inline-block;
@@ -1101,17 +1180,18 @@ header {
     overflow: hidden;
  }
 
-.butContrCont:hover {
+/* .butContrCont:hover {
 		border: 2px solid #662382;
 }
 
 .butContrCont:hover:before {
 	 -webkit-transform: rotatey(0);
 	         transform: rotatey(0);
- }
-.butContrCont:hover > span {
+ } */
+
+/* .butContrCont:hover > span {
 	color: #662382;
-}
+} */
 /*end of map-button-style*/
 /* end of map-section styles */
 
@@ -1209,13 +1289,40 @@ header {
 	color: #ff6200;
 }
 /* end of showForm_elements */
+/* faq section */
+.faq_content
+
+.faq_item {
+	padding: 2% 0;
+	text-align: left;
+}
+
+.faq_question {
+	font-size: 1.2em;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.faq_answer {
+	padding-top: 2%;
+}
+
+.roll_up {
+	text-decoration: underline;
+	color: #662382;
+	font-size: 0.9em;
+	cursor: pointer;
+	padding-top: 1%;
+}
+
+/* end of faq section */
 /* last form-section */
 .last_question_wrap {
     background-color: rgba(253, 253, 253, 0.82);
 }
 
 .last_form_title {
-	display: none;
+	display: none !important;
 }
 
 .last_form {
@@ -1234,10 +1341,20 @@ footer {
 	text-align: left;
 	background: #FFFfff;
 }
+
+.footer-container {
+	padding: 0 2%;
+	width: 96%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
 footer .tel {
 	display: inline-block;
 	width: 30%;
+	line-height: 250%;
 	vertical-align: middle;
+	float: right;
 }
 
 .copywrite {

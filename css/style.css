@@ -184,13 +184,13 @@
             transition: 0.3s all;
     overflow: hidden;
  }
-.submit_form:hover:before{
+/* .submit_form:hover:before{
 	 -webkit-transform: rotatey(0);
 	         transform: rotatey(0);
  }
 .submit_form:hover > span{
 	color: #ffaa00;
-}
+} */
 
 /*--------end-button-style---------*/
 
@@ -371,7 +371,7 @@ background: none;
 .cityPopUp img {
 	width: 323px;
 	height: 321px;
-	float: left;
+	float: right;
 	margin-right: 10px;	
 }
 
@@ -439,7 +439,6 @@ background: none;
 
 
 .highcharts-name-:hover{
-	
 	fill:#DCDCDC;
 }
 
@@ -1142,25 +1141,27 @@ nav {
 	right: 20px;
 	left: auto;
 	z-index: 999999999;
-}
-
-#back-top a {
-	width: 50px;
-	height: 50px;
-	background-image: url(../img/up-arrow.png);
-	background-size: contain;
-	cursor: pointer;
-	display: block;
- 	text-decoration: none;
+	background-color: rgba(248, 248, 248, 0.72);
+	border-radius: 100%;
+	padding: 10px;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	transition: 0.5s;
 }
 
-#back-top:hover a{
-	background-image: url(../img/up-arrow_hover.png);
-	position: relative;
+#back-top a {
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/up-arrow.svg');
+	background-size: contain;
+	cursor: pointer;
+	display: block;
+ 	text-decoration: none;
 }
+
+/* #back-top:hover {
+	background-color: rgba(248, 248, 248, 1);
+} */
 /*--------end-scroll-top------*/
 /*--------sale------*/
 
