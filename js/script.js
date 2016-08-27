@@ -472,7 +472,7 @@ var magnificPopup = $.magnificPopup.instance;
 // save instance in magnificPopup variable
 //var vendor=window.navigator.userAgent.toString();
 //var userAgent=window.navigator.vendor.toString();
-$("#submit").click(function(){
+$(".submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
 	var phone = $("#phone").val();
@@ -522,10 +522,10 @@ else if(pattern.test(email)) {
 			$("#email").val('');
 			$("#phone").val('');
 			$('.valid').css('display','none');
-			$('.formStyle').hide();
-			$('.nameForm').hide();
-			$('.nameFormComent').hide();
-			$('.formThanxStyle').show();
+			$('.formStyle').eq(0).hide();
+			$('.nameForm').eq(0).hide();
+			$('.nameFormComent').eq(0).hide();
+			$('.formThanxStyle').eq(0).show();
 			//alert("Дякуємо за замовлення");
 			setTimeout(function() { magnificPopup.close(); }, 4000);
 
@@ -541,10 +541,10 @@ else if(pattern.test(email)) {
 $('.formThanxStyle2').hide();
 
 $(".submitOpenForm").click(function(){
-	var name = $("#name_man").val();
-	var email = $("#email_man").val();
-	var phone = $("#phone_man").val();
-	var subject = $("#cont_man").val();
+	var name = $(".name_man").val();
+	var email = $(".email_man").val();
+	var phone = $(".phone_man").val();
+	var subject = $(".cont_man").val();
 	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
 	//console.log(dataString);
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
@@ -585,10 +585,10 @@ else if(pattern.test(email)) {
 		data: dataString,
 		cache: false,
 		success: function(result){
-			$("#name_man").val('');
-			$("#email_man").val('');
-			$("#phone_man").val('');
-			$("#cont_man").val('');
+			$(".name_man").val('');
+			$(".email_man").val('');
+			$(".phone_man").val('');
+			$(".cont_man").val('');
 			$('.valid').css('display','none');
 			$('.formStyle').hide();
 //			$('.nameForm').hide();
