@@ -23,7 +23,7 @@ body {
 
 .title {
 	font-size: 2.2em;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	width: 80%;
@@ -37,14 +37,14 @@ body {
 }
 
 .title-big {
-	font-size: 1.8em;
+	font-size: 1.5em;
 	font-variant: small-caps;
 }
 
 .title__small {
 	font-size: 2em;
 	font-weight: 700;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif;
 }
 
 
@@ -77,13 +77,13 @@ body {
 	clear: both;
 }
 
-.title-block_bg {
+/* .title-block_bg {
 	background: url('../pic/luvin.ua.png') center center no-repeat;
 	-webkit-background-size: contain;
 	     -o-background-size: contain;
 	        background-size: contain;
 	padding: 5% 0;
-}
+} */
 
 .violet {
 	color: #662382;
@@ -265,13 +265,17 @@ header {
 .benefits_item-text {
 	background-color: #ffffff;
 	font-size: 16px;
-	padding: 5% 26% 5% 0;
+	padding: 5% 0 5% 0;
 	margin-left: -30px;
 	text-align: left;
 	position: relative;
 }
 
-.benefits_item-text::before {
+.big {
+	font-size: 1.5em;
+}
+
+/* .benefits_item-text::before {
 	content: "";
 	width: 50px;
 	height: 50px;
@@ -282,7 +286,7 @@ header {
 	-webkit-background-size: contain;
 	     -o-background-size: contain;
 	        background-size: contain;
-}
+} */
 
 .benefits_item-text__garanty::before {
 	background-image: url('../pic/page-quality.svg');
@@ -425,8 +429,8 @@ header {
 
 .new-window_title-text span {
 	font-weight: 700;
-	font-family: 'Philosopher', sans-serif;
-	font-size: 1.7em;
+	font-family: 'pfagoraslabpro', sans-serif;
+	font-size: 1.4em;
 	padding: 0;
 	margin: 0;
 }
@@ -829,7 +833,7 @@ header {
 	margin: 0;
 	padding: 0;
 	font-size: 30px;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif;
 	font-weight: 700;
 	position: relative;
 }
@@ -1199,7 +1203,7 @@ header {
 .nameForm {
 	font-size: 1.7em;
 	padding-bottom: 3%;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	text-align: center;
