@@ -270,9 +270,26 @@ header {
 	text-align: left;
 	position: relative;
 }
-
+.u {
+	text-transform: uppercase;
+}
 .big {
-	font-size: 1.5em;
+	font-size: 2.5em;
+	text-align: left;
+}
+
+.benefits_item-text__main {
+	display: inline-block;
+	color: #662382;
+	font-size: 1em;
+    line-height: 1;
+    text-align: center;
+}
+
+.benefits_item-text__desc {
+	display: inline-block;
+	width: 100px;
+	padding-left: 10px;
 }
 
 /* .benefits_item-text::before {
