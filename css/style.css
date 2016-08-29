@@ -152,6 +152,7 @@
 	margin: auto;
     position: relative;
     z-index: 999;
+    color: #FAAB1B;
     -webkit-transition: .3s all;
             transition: .3s all;
 }
