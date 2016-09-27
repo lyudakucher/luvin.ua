@@ -130,6 +130,7 @@ header {
 .slogan {
 	visibility: visible;
 	width: 280px;
+	font-size: 1em;
 	padding-left: 10px;
 	position: relative;
 	margin-left: 10px;
