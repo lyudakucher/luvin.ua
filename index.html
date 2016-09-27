@@ -9,55 +9,147 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="pic/favicon.ico"/>
 	<link rel="icon" type="image/png" sizes="32x32" href="pic/favicon.png"/>
-	<!-- <link rel="stylesheet" href="css/fonts.css"/> -->
-	<!-- <link href='https://fonts.googleapis.com/css?family=Philosopher:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/style_lyuda.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="library/threesixty/threesixty.css"/>
-	<link rel="stylesheet" href="css/media.css"/>
-	<link rel="stylesheet" href="css/fonts.css"/>
-	
-<!-- 	online library
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
- <link rel="stylesheet" type="text/css" href="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css">
-  <script src="http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
-
- 	end online library -->
- 	
- 	<!-- 	offline library  -->
-	<link rel="stylesheet" href="library/animate/animate.css">
-	<script type="text/javascript" src="library/jquery/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="library/jquery-validation/jquery.validate.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="library/slick/slick.css"/>
-	<script type="text/javascript" src="library/slick/slick.js"></script>
-	<script type="text/javascript" src="library/waypoint/jquery.waypoints.min.js"></script>
-	<script type="text/javascript" src="library/threesixty/threesixty.min.js"></script>
-	
-<script type="text/javascript" src="library/tweenmax/TweenMax.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="library/magnific-popup/magnific-popup.css"/>
-	<script type="text/javascript" src="library/magnific-popup/jquery.magnific-popup.min.js"></script>
-	 	<!-- end offline library -->
-
- 	
- 	
- 	
-	<script src="js/script.js"></script>
-
 </head>
 <body>
+	<style>
+		body {font-size: 16px;font-family:'Arial';font-weight: 400;}
+		.wrap {padding: 5% 0% 7%;}
+		.container {width: 100%;max-width: 900px;margin: 0 auto;text-align: center;}
+		.title {font-size: 2.2em;font-weight: 700;width: 80%;max-width: 700px;margin: 0 auto;}
+		.title-block_bg .description {max-width: 700px;margin: 0 auto;}
+		.title-big {font-size: 1.5em;font-variant: small-caps;}
+		.title__small {font-size: 2em;font-weight: 700;}
+		.clearfix::after {
+			content: "";
+			overflow: hidden;
+			display: table;
+			clear: both;
+		}
+		.violet {
+			color: #662382;
+		}
+		.main_wrap {padding-top: 0;}
+		header {background-color: rgba(255, 255, 255, 0.7);}
+		.header-container {text-align: left;margin: 0 auto;padding: 20px 0;}
+		.header-item {display: inline-block;vertical-align: middle;}
+		.logo {position: relative;}
+		.logo img {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+		.logo>span {
+			position: absolute;
+			right: 4px;
+			bottom: -5px;
+			font-size: 0.8em;
+			font-weight: 700;
+		}
+
+		.slogan {width: 280px;padding-left: 10px;position: relative;margin-left: 10px;}
+
+		.slogan::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 1px;
+			height: 100%;
+			background-color: #662382;
+		}
+
+		.languages {font-size: 1.3em;color: #662382;margin-left: 17%;}
+
+		.languages .languages-item:nth-child(1)::after {*/
+			content: "|";
+			font-size: 1em;
+			color: #662382;
+			text-align: right;
+			padding-left: 7px;
+		}
+
+		.languages-item {
+			color: #662382;
+		}
+
+		.languages-item__active {*/
+			color: rgba(118, 30, 133, 0.51);*/
+		}
+
+		.languages-item:hover {
+            color: rgba(118, 30, 133, 0.51);
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+		.tel {
+			float: right;
+			text-align: right;
+			width: 180px;
+		}
+
+		.number {
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+
+		.show_form {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px dashed #662382;
+			color: #662382;
+			font-weight: 400;
+			cursor: pointer;
+		}
+
+		#main {
+		}
+
+		.main_section {
+			background:
+					url('../img/top-window.png') center center no-repeat,
+					url('../img/top-wrap.jpg') center center no-repeat;
+			background-size: cover;
+		}
+
+		.main_container {
+			background: none;
+			background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ff3.6+ */
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,.9)), color-stop(60%, rgba(255,255,255,0.5)), color-stop(70%, rgba(255,255,255,0.1)), color-stop(100%, rgba(255,255,255,0) 100%)); /* safari4+,chrome */
+			background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* safari5.1+,chrome10+ */
+			background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* opera 11.10+ */
+			background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%); /* ie10+ */
+			background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.1) 73%, rgba(255,255,255,0) 100%);
+		}
+
+		.main_img {
+			width: 80%;
+			max-width: 500px;
+			margin: 5% 0%;
+		}
+
+		.main-description {
+			font-size: 1.2em;
+			padding-bottom: 10%;
+		}
+
+		.main-description::before {
+			content: "";
+			background: url('../pic/top-bottom-line.png') center center no-repeat;
+			-webkit-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			height: 72px;
+			display: block;
+			margin: 0 auto;
+		}
+	</style>
+
 	<p id="back-top">
     	<a href="#top"><span></span><!-- Вверх --></a>
 	</p>
-
-	
 <!--
 	<div class="toggle_mnu">
 					<span class="sandwich">
@@ -83,8 +175,6 @@
 		</nav>
 	</header>
 -->
-	 
-	
 	<section id="main" class="section main_section">
 		<div class="wrap main_wrap">
 			<header>
@@ -1640,91 +1730,98 @@
 	   		<h4 class="showForm showForm4">Получить подарок к заказу 4</h4>
 	   		<h4 class="showForm showForm5">расчет стоимости окна 5</h4>
 	   	</div> -->
-	<section id="faq" class="section">
+	<section id="faq" class="section faq_section">
 		<div class="wrap faq_wrap">
-			<div class="container faq_container">
+			<!-- <div class="container faq_container"> -->
 				<div class="title-block_bg">
-					<h2 class="title"> <span class="num2"></span>	 самых популярных вопросов пры выборе металлопластыковых окон</h2>
+					<h2 class="title"> <span class="num2"></span>	 самых популярных вопросов при выборе металлопластыковых окон</h2>
 
 					<figure class='title__line'></figure>
 					<p class="description">
 						Выбор металлопластикового окна индивидуален и зависит от пожеланий по энергосбережению, шумоизоляции, безопасности, цвету, текстуры и др.
 					</p>
 				</div>
-				<div class="faq_content">
-					<div class="faq_item">
-						<p class="faq_question">1. Выбор окна или профиля?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">2. Кто, как и где делает окна?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">3. Чем обусловлены цены?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">4. Как выбрать фурнитуру?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">5. Есть ли реальные скидки?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">6. Шумоизоляция, энергосбережение</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">7. Могут ли окна быть безопасными?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
+				<table class="faq_table">
+					<tr>
+						<td class="faq_content">
+							<div class="">
+								<div class="faq_item">
+									<p class="faq_question">1. Выбор окна или профиля?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">2. Кто, как и где делает окна?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">3. Чем обусловлены цены?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">4. Как выбрать фурнитуру?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">5. Есть ли реальные скидки?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">6. Шумоизоляция, энергосбережение</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">7. Могут ли окна быть безопасными?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
 
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">8. Правильный монтаж окна.</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">9. Официальная гарантия</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">10. Какое же окно мне поставить?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-				</div>
-			</div>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">8. Правильный монтаж окна.</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">9. Официальная гарантия</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">10. Какое же окно мне поставить?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+							</div>
+						</td>
+						<td class="faq_content--img"></td>
+					</tr>
+				</table>
+			<!-- </div> -->
 		</div>
 	</section>
 	<section id="last_question" class="section">
@@ -1773,6 +1870,28 @@
 			<span class="footer-item copywrite">© 2002 -2016 | "ЄВРОВІКНА" | <a href="www.luvin.ua">www.luvin.ua</a><br>Лидер рынка Украины по производству и установке металлопластиковых окон.</span>
 		</div>
 	</footer>
+	<!-- 	online library  -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style_lyuda.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="library/threesixty/threesixty.css"/>
+	<link rel="stylesheet" href="css/media.css"/>
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<!-- 	end online library  -->
+	<!-- 	offline library  -->
+	<link rel="stylesheet" href="library/animate/animate.css">
+	<script type="text/javascript" src="library/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="library/jquery-validation/jquery.validate.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/slick/slick.css"/>
+	<script type="text/javascript" src="library/slick/slick.js"></script>
+	<script type="text/javascript" src="library/waypoint/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="library/threesixty/threesixty.min.js"></script>
 
+	<script type="text/javascript" src="library/tweenmax/TweenMax.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/magnific-popup/magnific-popup.css"/>
+	<script type="text/javascript" src="library/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- end offline library -->
+	<script src="js/script.js"></script>
 </body>
 

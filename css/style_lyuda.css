@@ -1,7 +1,7 @@
 /* main styles */
 body {
 	font-size: 16px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: normal;
 	background: url('../pic/logo_bgr.png') center center repeat;
@@ -23,7 +23,7 @@ body {
 
 .title {
 	font-size: 2.2em;
-	font-family: 'pfagoraslabpro', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif, 'Arial';
 	font-weight: 700;
 	font-style: normal;
 	width: 80%;
@@ -44,7 +44,7 @@ body {
 .title__small {
 	font-size: 2em;
 	font-weight: 700;
-	font-family: 'pfagoraslabpro', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif, 'Arial';
 }
 
 
@@ -446,7 +446,7 @@ header {
 
 .new-window_title-text span {
 	font-weight: 700;
-	font-family: 'pfagoraslabpro', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif, 'Arial';
 	font-size: 1.4em;
 	padding: 0;
 	margin: 0;
@@ -667,7 +667,7 @@ header {
 /* managers-section styles */
 .managers_title span {
 	font-weight: 400;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 }
 
 .managers_wrap {
@@ -799,7 +799,7 @@ header {
 	padding: 3%;
 	margin: 2% auto;
 	font-size: 0.9em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: normal;
 	border: 1px solid #ffb400;
@@ -810,7 +810,7 @@ header {
 .open_form_item_input::-webkit-input-placeholder {
 	color: rgba(102, 35, 131, 0.63);
 	font-size: 0.9em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: italic;
 }
@@ -818,7 +818,7 @@ header {
 .open_form_item_input::-moz-placeholder {
 	color: rgba(102, 35, 131, 0.63);
 	font-size: 0.9em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: italic;
 }
@@ -850,7 +850,7 @@ header {
 	margin: 0;
 	padding: 0;
 	font-size: 30px;
-	font-family: 'pfagoraslabpro', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif, 'Arial';
 	font-weight: 700;
 	position: relative;
 }
@@ -861,7 +861,7 @@ header {
 
 .montague_list .montague_list_item::before {
 	font-size: 16px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 700;
 	font-style: normal;
 	position: absolute;
@@ -1220,7 +1220,7 @@ header {
 .nameForm {
 	font-size: 1.7em;
 	padding-bottom: 3%;
-	font-family: 'pfagoraslabpro', sans-serif;
+	font-family: 'pfagoraslabpro', sans-serif, 'Arial';
 	font-weight: 700;
 	font-style: normal;
 	text-align: center;
@@ -1244,14 +1244,14 @@ header {
 	color: #3C3A3A;
 	font-size: 0.9em;
 	padding: 0 5% 3%;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
 }
 
 .formStyle {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: normal;
 	text-align: left;
@@ -1280,7 +1280,7 @@ header {
 	padding: 2%;
 	margin: 0 auto 2%;
 	font-size: 15px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 	font-style: normal;
 	border: 3px solid #bebebe;
@@ -1291,14 +1291,14 @@ header {
 .formStyle_input::-webkit-input-placeholder {
 	color: #bebebe;
 	font-size: 0.9em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 }
 
 .formStyle_input::-moz-placeholder {
 	color: #bebebe;
 	font-size: 0.9em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif, 'Arial';
 	font-weight: 400;
 }
 
@@ -1311,10 +1311,22 @@ header {
 }
 /* end of showForm_elements */
 /* faq section */
-.faq_content
+.faq_table {
+	width: 100%;
+}
+.faq_content--img {
+	width: 49%;
+	background: url('../img/faq_window.png') bottom right no-repeat;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.faq_content {
+	width: 50%;
+}
 
 .faq_item {
-	padding: 2% 0;
+	padding: 0.5% 2%;
 	text-align: left;
 }
 
@@ -1334,6 +1346,7 @@ header {
 	font-size: 0.9em;
 	cursor: pointer;
 	padding-top: 1%;
+	padding-bottom: 2%;
 }
 
 /* end of faq section */
