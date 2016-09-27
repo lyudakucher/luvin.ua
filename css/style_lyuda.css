@@ -150,6 +150,7 @@ header {
 }
 
 .languages {
+	visibility: visible;
 	font-size: 1.3em;
 	color: #662382;
 	margin-left: 17%;
