@@ -152,9 +152,10 @@
 	font-weight: 400;
 	margin: auto;
     position: relative;
+	line-height:1em;
     z-index: 999;
     color: #000000;
-    font-family: 'pfagoraslabpro', sans-serif;
+    font-family: 'PT Sans', sans-serif, 'Arial';
     -webkit-transition: .3s all;
             transition: .3s all;
 }
@@ -204,37 +205,32 @@
 }
 .slick-dots{
 	display: block;
-		width: 20%;
-margin: 0 auto;	
-background: aqua !important;
+	width: 20%;
+	margin: 0 auto;	
+	background: aqua !important;
 }
 
 .slick-dots>li{
-float: left;
-width: 20px;
+	float: left;
+	width: 20px;
 	display: block;
-background: rgba(255,99,71,.7);
-margin: 5px;
- border-radius: 25px;
+	background: rgba(255,99,71,.7);
+	margin: 5px;
+	border-radius: 25px;
 }
 
 .slick-dots>li>button{
-background: none;
+	background: none;
 }
-
-
-
 
 .slick-active button{
 	color:red;
 }
 
-
-
 .slick-prev {
     left: -55px;
     background: url(../pic/left-arrow.svg) !important;
-    
+	color: red;
 }
 .slick-next {
     right: -55px;

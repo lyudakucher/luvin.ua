@@ -600,6 +600,19 @@
 		margin: 0 auto;
 		float: none;
 	}
+	.read-more {
+		margin:0 auto;
+		padding:0 1%;
+	}
+
+	.read-more_wrap1, .read-more_wrap2, .read-more_wrap3 {
+		background: none;
+	}
+	.new-window_item_wrap {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
 
 	.managers_options p:nth-child(2) {
 		display: none;
@@ -618,6 +631,11 @@
 		width: 90%;
 		display: block;
 		margin: 0 auto;
+	}
+	.open_form__flex {
+		display: block;}
+	.managers_form_textaling textarea{
+		margin-left: 0;
 	}
 
 	.feedback-slider_container {
@@ -756,13 +774,12 @@
 
 	.list-item,
 	.steps_list_item,
-	.benefits_item-text,
-	.montague_list .montague_list_item::before {
+	.benefits_item-text {
 		font-size: 12px;
 	}
 
-	.montague_list_item {
-		font-size: 22.5px;
+	.montague_title {
+		width: 320px;
 	}
 	
 	.tel {
