@@ -1141,36 +1141,7 @@ nav {
 	background-color: rgba(248, 248, 248, 1);
 } */
 /*--------end-scroll-top------*/
-/*--------sale------*/
 
-
-#clock:after {
-  content: '';
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
-#clock .time {
-  background: #00BF96;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 10px;
-  text-align: center;
-  width: 115px;
-}
-#clock .time span {
-  background: #00816A;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 15px;
-}
-#clock .time .seconds {
-  width: 25px;
-}
- .rem{
-	 display: none;
- }
-/*--------end-sale------*/
 /*--------media------*/
 /*
 

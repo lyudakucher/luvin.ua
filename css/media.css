@@ -258,7 +258,7 @@
 
 @media screen and (max-width:1200px) { 
 	.num {
-		width: 100px;
+		width: 125px;
 	}
 
 	#map-svg{
@@ -271,7 +271,7 @@
 }
 @media screen and (max-width:1024px) {
 	.num {
-		width: 96px;
+		width: 125px;
 	}
 
 	.map-on-site {
@@ -498,6 +498,17 @@
 		-o-transform: scale(1.5) translate(-19%);
 		-ms-transform: scale(1.5) translate(-19%);
 	}
+
+	.faq_content {
+		width: 60%;
+	}
+
+	.slider_descriptional_option {
+		width:50%;
+	}
+	.slider_descriptional_text {
+		width: 46%;
+	}
 }
 
 @media screen and (max-width:600px) {    
@@ -511,7 +522,7 @@
 	}
 
 	.num {
-		width: 86px;
+		width: 112px;
 	}
 
 	.threesixty .threesixty_images img {
@@ -636,6 +647,7 @@
 		display: block;}
 	.managers_form_textaling textarea{
 		margin-left: 0;
+		margin-top:1.5%;
 	}
 
 	.feedback-slider_container {
@@ -752,6 +764,14 @@
 
 	.copywrite {
 		width: 59%;
+	}
+
+	.faq_content {
+		width: 100%;
+	}
+
+	.faq_table:before {
+		display: none;
 	}
 }
 
