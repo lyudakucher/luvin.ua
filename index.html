@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru-RU">
+<html lang="ua-UA">
 <head>
 	<meta charset="UTF-8"/>
 	<title>ЄВРОВІКНА - LUVIN™ | Качественные и теплые металлопластиковые окна - Изготовление металлопластиковых окон разных форм и размеров в Виннице</title>
@@ -9,55 +9,199 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="pic/favicon.ico"/>
 	<link rel="icon" type="image/png" sizes="32x32" href="pic/favicon.png"/>
-	<!-- <link rel="stylesheet" href="css/fonts.css"/> -->
-	<link href='https://fonts.googleapis.com/css?family=Philosopher:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<!-- <link href="https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700&subset=cyrillic" rel="stylesheet"> -->
-	<link rel="stylesheet" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/style_lyuda.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="library/threesixty/threesixty.css"/>
-	<link rel="stylesheet" href="media/media.css"/>
-	
-<!-- 	online library
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
- <link rel="stylesheet" type="text/css" href="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css">
-  <script src="http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
+	<style>
+		body {
+			font-size: 16px;
+			font-family:'Arial', sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			padding: 0;
+			margin: 0;
+		}
+        .main_section {
+			background:
+					url('img/top-wrap.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		header {
+			background-color: rgba(255, 255, 255, 0.7);
+		}
+		.container {
+			width: 100%;
+			max-width: 900px;
+			margin: 0 auto;
+			text-align: center;
+		}
 
- 	end online library -->
- 	
- 	<!-- 	offline library  -->
-	<link rel="stylesheet" href="library/animate/animate.css">
-	<script type="text/javascript" src="library/jquery/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="library/jquery-validation/jquery.validate.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="library/slick/slick.css"/>
-	<script type="text/javascript" src="library/slick/slick.js"></script>
-	<script type="text/javascript" src="library/waypoint/jquery.waypoints.min.js"></script>
-	<script type="text/javascript" src="library/threesixty/threesixty.min.js"></script>
-	
-<script type="text/javascript" src="library/tweenmax/TweenMax.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="library/magnific-popup/magnific-popup.css"/>
-	<script type="text/javascript" src="library/magnific-popup/jquery.magnific-popup.min.js"></script>
-	 	<!-- end offline library -->
+		.header-container {
+			text-align: left;
+			padding: 20px 0;
+		}
 
- 	
- 	
- 	
-	<script src="js/script.js"></script>
+		.header-item {
+			display: inline-block;
+			vertical-align: middle;
+		}
 
+		.main_img {
+			width: 80%;
+			max-width: 500px;
+			margin: 5% 0;
+		}
+
+		.logo {
+			position: relative;
+		}
+
+		.logo img {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			width:156px;
+			height:49px;
+		}
+		.logo>span {
+			position: absolute;
+			right: 4px;
+			bottom: -5px;
+			font-size: 0.8em;
+			font-weight: 700;
+		}
+
+		.slogan {
+			visibility: hidden;
+			position: relative;
+			font-size: 0;
+		}
+
+		.slogan::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 1px;
+			height: 100%;
+			background-color: #662382;
+		}
+
+		.languages {
+			visibility: hidden;
+			font-size: 0;
+			color: #662382;
+		}
+
+		.languages .languages-item:nth-child(1)::after {
+			content: "|";
+			font-size: 1em;
+			color: #662382;
+			text-align: right;
+			padding-left: 7px;
+		}
+
+		.languages-item {
+			color: #662382;
+		}
+
+		.tel {
+			float: right;
+			text-align: right;
+			width: 180px;
+		}
+
+		.number {
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+
+		.show_form {
+			visibility: hidden;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px dashed #662382;
+			color: #662382;
+			font-weight: 400;
+			cursor: pointer;
+		}
+
+
+
+		.main-description {
+			font-size: 1.2em;
+			padding-bottom: 10%;
+		}
+
+		.main-description::before {
+			content: "";
+			-webkit-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			height: 72px;
+			display: block;
+			margin: 0 auto;
+		}
+		.title {
+			font-size: 2.2em;
+			font-family: 'pfagoraslabpro', sans-serif, 'Arial';
+			font-weight: 700;
+			font-style: normal;
+			width: 80%;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		.title-block_bg .description {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		.title-big {
+			font-size: 1.5em;
+			font-variant: small-caps;
+		}
+
+		.title__small {
+			font-size: 2em;
+			font-weight: 700;
+			font-family: 'pfagoraslabpro', sans-serif, 'Arial';
+		}
+
+
+		.title__line{
+			display: block;
+			width: 0;
+			height: 4px;
+			background-color: #662382;
+			margin: 2% auto;
+		}
+
+		.list {
+			list-style-type: none;
+			font-size: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+		.list-item {
+			margin: 0;
+			display: inline-block;
+			padding: 0;
+			font-size: 16px;
+		}
+		.clearfix::after {
+			content: "";
+			overflow: hidden;
+			display: table;
+			clear: both;
+		}
+	</style>
 </head>
 <body>
+
+
 	<p id="back-top">
     	<a href="#top"><span></span><!-- Вверх --></a>
 	</p>
-
-	
 <!--
 	<div class="toggle_mnu">
 					<span class="sandwich">
@@ -83,8 +227,6 @@
 		</nav>
 	</header>
 -->
-	 
-	
 	<section id="main" class="section main_section">
 		<div class="wrap main_wrap">
 			<header>
@@ -97,8 +239,8 @@
 						лидер рынка Украины по производству и установке металлопластиковых окон
 					</p>
 						<div class="header-item languages">
-							<a class="languages-item" href="#">Укр</a>
-							<a class="languages-item languages-item__active" href="ru/">Рус</a>
+							<a class="languages-item languages-item__active" href="#">Укр</a>
+							<a class="languages-item" href="ru/">Рус</a>
 						</div>
 						<div class="header-item tel">
 							<span class="number">
@@ -134,22 +276,40 @@
 				</div>
 				<ul class="benefits_list">
 					<li class="benefits_item">
-						<p class="benefits_item-text benefits_item-text__garanty">До <span class="b">10 років</span> гарантійного обслуговування</p>
+						<div class="benefits_item-text benefits_item-text__garanty">
+							<p class="benefits_item-text__main u b">До<br><span class="big">10</span></p>
+							<p class="benefits_item-text__desc">років гарантійного обслуговування</p>
+						</div>
 					</li>
 					<li class="benefits_item">
-						<p class="benefits_item-text benefits_item-text__professional"><span class="b">Більше 150</span> професійних менеджерів та майстрів</p>
+						<div class="benefits_item-text benefits_item-text__professional">
+							<p class="benefits_item-text__main u b">Більше<br><span class="big">150</span></p>
+							<p class="benefits_item-text__desc">професійних менеджерів та майстрів</p>
+						</div>
 					</li>
 					<li class="benefits_item">
-						<p class="benefits_item-text benefits_item-text__color"><span class="b">Понад 50</span> кольорових рішень Вашого вікна</p>
+						<div class="benefits_item-text benefits_item-text__color">
+							<p class="benefits_item-text__main u b">Понад<br><span class="big">10</span></p>
+							<p class="benefits_item-text__desc">кольорових рішень Вашого вікна</p>
+						</div>
 					</li>
 					<li class="benefits_item">
-						<p class="benefits_item-text benefits_item-text__forms"><span class="b">14 років досвіду</span> на віконному ринку</p>
+						<div class="benefits_item-text benefits_item-text__forms">
+							<p class="benefits_item-text__main u b"><span class="big">14</span><br>років</p>
+							<p class="benefits_item-text__desc">досвіду на віконному ринку</p>
+						</div>
 					</li>
 					<li class="benefits_item">
-						<p class="benefits_item-text benefits_item-text__years"><span class="b">50 років</span> - термін служби вікна</p>
+						<div class="benefits_item-text benefits_item-text__years">
+							<p class="benefits_item-text__main u b"><span class="big">50</span><br>років</p>
+							<p class="benefits_item-text__desc">термін служби вікна</p>
+						</div>
 					</li>
 					<li class="benefits_item">
-						<p class="benefits_item-text benefits_item-text__energo">Більше, ніж <span class="b">в 1,5 рази тепліші</span> за будівельні норми</p>
+						<div class="benefits_item-text benefits_item-text__energo">
+							<p class="benefits_item-text__main u b">Більше, ніж<br><span class="big">1,5</span></p>
+							<p class="benefits_item-text__desc">рази тепліші за будівельні норми</p>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -233,7 +393,6 @@
 		<div class="new-window_item">
 			<div class="wrap new-window_item_wrap">
 				<div class="container new-window_container clearfix">
-				<div class="clearfix">
 					<div class="new-window_titleblock clearfix">
 						<div class="new-window_leftblock">
 							<div class="new-window_title">
@@ -285,21 +444,21 @@
 			<div class="wrap read-more_wrap1">
 				<div class="container read-more_container">
 					<div class="read-more">
-							<h3 class="read-more_title title">Описание модели LUVIN™ Standart</h3>
-							<div class="read-more_description">
-								<p>
-									Это окна с классическим дизайном прямоугольной формы, которые Вы можете заказать белыми или в цветах солнечный и темный дуб под фактуру дерева. Данная модель окон поможет Вам сохранить тепло и сэкономить средства на дополнительном обогреве помещения. Вы сможете легко и удобно проветривать помещения и ухаживать за окном, открывая его в положении поворот, откид и микропроветривание.
-								</p>
-								<p>
-									Среди дополнительных преимуществ данной модели является базовая защита от взлома и возможность установки противоударного стеклопакета. Детский замок защитит Ваших детей от выпадения из окна (ребенок не сможет самостоятельно открыть окно, так как закрытое оно открывается только в положение откид). Чтобы сохранить целостность Ваших откосов и мебели рядом с окном, возможна установка ограничителя открывания створки (максимальный угол открывания створки составляет 95°).
-								</p>
-								<p>
-									Комфорт летом Вы сможете обеспечить, выбрав окно с солнцезащитным стеклопакетом. Декоративные стекло, декоративные перемычки и витражи позволят Вам подобрать окна под особенности вашего интерьера.
-								</p>
-								<p>
-									Гарантия на данную модель окна - 5 лет.
-								</p>
-							</div>
+                        <h3 class="read-more_title title">Описание модели LUVIN™ Standart</h3>
+                        <div class="read-more_description">
+                            <p>
+                                Это окна с классическим дизайном прямоугольной формы, которые Вы можете заказать белыми или в цветах солнечный и темный дуб под фактуру дерева. Данная модель окон поможет Вам сохранить тепло и сэкономить средства на дополнительном обогреве помещения. Вы сможете легко и удобно проветривать помещения и ухаживать за окном, открывая его в положении поворот, откид и микропроветривание.
+                            </p>
+                            <p>
+                                Среди дополнительных преимуществ данной модели является базовая защита от взлома и возможность установки противоударного стеклопакета. Детский замок защитит Ваших детей от выпадения из окна (ребенок не сможет самостоятельно открыть окно, так как закрытое оно открывается только в положение откид). Чтобы сохранить целостность Ваших откосов и мебели рядом с окном, возможна установка ограничителя открывания створки (максимальный угол открывания створки составляет 95°).
+                            </p>
+                            <p>
+                                Комфорт летом Вы сможете обеспечить, выбрав окно с солнцезащитным стеклопакетом. Декоративные стекло, декоративные перемычки и витражи позволят Вам подобрать окна под особенности вашего интерьера.
+                            </p>
+                            <p>
+                                Гарантия на данную модель окна - 5 лет.
+                            </p>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -423,26 +582,26 @@
 						</ul>
 					</div>
 					<div class="new-window_more-options">
-							<a href="" class="more-options_item">Скачать технические характеристики</a>
-							<p  class="more-options_item readMoreOption3">Читать больше</p>
+						<a href="" class="more-options_item">Скачать технические характеристики</a>
+						<p  class="more-options_item readMoreOption3">Читать больше</p>
 					</div>
 				</div>
 			</div>
 			<div class="wrap read-more_wrap3">
 				<div class="container read-more_container">
 					<div class="read-more">
-							<h3 class="read-more_title title">Описание модели LUVIN™ Premium</h3>
-							<div class="read-more_description">
-								<p>
-									Максимально сохранить тепло Вы сможете с окнами LUVIN™ Premium. Данная модель обеспечит комфортную температуру в Вашем доме и позволит получить максимальную экономию на отоплении. Согласно испытаниям, сопротивление теплопередаче окон LUVIN™ Premium вдвое больше стандартов установленных в ДержБудНорме, что подтверждено соответствующим сертификатом.
-								</p>
-								<p>
-									Широкие возможности в дизайне данной модели окон обеспечивает возможность изготовления окон нестандартных форм, более 50-ти цветовых решений, в т. ч. с фактурой дерева, многообразием видов декоративных стекол, перемычек с узорами и витражей. Данная модель окна может быть оснащена самым высоким уровнем защиты от взлома и противоударным стеклопакетом. Также окна можно укомплектовать дополнительными опциями: детский замок; ограничитель открывания окна; ступенчатый наклон створки, проветривание по периметру, фиксация створки в открытом положении; скрытые петли (оригинальный дизайн окна и удобство в уходе за окном) и др. Окно с солнцезащитным стеклопакетом защитит Вас от летней жары.
-								</p>
-								<p>
-									Гарантия на данную модель окна - 10 лет.
-								</p>
-							</div>
+						<h3 class="read-more_title title">Описание модели LUVIN™ Premium</h3>
+						<div class="read-more_description">
+							<p>
+								Максимально сохранить тепло Вы сможете с окнами LUVIN™ Premium. Данная модель обеспечит комфортную температуру в Вашем доме и позволит получить максимальную экономию на отоплении. Согласно испытаниям, сопротивление теплопередаче окон LUVIN™ Premium вдвое больше стандартов установленных в ДержБудНорме, что подтверждено соответствующим сертификатом.
+							</p>
+							<p>
+								Широкие возможности в дизайне данной модели окон обеспечивает возможность изготовления окон нестандартных форм, более 50-ти цветовых решений, в т. ч. с фактурой дерева, многообразием видов декоративных стекол, перемычек с узорами и витражей. Данная модель окна может быть оснащена самым высоким уровнем защиты от взлома и противоударным стеклопакетом. Также окна можно укомплектовать дополнительными опциями: детский замок; ограничитель открывания окна; ступенчатый наклон створки, проветривание по периметру, фиксация створки в открытом положении; скрытые петли (оригинальный дизайн окна и удобство в уходе за окном) и др. Окно с солнцезащитным стеклопакетом защитит Вас от летней жары.
+							</p>
+							<p>
+								Гарантия на данную модель окна - 10 лет.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -454,11 +613,9 @@
 			<div class="container payment_container">
 				<div class="title-block_bg">
 					<h2 class="title">Лучшие условия для наших клиентов</h2>
-				<figure class='title__line'></figure>
+					<figure class='title__line'></figure>
 				</div>
-				<div class="payment_content">
-					
-				</div>
+				<div class="payment_content"></div>
 			</div>
 		</div>
 	</section>
@@ -501,7 +658,7 @@
 					<div class="managers_form">
 						<h3 class="nameForm form_title">Напишите нам</h3>
 						<p class="nameFormComent form_description">Заполните короткую форму ниже и мы обязательно с вами свяжемся!</p>
-						<form action="" class="formStyle open_form" id="">
+						<form action="" class="formStyle open_form">
 							<div class="managers_form_input">
 								<div class="open_form_item">
 									<span class='valid'></span>
@@ -1497,7 +1654,7 @@
 							<p class="adressPopUp"><span>ул. Циолковского, 9</span></p>
 							<a href="https://maps.google.com/?hl=ru&q=49.653296,26.974162" target='_blank' class="linkMapPopUp">посмотреть на карте</a>
 						</div>
-						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</<spa>	</spa>n> Сб, Вс - выходные</p>
+						<p class="timePopUp"><span>Пн-Пт 09.00-18.00</span> Сб, Вс - выходные</p>
 					</div>
 	
 					<h3 class="nameCityPopUp">Представитель LUVIN&#153; в г. Летичев</h3>
@@ -1582,18 +1739,13 @@
 	   		</div>
 		</div>
 	</div>
-</div>
-		
-		
 </section>
-	</section>
-	
 	<section>
 	   	<div class="contCityDisplayNone">
 		   	<div class="formPopUp" id='formPopUp'>
 			   	<h3 class="nameForm"></h3>
 			   	<p class="nameFormComent">Заполните короткую форму ниже и мы скоро вам перезвоним!</p>
-			   	<form action="" class="formStyle" id="">
+			   	<form action="" class="formStyle">
 			   		<div class="formPopUp_item">
 			   			<span class='valid'></span>
 			   			<input placeholder="Ваше имя" type="text" name="name" id="name" class="formStyle_input" />
@@ -1606,7 +1758,7 @@
 			   			<span class='valid'></span>
 			   			<input placeholder="Ваш email" type="email" name="email" id="email" class="formStyle_input"/>
 			   		</div>
-					<button id="" class="submit submit_form"><span>Перезвонить</span></button>
+					<button class="submit submit_form"><span>Перезвонить</span></button>
 			   	</form>
 			   	<div class="formThanxStyle">
 			   		<p>Спасибо за обращение! Ваш запрос отправлен в отдел консультаций и продаж. Скоро с вами свяжется наш специалист.</p>
@@ -1622,91 +1774,98 @@
 	   		<h4 class="showForm showForm4">Получить подарок к заказу 4</h4>
 	   		<h4 class="showForm showForm5">расчет стоимости окна 5</h4>
 	   	</div> -->
-	<section id="faq" class="section">
+	<section id="faq" class="section faq_section">
 		<div class="wrap faq_wrap">
-			<div class="container faq_container">
+			<!-- <div class="container faq_container"> -->
 				<div class="title-block_bg">
-					<h2 class="title"> <span class="num2"></span>	 самых популярных вопросов пры выборе металлопластыковых окон</h2>
+					<h2 class="title"> <span class="num2"></span>	 самых популярных вопросов при выборе металлопластыковых окон</h2>
 
 					<figure class='title__line'></figure>
 					<p class="description">
 						Выбор металлопластикового окна индивидуален и зависит от пожеланий по энергосбережению, шумоизоляции, безопасности, цвету, текстуры и др.
 					</p>
 				</div>
-				<div class="faq_content">
-					<div class="faq_item">
-						<p class="faq_question">1. Выбор окна или профиля?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">2. Кто, как и где делает окна?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">3. Чем обусловлены цены?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">4. Как выбрать фурнитуру?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">5. Есть ли реальные скидки?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">6. Шумоизоляция, энергосбережение</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">7. Могут ли окна быть безопасными?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
+				<table class="faq_table">
+					<tr>
+						<td class="faq_content">
+							<div class="">
+								<div class="faq_item">
+									<p class="faq_question">1. Выбор окна или профиля?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">2. Кто, как и где делает окна?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">3. Чем обусловлены цены?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">4. Как выбрать фурнитуру?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">5. Есть ли реальные скидки?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">6. Шумоизоляция, энергосбережение</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">7. Могут ли окна быть безопасными?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
 
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">8. Правильный монтаж окна.</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">9. Официальная гарантия</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-					<div class="faq_item">
-						<p class="faq_question">10. Какое же окно мне поставить?</p>
-						<p class="faq_answer">
-							Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
-						</p>
-						<p class="roll_up">Свернуть ответ</p>
-					</div>
-				</div>
-			</div>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">8. Правильный монтаж окна.</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">9. Официальная гарантия</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+								<div class="faq_item">
+									<p class="faq_question">10. Какое же окно мне поставить?</p>
+									<p class="faq_answer">
+										Ориентироваться только на профиль мало. Окно состоит из профиля, фурнитуры и стеклопакета. Поэтому важно обращать внимание на все составляющие окна и условия его производства. Покупая деловой костюм, мало выбрать только качественную дорогую ткань. Нужно найти специалистов, которые пошьют красивый костюм фабричного качества. Выбирайте окно, собранное в заводских условиях и проверенное по качеству на выходе из производства.
+									</p>
+									<p class="roll_up">Свернуть ответ</p>
+								</div>
+							</div>
+						</td>
+						<td class="faq_content--img"></td>
+					</tr>
+				</table>
+			<!-- </div> -->
 		</div>
 	</section>
 	<section id="last_question" class="section">
@@ -1721,7 +1880,7 @@
 				</div>
 				<div class="managers_form last_form">
 						<h3 class="nameForm form_title last_form_title">Остался вопрос</h3>
-						<form  class="formStyle open_form last_open_form" id="">
+						<form  class="formStyle open_form last_open_form">
 							<div class="managers_form_input">
 								<div class="open_form_item">
 									<span class='valid'></span>
@@ -1755,6 +1914,28 @@
 			<span class="footer-item copywrite">© 2002 -2016 | "ЄВРОВІКНА" | <a href="www.luvin.ua">www.luvin.ua</a><br>Лидер рынка Украины по производству и установке металлопластиковых окон.</span>
 		</div>
 	</footer>
+	<!-- 	online library  -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style_lyuda.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="library/threesixty/threesixty.css"/>
+	<link rel="stylesheet" href="css/media.css"/>
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<!-- 	end online library  -->
+	<!-- 	offline library  -->
+	<link rel="stylesheet" href="library/animate/animate.css">
+	<script type="text/javascript" src="library/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="library/jquery-validation/jquery.validate.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/slick/slick.css"/>
+	<script type="text/javascript" src="library/slick/slick.js"></script>
+	<script type="text/javascript" src="library/waypoint/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="library/threesixty/threesixty.min.js"></script>
 
+	<script type="text/javascript" src="library/tweenmax/TweenMax.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/magnific-popup/magnific-popup.css"/>
+	<script type="text/javascript" src="library/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- end offline library -->
+	<script src="js/script.js"></script>
 </body>
 

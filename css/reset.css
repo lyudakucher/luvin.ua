@@ -66,12 +66,12 @@ input,
 select, 
 textarea {
 	display: block;
-	border:  1px solid #ffb400;
+	border:  1px solid #faab1b;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
 	font-family: serif;
 	vertical-align: top;
     box-sizing:  border-box;
-    -webkit-border-radius: 0;
-            border-radius: 0;
     outline: none;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -84,8 +84,8 @@ textarea {
 	resize: none;
 	overflow-x: hidden;
 	overflow-y: auto;
-	-webkit-border-radius: 0;
-	        border-radius: 0;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
 }
 
 sub, sup {

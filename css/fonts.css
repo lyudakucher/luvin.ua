@@ -1,43 +1,13 @@
 @font-face {
-    font-family: '__PF Agora Slab Pro_5';
-    src: url('../fonts/pfagoraslabpro-reg.eot') format('embedded-opentype');
-    src: url('../fonts/pfagoraslabpro-reg.woff') format('woff');
+    font-family: 'pfagoraslabpro';
     src: url('../fonts/pfagoraslabpro-reg.ttf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-reg.otf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-reg.svg') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: '__PF Agora Slab Pro_5';
-    src: url('../fonts/pfagoraslabpro-medium.eot') format('embedded-opentype');
-    src: url('../fonts/pfagoraslabpro-medium.woff') format('woff');
-    src: url('../fonts/pfagoraslabpro-medium.ttf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-medium.otf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-medium.svg') format('svg');
-    font-weight: medium;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '__PF Agora Slab Pro_5';
-    src: url('../fonts/pfagoraslabpro-bold.eot') format('embedded-opentype');
-    src: url('../fonts/pfagoraslabpro-bold.woff') format('woff');
+    font-family: 'pfagoraslabpro';
     src: url('../fonts/pfagoraslabpro-bold.ttf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-bold.otf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-bold.svg') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '__PF Agora Slab Pro_5';
-    src: url('../fonts/pfagoraslabpro-black.eot') format('embedded-opentype');
-    src: url('../fonts/pfagoraslabpro-black.woff') format('woff');
-    src: url('../fonts/pfagoraslabpro-black.ttf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-black.otf') format('truetype');
-    src: url('../fonts/pfagoraslabpro-black.svg') format('svg');
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
 }
