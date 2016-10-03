@@ -637,7 +637,9 @@ header {
 	margin: 0;
 
 }
-
+.read-more_container {
+    padding-right: 15px;
+}
 .read-more {
 	margin-left: 50%;
 }
@@ -1257,8 +1259,8 @@ header {
     position: absolute;
     top: -30px;
     bottom: -30px;
-    right:30px;
-    left: 30px;
+    right:-100px;
+    left: -100px;
     display: block;
     content: '';
 }
@@ -1267,7 +1269,7 @@ header {
     position: absolute;
     width:4px;
     background: #662382;
-    left:30px;
+    left:-100px;
     top: -30px;
     bottom:-30px;
     display: block;
