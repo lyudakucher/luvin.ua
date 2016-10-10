@@ -4,10 +4,21 @@
 	<meta charset="UTF-8" />
 	<title>svg-animation-preloader</title>
 	<style>
+		#preloader .loading .percentage {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    height: 1px;
+		    background-color: #C3A17D;
+		    -webkit-transition: .3s all ease;
+		    -o-transition: .3s all ease;
+		    transition: .3s all ease
+		}
+		
 		svg{
 			position:fixed;
 			top:50%;
-			left:60%;
+			left:50%;
 			
 			-webkit-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
@@ -15,62 +26,77 @@
 	</style>
 </head>
 <body>
+	<div id="preloader" class="autocolor" >
+	    <div class="loading" >
+	        <div class="text">100%</div>
+	        <p>loading</p>
+	        <div class="percentage" style="width: 100%;"></div>
+	    </div>
 	<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 900.93335 199.34666"
-   height="199.34666"
-   width="900.93335"
-   xml:space="preserve"
-   id="svg2"
-   version="1.1"><defs
-     id="defs6"><linearGradient
-       id="linearGradient42"
-       spreadMethod="pad"
-       gradientTransform="matrix(174.184,-698.613,-698.613,-174.184,451.255,1301.64)"
-       gradientUnits="userSpaceOnUse"
-       y2="0"
-       x2="1"
-       y1="0"
-       x1="0"><stop
-         id="stop26"
-         offset="0"
-         style="stop-opacity:1;stop-color:#f1df95" /><stop
-         id="stop28"
-         offset="0.1289996"
-         style="stop-opacity:1;stop-color:#f1df95" /><stop
-         id="stop30"
-         offset="0.387879"
-         style="stop-opacity:1;stop-color:#dba92c" /><stop
-         id="stop32"
-         offset="0.40249077"
-         style="stop-opacity:1;stop-color:#fde8a5" /><stop
-         id="stop34"
-         offset="0.460606"
-         style="stop-opacity:1;stop-color:#fde8a5" /><stop
-         id="stop36"
-         offset="0.49438832"
-         style="stop-opacity:1;stop-color:#fde8a5" /><stop
-         id="stop38"
-         offset="0.8"
-         style="stop-opacity:1;stop-color:#e8a42e" /><stop
-         id="stop40"
-         offset="1"
-         style="stop-opacity:1;stop-color:#c0842c" /></linearGradient>
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:cc="http://creativecommons.org/ns#"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:svg="http://www.w3.org/2000/svg"
+	   xmlns="http://www.w3.org/2000/svg"
+	   viewBox="0 0 400 160"
+	   height="200"
+	   width="400"
+	   xml:space="preserve"
+	   id="svg2"
+	   version="1.1">
+   <defs id="defs6">
+	<linearGradient
+	   id="linearGradient42"
+	   spreadMethod="pad"
+	   gradientTransform="matrix(174.184,-698.613,-698.613,-174.184,451.255,1301.64)"
+	   gradientUnits="userSpaceOnUse"
+	   y2="0"
+	   x2="1"
+	   y1="0"
+	   x1="0">
+		<stop id="stop26" offset="0"
+		style="stop-opacity:1;stop-color:#f1df95" />
+		<stop id="stop28" offset="0.1289996"
+		style="stop-opacity:1;stop-color:#f1df95" />
+		<stop id="stop30" offset="0.387879"
+		style="stop-opacity:1;stop-color:#dba92c" />
+		<stop id="stop32" offset="0.40249077"
+		style="stop-opacity:1;stop-color:#fde8a5" />
+		<stop id="stop34" offset="0.460606"
+		style="stop-opacity:1;stop-color:#fde8a5" />
+		<stop id="stop36" offset="0.49438832"
+		style="stop-opacity:1;stop-color:#fde8a5" />
+		<stop id="stop38" offset="0.8"
+		style="stop-opacity:1;stop-color:#e8a42e" />
+		<stop id="stop40" offset="1"
+		style="stop-opacity:1;stop-color:#c0842c" />
+	</linearGradient>
+	<radialGradient id="rgrad1" cx="50%" cy="50%" r="75%" > 
+		<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0.8" />
+		<stop offset="100%" style="stop-color:rgb(181,181,181);stop-opacity:1" />
+	</radialGradient> 
 	<style type="text/css">
-		path{
+		.letterSvgTagline, .letterSvgLuvin,  .svgHexagon{
 			fill:#5d2790;
 			fill-opacity:1;
 			fill-rule:nonzero;
 			stroke:none;
 		}
+		#svg2 > rect{
+			fill:#3b3a3c;
+		}
 		.letterSvgLuvin{
+			-moz-transform: translate(-3070px,0px);
+		    -ms-transform: translate(-3070px,0px);
+		    -webkit-transform: translate(-3070px,0px);
+		    -o-transform: translate(-3070px,0px);
 			transform:translate(-3070px,0px);
 		}
 		.letterSvgTagline{
+			-moz-transform: translate(0px,900px);
+		    -ms-transform: translate(0px,900px);
+		    -webkit-transform: translate(0px,900px);
+		    -o-transform: translate(0px,900px);
 			transform:translate(0px,900px);
 		}
 		#mainCheckMark{
@@ -85,15 +111,18 @@
 			fill-rule:nonzero;
 			stroke:none
 		}
-		rect{
-			fill:#3b3a3c;
-		}
+	
+		
 		.rectHideTagLine{
 		    fill:white;
 /*
 			width:300px;
 			height:200px;
 */
+			-moz-transform: translate(0px,530px);
+		    -ms-transform: translate(0px,530px);
+		    -webkit-transform: translate(0px,530px);
+		    -o-transform: translate(0px,530px);
 			transform:translate(0px,530px);
 		}
 		.rectHideLetterLuvin{
@@ -103,12 +132,20 @@
 			fill:black;
 			width:60px;
 			height:0px;
+			-moz-transform: translate(1100px,400px);
+		    -ms-transform: translate(1100px,400px);
+		    -webkit-transform: translate(1100px,400px);
+		    -o-transform: translate(1100px,400px);
 			transform:translate(1100px,400px);
 		}
 		.rectCursorLetterLuvin2{
 			fill:white;
 			width:80px;
 			height:0px;
+			-moz-transform: translate(1090px,400px);
+		    -ms-transform: translate(1090px,400px);
+		    -webkit-transform: translate(1090px,400px);
+		    -o-transform: translate(1090px,400px);
 			transform:translate(1090px,400px);
 		}
 		.letterSvgLuvin {
@@ -149,20 +186,37 @@
 		
 		@-webkit-keyframes dash2 {
 			from {
+			-moz-transform: translate(-3070px,0px);
+		    -ms-transform: translate(-3070px,0px);
+		    -webkit-transform: translate(-3070px,0px);
+		    -o-transform: translate(-3070px,0px);
 			transform:translate(-3070px,0px);
 			}
 			
 			to {
+			-moz-transform: translate(0px,0px);
+		    -ms-transform: translate(0px,0px);
+		    -webkit-transform: translate(0px,0px);
+		    -o-transform: translate(0px,0px);
 			transform:translate(0px,0px);
 			}
 		}
 		
 		@-webkit-keyframes dash3 {
 			from {
+			-moz-transform: translate(0px,900px);
+		    -ms-transform: translate(0px,900px);
+		    -webkit-transform: translate(0px,900px);
+		    -o-transform: translate(0px,900px);
 			transform:translate(0px,900px);
+			
 			}
 			
 			to {
+			-moz-transform: translate(0px,0px);
+		    -ms-transform: translate(0px,0px);
+		    -webkit-transform: translate(0px,0px);
+		    -o-transform: translate(0px,0px);
 			transform:translate(0px,0px);
 			}
 		}
@@ -186,30 +240,23 @@
 			height:1000px;
 			}
 		}
+		
 		.svgHexagon {
+			opacity:0;
 			-webkit-animation: dash6 2s ease-in-out forwards ;
 			-o-animation: dash6 2s ease-in-out forwards ;			
 			-moz-animation: dash6 2s ease-in-out forwards ;
 			animation: dash6 2s ease-in-out forwards ;
 		}
 		@-webkit-keyframes dash6 {
-			from {
-				-moz-transform: rotate(360deg); /* Для Firefox */
-			    -ms-transform: rotate(360deg); /* Для IE */
-			    -webkit-transform: rotate(360deg); /* Для Safari, Chrome, iOS */
-			    -o-transform: rotate(360deg); /* Для Opera */
-			    transform: rotate(360deg);
-			    -webkit-transform-origin: 50% 50%;
+			0% {
+				fill:white;
+				opacity: 0;
 			}
 			
-			to {
-				-moz-transform: rotate(0deg); /* Для Firefox */
-			    -ms-transform: rotate(0deg); /* Для IE */
-			    -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
-			    -o-transform: rotate(0deg); /* Для Opera */
-			    transform: rotate(0deg);
-			    -webkit-transform-origin: 50% 50%;
-			    
+			100% {
+				opacity: 1;
+				fill:#5d2790;			    
 			}
 		}
 		#mainCheckMark {
@@ -228,9 +275,12 @@
 				opacity: 1;
 			}
 		}
+		
+/*
+		
 		.threeHexagons{
 			transform:translate(3900px,0);
-							opacity:0;
+			opacity:0;
 
 		}
 		#hexagon1{
@@ -342,15 +392,14 @@
 			transform:translate(1500px,0) scale(.15);
 			}
 		}
-
-
+*/
 	</style>
 </defs>
 	<g
-     transform="matrix(1.3333333,0,0,-1.3333333,0,199.34667)"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,160)"
      id="g10">
 	 <g
-       transform="scale(0.1)"
+       transform="scale(0.07)"
        id="g12">
 	
 	
@@ -435,6 +484,7 @@
 			 id="mainCheckMark"
 			 d="M 1036.94,1189.13 518.43,890.59 0,1189.13 V 874.938 L 518.43,576.352 v 2.722 l 518.51,610.056" />
 	</g>
+<!--
 	<g class='threeHexagons'>
 	<path 
 			 id="hexagon1"
@@ -447,8 +497,21 @@
 			 d="m 0,1196.59 518.43,298.49 518.51,-298.49 V 599.477 L 518.43,300.84 0,599.477 v 597.113" />
 
 	</g>
+-->
 	</g>
 </g>
 </svg>
+	</div>
+
+	<script src="../library/jquery/jquery-1.8.3.min.js"></script>
+	<script src="dmpreloader.js"></script>
+<!--
+	<script>
+		$(window).load(function() {
+			$(".loader_inner").fadeOut(3000);
+			$(".loader").delay(2000).fadeOut("slow");
+		});
+	</script>
+-->
 </body>
 </html>
