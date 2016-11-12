@@ -1,7 +1,3 @@
-// window.onload = init;
-
-
-
     function init(){
     var product1, product2, product3;
 
@@ -61,7 +57,7 @@
 	var old_id = $(this).attr('data-atr');
 	var new_id = 'pause';
 	var old_id_s='play';
-	//product1.play();
+
 	if (old_id !== old_id_s){
 	  	productItems.stop();
 	  	domElem.removeClass('pause_around_icon_item');	
@@ -75,90 +71,8 @@
     };
         
     };
-/*
-    function init1(){
-
-       product2 = $('.product2').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-standart/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });     
-	};
-	
-	function init2(){
- 	
-	  	product3 = $('.product3').ThreeSixty({
-        totalFrames: 20,
-        endFrame: 20,
-        currentFrame: 1,
-
-        imgList: '.threesixty_images',
-        progress: '.spinner',
-        imagePath:'img/windows/luvin-premium/',
-        filePrefix: '',
-        ext: '.png',
-        height: 400,
-        width: 400,
-        navigation: false,
-        
-      });     
-
-
-    };
- 
-*/
-
 
 $(document).ready(function() {
-/*
-
-
-$(window).on('mousemove', function(e) {
-        var w = $(window).width();
-        var h = $(window).height();
-        var offsetX = 0.5 - e.pageX / w;
-        var offsetY = 0.5 - e.pageY / h;
-
-        $(".parallax").each(function(i, el) {
-            var offset = parseInt($(el).data('offset'));
-            var translate = "translate3d(" + Math.round(offsetX * offset) + "px," + Math.round(offsetY * offset) + "px, 0px)";
-
-            $(el).css({
-                '-webkit-transform': translate,
-                'transform': translate,
-                'moz-transform': translate
-            });
-        });
-    });
-*/
-/*
-  var navli = $('ul#menu li');
-
- $('.section').waypoint(function(){
-	 
-	 var hash=$(this).attr('id');
-	 console.log(hash);
-	 console.log($('.section'));
-	 navli.removeClass('active');
-	 $.each(navli, function(){
-		if($(this).children('a').attr('href').slice(1) == hash) {
-			$(this).addClass('active');
-		};
-	 });
- }, {
-	offset:'30%'	 
- });   
-*/
 
 $('.feedback_slider').slick({
 //	dots: true,
@@ -170,11 +84,7 @@ $('.feedback_slider').slick({
   adaptiveHeight: true,
   prevArrow: '<div class="slick-prev"></div>',
   nextArrow: '<div class="slick-next"></div>',
-//   appendDots: $('.slick-dots'),
-/*
-  autoplay: true,
-  autoplaySpeed: 2000,
-*/responsive: [
+  responsive: [
     
     {
       breakpoint: 600,
@@ -183,9 +93,6 @@ $('.feedback_slider').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -197,19 +104,11 @@ $('.feedback-slider_content').slick({
   adaptiveHeight: true,
   prevArrow: '<div class="slick-prev"></div>',
   nextArrow: '<div class="slick-next"></div>',
-//   appendDots: $('.slick-dots'),
-/*
-  autoplay: true,
-  autoplaySpeed: 2000,
-*/
 });
 
 $('h2.title').each(function() {
   $(this).waypoint(function() {
-   //console.log($(this.element).next()==$('.title__line')	);
-   //console.log($('.title__line')); 
     $(this.element).next().animate({ width: "30%"}, 1100);
- //   this.destroy();
 },{ 
   offset: '99%'
   });
@@ -218,50 +117,11 @@ $('h2.title').each(function() {
 $('.gallery_img_previev').click(function(){
 	var old_id = $(this).attr('src');
 	$(this).parent().siblings().attr('src', old_id);
-	//console.log($(this).parent().before().before());
-	//console.log($(this).parent().siblings());
 });
 
-/*
-newImg.animate(css, SPEED, function() {
-    var old_id = img.attr('id');
-    img.remove();
-    newImg.attr('id', old_id);
-    newImg.removeClass('morpher');
-    (callback || function() {})();
-});
-*/
-/*
 
-$('.benefits_item').css('opacity', '0');
-$('.benefits_item').waypoint(function(direction) {
-$('.benefits_item').eq(0).addClass('animated fadeInUp');
-setTimeout(function() { 
-	$('.benefits_item').eq(1).addClass('animated fadeInUp');
-	}, 200);
-setTimeout(function() { 
-	$('.benefits_item').eq(2).addClass('animated fadeInUp');
-	}, 400);
-setTimeout(function() { 
-	$('.benefits_item').eq(3).addClass('animated fadeInUp');
-	}, 600);
-setTimeout(function() { 
-	$('.benefits_item').eq(4).addClass('animated fadeInUp');
-	}, 800);
-setTimeout(function() { 
-	$('.benefits_item').eq(5).addClass('animated fadeInUp');
-	}, 1000);
-
-},{ 
-  offset: '99%'
-
-});
-*/
-//alert(window.navigator.userAgent);
-//alert(window.navigator.vendor);
-//console.log(window.navigator);
 $('.num').waypoint(function(direction) {
-$('.num').animate({ num: 115784 - 100000/* - начало */ }, {
+$('.num').animate({ num: 115784 - 100000}, {
     duration: 1500,
     step: function (num){
         this.innerHTML = (num + 100000).toFixed(0) // + '%'
@@ -272,7 +132,7 @@ $('.num').animate({ num: 115784 - 100000/* - начало */ }, {
 });
 
 $('.num2').waypoint(function(direction) {
-$('.num2').animate({ num: 10 - 1/* - начало */ }, {
+$('.num2').animate({ num: 10 - 1 }, {
     duration: 700,
     step: function (num){
         this.innerHTML = (num + 1).toFixed(0) // + '%'
@@ -469,49 +329,29 @@ $('.showForm').on('click', function () {
 });
 
 var magnificPopup = $.magnificPopup.instance; 
-// save instance in magnificPopup variable
-//var vendor=window.navigator.userAgent.toString();
-//var userAgent=window.navigator.vendor.toString();
 $(".submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
 	var phone = $("#phone").val();
 	var subject = $('.nameForm').html();
-	//var vendor=window.navigator.vendor.toString();
-	//var userAgent=window.navigator.userAgent.toString();
 	
 	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
-	//var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject+ '&vendor1='+ vendor + '&userAgent1='+ userAgent;
-	//console.log(dataString);
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 	if(name==''||email==''||phone=='')
 	{
-		// console.log($('.valid').eq(0));
 		$(this).siblings().children('.valid').eq(0).text("укажите, как к вам обращаться");
 		 $(this).siblings().children('.valid').eq(1).text("пожалуйста, заполните поле email");
 		 $(this).siblings().children('.valid').eq(2).text("укажите телефон для связи");
 
 		$('.valid').css('display','block');
-		//alert("Please Fill All Fields");
 	}	
           else  if(!(pattern.test(email))){
-//                $("#email").css({'border' : '1px solid #569b44'});
                 $(this).siblings().children('.valid').eq(1).text('ваш e-mail указано не верно');
                 $('.valid').eq(0).hide();
                 $('.valid').eq(2).hide();
 
                 
-            } /*
-else if(pattern.test(email)) {
-               $("#email").css({'border' : '1px solid #ff0000'});
-                $('.valid').eq(1).text('Не верно');
-            }
-*/
-       
-	
-	
-	else
-	{
+    } else {
 		$.ajax({
 		type: "POST",
 		url: "send.php",
@@ -528,12 +368,9 @@ else if(pattern.test(email)) {
 			$('.formThanxStyle').eq(0).show();
 			//alert("Дякуємо за замовлення");
 			setTimeout(function() { magnificPopup.close(); }, 4000);
-
-			
-
-	}
+		}
 	});
-	}
+}
 	return false;
 
 });
@@ -546,7 +383,6 @@ $(".submitOpenForm").click(function(){
 	var phone = $(".phone_man").val();
 	var subject = $(".cont_man").val();
 	var dataString = 'name1='+ name + '&email1='+ email + '&phone1='+ phone + '&subject1='+ subject;
-	//console.log(dataString);
 	var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 					 console.log($(this).siblings().children().children('.valid').eq(0));
 
@@ -562,20 +398,12 @@ $(".submitOpenForm").click(function(){
 		$('.valid').css('display','block');
 	}	
           else  if(!(pattern.test(email))){
-//                $("#email").css({'border' : '1px solid #569b44'});
                $(this).siblings().children('.valid').eq(1).text('ваш e-mail указано не верно');
                 $('.valid').eq(0).hide();
                 $('.valid').eq(2).hide();
 
                 
-            } /*
-else if(pattern.test(email)) {
-               $("#email").css({'border' : '1px solid #ff0000'});
-                $('.valid').eq(1).text('Не верно');
             }
-*/
-       
-	
 	
 	else
 	{
@@ -591,13 +419,8 @@ else if(pattern.test(email)) {
 			$(".cont_man").val('');
 			$('.valid').css('display','none');
 			$('.formStyle').hide();
-//			$('.nameForm').hide();
-//	$('.nameFormComent').hide();
 			$('.formThanxStyle2').show();
 			setTimeout(function() { $('.formStyle').show();$('.formThanxStyle2').hide();; }, 4000);
-
-			
-
 	}
 	});
 	}
@@ -654,8 +477,6 @@ $('.clickMap').on('click', function () {
 				  type: 'inline'
 				}
 		];
-//162px,124px
-//83px,-16px
    
     var db= new Object (db0);
     var db1=db.splice(a);
@@ -677,10 +498,6 @@ $('.faq_answer').hide();
 $('.faq_question').click(function(){
 	$('.faq_answer').slideUp();
 	$('.roll_up').slideUp();
-
-//if($(this).next()){
-//	console.log('true');}
-//	console.log($(this).next().visibility);
 	
 	$(this).siblings().show();
 });
