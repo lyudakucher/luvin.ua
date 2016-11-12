@@ -104,7 +104,7 @@ function start_loading_handler(){
 
 function end_loading_handler(){
 	$('#preloader .loading').fadeOut();
-    $('#preloader').delay(6000).fadeOut('slow');
+    $('#preloader').delay(2000).fadeOut('slow');
 }
 
 function set_loaded(percent){

@@ -159,12 +159,7 @@ $(".readMoreOption3").click(function() {
   });
 });
 	
-/*
-$(".toggle_mnu").click(function() {
-	$(".sandwich").toggleClass("active");
-	$('.menu').toggleClass('trust-exp').css('display','');
-});
-*/
+
 
 function trutime() {
   
@@ -227,49 +222,6 @@ function trutime() {
 };
 
 trutime();
-/*
-
- $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('nav ul li a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('nav ul li a').each(function () {
-           $(this).removeClass('activenav');
-            $(".sandwich").removeClass("active");
-            $('.trust').toggleClass('trust-exp').css('display','');
-		   
-            })
-        $(this).addClass('activenav');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-    
-    function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#menu a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos +50 && refElement.position().top + refElement.height() > scrollPos + 50) {
-            $('#menu ul li a').removeClass("activenav");
-            currLink.addClass("activenav");
-        }
-        else{
-            currLink.removeClass("activenav");
-        }
-    }
-    );};
-*/
 
 $("#back-top").hide();	
 $(window).scroll(function(){
@@ -289,13 +241,6 @@ $('#back-top a').click(function () {
 	return false;
 });
 
-/*
-	$('.butContrCont').eq(3).addClass('activeContCont');
-	 $('.cityPopUpAll').addClass('showCityContact');;
-     $('.cityPopUpStyle').addClass('contCityDisplayNone');
-     $('.cityPopUpStyle').eq(3).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');
-*/
-
 
 $('.butContrCont').on('click', function () {
     var value=$(this).attr('data-atcont');
@@ -303,11 +248,6 @@ $('.butContrCont').on('click', function () {
 	$(this).addClass('activeContCont');
     $('.cityPopUpAll').addClass('showCityContact');
      
-/*
-     $('.cityPopUpStyle').each(function(){
-	  $(this).removeClass('contCityDisplayBlock').addClass('contCityDisplayNone');
-     });
-*/
       $('.cityPopUpStyle').removeClass('contCityDisplayBlock').addClass('contCityDisplayNone');
      $('.cityPopUpStyle').eq(value).removeClass('contCityDisplayNone').addClass('contCityDisplayBlock');    
 });
