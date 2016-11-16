@@ -1,491 +1,1361 @@
-/* main styles */
-body {
-	font-size: 16px;
+/*---------preloader----------*/
+/*
+
+*/
+
+
+#preloader .loading .percentage {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    height: 3px;
+    background-color: #5d2790;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    z-index:2;
+}
+
+#preloader:after{
+	position: fixed;
+	z-index: 9999;
+	content:'';
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+
+#svg2{
+	z-index: 3;
+	position:fixed;
+	top:45%;
+	left:50%;
+		z-index: 99999;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	}
+.loading{
+	z-index: 4;
+	position: fixed;
+	left:50%;
+	bottom:10%;
+			z-index: 99999;
+
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%;-50%);
+	font-size: 35px;
+	
+}	
+
+/*--------end-preloader-------*/
+/*--------animation-preloader----*/
+#letterRusB, #letterRusO, #letterRusV, #letterRusD, #letterRusO2, #letterRusK, #letterRusO3, #hexagon1,#hexagon2,#hexagon3{
+	fill:#3b3a3c;
+	fill-opacity:1;
+	fill-rule:nonzero;
+	stroke:none
+}
+
+
+.letterSvgLuvin {
+	-webkit-animation: dash2 3s ease-in-out forwards 1.7s;
+	-o-animation: dash2 3s ease-in-out forwards 1.7s;			
+	-moz-animation: dash2 3s ease-in-out forwards 1.7s;
+	animation: dash2 3s ease-in-out forwards 1.7s;
+}
+
+
+
+.rectCursorLetterLuvin {
+	-webkit-animation: dash4 1s ease-in-out forwards 1.7s;
+	-o-animation: dash4 1s ease-in-out forwards 1.7s;			
+	-moz-animation: dash4 1s ease-in-out forwards 1.7s;
+	animation: dash4 1s ease-in-out forwards 1.7s;
+}
+.rectCursorLetterLuvin2 {
+	-webkit-animation: dash5 1s ease-in-out forwards 6.7s;
+	-o-animation: dash5 1s ease-in-out forwards 6.7s;			
+	-moz-animation: dash5 1s ease-in-out forwards 6.7s;
+	animation: dash5 1s ease-in-out forwards 6.7s;
+}
+
+.letterSvgLuvin {
+	-webkit-animation: dash2 2s ease-in-out forwards 2.7s;
+	-o-animation: dash2 2s ease-in-out forwards 2.7s;			
+	-moz-animation: dash2 2s ease-in-out forwards 2.7s;
+	animation: dash2 2s ease-in-out forwards 2.7s;
+}
+
+.letterSvgTagline {
+	-webkit-animation: dash3 3s ease-in-out forwards 3.7s;
+	-o-animation: dash3 3s ease-in-out forwards 3.7s;			
+	-moz-animation: dash3 3s ease-in-out forwards 3.7s;
+	animation: dash3 3s ease-in-out forwards 3.7s;
+}
+
+@-webkit-keyframes dash2 {
+	from {
+	-moz-transform: translate(-3070px,0px);
+    -ms-transform: translate(-3070px,0px);
+    -webkit-transform: translate(-3070px,0px);
+    -o-transform: translate(-3070px,0px);
+	transform:translate(-3070px,0px);
+	}
+	
+	to {
+	-moz-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+	transform:translate(0px,0px);
+	}
+}
+
+@-webkit-keyframes dash3 {
+	from {
+	-moz-transform: translate(0px,900px);
+    -ms-transform: translate(0px,900px);
+    -webkit-transform: translate(0px,900px);
+    -o-transform: translate(0px,900px);
+	transform:translate(0px,900px);
+	
+	}
+	
+	to {
+	-moz-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+	transform:translate(0px,0px);
+	}
+}
+
+@-webkit-keyframes dash4 {
+	from {
+	height:0px;
+	}
+	
+	to {
+	height:1000px;
+	}
+}
+
+@-webkit-keyframes dash5 {
+	from {
+	height:0px;
+	}
+	
+	to {
+	height:1000px;
+	}
+}
+
+.svgHexagon {
+	opacity:0;
+	-webkit-animation: dash6 2s ease-in-out forwards ;
+	-o-animation: dash6 2s ease-in-out forwards ;			
+	-moz-animation: dash6 2s ease-in-out forwards ;
+	animation: dash6 2s ease-in-out forwards ;
+}
+@-webkit-keyframes dash6 {
+	0% {
+		fill:white;
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+		fill:#5d2790;			    
+	}
+}
+#mainCheckMark {
+	-webkit-animation: dash7 2s ease-in-out forwards ;
+	-o-animation: dash7 2s ease-in-out forwards ;			
+	-moz-animation: dash7 2s ease-in-out forwards ;
+	animation: dash7 2s ease-in-out forwards ;
+}
+@-webkit-keyframes dash7 {
+	from {
+		opacity:.1;
+
+	}
+	
+	to {
+		opacity: 1;
+	}
+}
+/*--------end-animation-preloader---*/
+/*--------popUp-window-----*/
+
+.cityPopUp {
+	/* width: 98%;
+	max-width:900px; */
+	width: 700px;
+	height: 500px;
+	overflow-y: scroll;
+	background: white ;
+	position: relative;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+.formPopUp {
+	width: 650px;
+	margin: 5% auto;
+}
+
+/*-------end-popUp-window-----*/
+.parallax,.old-window_wrap2, .old-window_wrap3{
+	 position:absolute;
+  bottom:0;
+  left:0;
+  overflow:hidden;
+  right:0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.old-window_wrap1{
+	top:5%;
+}
+.old-window_wrap4{
+	top:25%;
+}
+.leavesMotino{
+	position: relative;
+}
+
+.leaves{
+	position: absolute;
+	top:60px;
+	left:21%;
+	z-index: 1
+}
+.leaves2{
+	top:293px ;
+	left:25.6%;
+}
+.leaves3{
+	top:180px;
+	left:30%;
+}
+.leaves4{
+	top:50px ;
+	left:75.6%;
+}
+.leaves5{
+	top:200px;
+	left:80%;
+}
+.leaves6{
+	top:23px ;
+	left:60%;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5, #Polygon-6 {
+  -webkit-animation: float 3s infinite ease-in-out alternate;
+          animation: float 3s infinite ease-in-out alternate;
+          position: absolute;
+}
+#Polygon-2 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+#Polygon-3 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s; 
+}
+#Polygon-4 {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s; 
+}
+
+#Polygon-5{
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s; 
+        
+}
+#Polygon-6{
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s; 
+        
+}
+
+@-webkit-keyframes float {
+	100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes float {
+	100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+
+/*---------button-style---------*/
+
+.submit_form{
+	margin:20px auto 0;
+	position: relative;
+	cursor: pointer;
+	width: 98%;
+	max-width: 300px;
+    min-width: 220px;
+	padding: 15px 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #faab1b;
+    background: linear-gradient(#faab1b, #fcdd45);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	border: 2px solid #f19c28;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+    overflow: hidden;
+    -webkit-transition: .3s all;
+            transition: .3s all;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+}
+.submit_form span{
+	display: block;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: auto;
+    position: relative;
+	line-height:1em;
+    z-index: 999;
+    color: #000000;
+    font-family: 'PT Sans', sans-serif, 'Arial';
+    -webkit-transition: .3s all;
+            transition: .3s all;
+}
+
+.submit_form:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotatey(90deg);
+            transform: rotatey(90deg);
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all;
+    overflow: hidden;
+ }
+
+/*--------end-button-style---------*/
+
+
+/* map content styles */
+
+
+/*---------video-youtube------*/
+.videoYoutube{
+	width: 900px;
+	height: 510px;
+}
+/*--------end-video-youtube------*/
+
+/*---------img-slider-feedback-------*/
+
+
+/*-----end-img-slider-feedback-------*/
+
+
+.slideBlockColor{
+	width: 100%;
+	background: rgba(190, 190, 190, 0.04);
+}
+
+.feedback-slider_container{
+	width: 900px;
+	margin: 0 auto;
+}
+.slick-dots{
+	display: block;
+	width: 20%;
+	margin: 0 auto;	
+	background: aqua !important;
+}
+
+.slick-dots>li{
+	float: left;
+	width: 20px;
+	display: block;
+	background: rgba(255,99,71,.7);
+	margin: 5px;
+	border-radius: 25px;
+}
+
+.slick-dots>li>button{
+	background: none;
+}
+
+.slick-active button{
+	color:red;
+}
+
+.slick-prev {
+    left: -55px;
+    background: url(../pic/left-arrow.svg) !important;
+	color: red;
+}
+.slick-next {
+    right: -55px;
+    background: url(../pic/right-arrow.svg) !important
+}
+.slick-prev, .slick-next {
+   z-index: 99999;
+    background: none;
+    border: medium none;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    height: 50px;
+    line-height: 0;
+    margin-top: -10px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+}
+
+
+.slick-prev:before {
+    content: "";
+    display:block;
+    width:20px;
+    height:20px;
+
+}
+
+.slick-next:before {
+    content: "";
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { color: grey; }
+
+
+
+
+
+
+
+
+/* button send form styles */
+.valid{
+		display: none;
+		/* color:red; */
+	}
+	
+.formThanxStyle{
+	/* background: WHITE;
+	font-size: 30px; */
+}
+
+.formPopUp label{
+	display: block;
+	font-size: 0.8em;
+	padding: 10px 0 5px;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-.wrap {
-	padding: 8% 0 7%;
+.formPopUp input{
+	/* margin-left: 30px;
+	width:70%; */
 }
 
-.container {
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
-	text-align: center;
+.formStyle{
+	margin: auto;
+	
 }
+/* .showForm {
+	margin: 20px;
+	padding: 10px;
+	background: grey;
+	display:block;
+	width: 200px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+} */
 
-.title {
-	font-size: 2.2em;
-	font-family: 'Philosopher', sans-serif;
+/* .showForm:hover{
+	cursor: pointer;
+	background: silver;
+	color: rgba(0,0,0,.8);
+} */
+/* end button send form styles */
+
+
+
+.activeContCont{
+	/* color:red; */
 	font-weight: 700;
-	font-style: normal;
-	width: 80%;
-	max-width: 700px;
-	margin: 0 auto;
+
+}
+.contCityDisplayNone {
+	display: none;
 }
 
-.title-big {
-	font-size: 1.8em;
-	font-variant: small-caps;
-}
-
-.title__small {
-	font-size: 2em;
-	font-weight: 700;
-	font-family: 'Philosopher', sans-serif;
-}
-
-.title__line {
-	font-size: 2.2em;
-	padding-bottom: 2%;
-}
-
-.title__line::after {
-	content: "";
+.contCityDisplayBlock {
 	display: block;
-	width: 30%;
-	height: 4px;
-	background-color: #662382;
-	margin: 2% auto 0;
 }
 
-.description {
+.contactCityPopUp {
+	display: none;
+}
+
+.cityPopUpAll {
+	display: none;
+	clear: both;
+}
+
+.cityPopUp img {
+	width: 323px;
+	height: 321px;
+	float: right;
+	margin-right: 10px;	
+}
+
+.cityPopUp p{
+	margin-top: 5px; 
+}
+
+.cityPopUp h3 {
+	margin-top: 20px;
+	color: #662382;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1.3em;
+}
+
+.cityPopUp h3:first-child{
+	margin-top:20px;
+	clear: inherit; 
+}
+
+
+.cityPopUp span{
+	font-style:normal;
+	display:block;
+}
+
+.contactAdresa {
+	font-style: italic;
+}
+/* end map content styles */
+
+
+/* map styles */
+.map-on-site {
+	height: 772px;
+}
+
+#map-svg {
+	transform: scale(2.9) translate(14%);
+	-moz-transform: scale(2.9) translate(14%); 
+	-webkit-transform: scale(2.9) translate(14%); 
+	-o-transform: scale(2.9) translate(14%); 
+	-ms-transform: scale(2.9) translate(14%);
+}
+
+#map {
+	width: 100%;
+	min-height: 100%;
+}
+
+ /*----------fill-map------*/
+.on {
+		stroke-width:1px;
+		stroke: red;
+		fill: pink;
+		
+}
+.highcharts-name-{
+	cursor: pointer;
+	fill: url(#rgrad);
+	stroke:silver;
+	stroke-dasharray:1;
 	
 }
 
-.list {
-	list-style-type: none;
-	font-size: 0;
-	margin: 0;
-	padding: 0;
+
+
+.highcharts-name-:hover{
+	fill:#DCDCDC;
 }
 
-.list-item {
-	margin: 0;
+.no-color{
+	opacity: 0;
+}
+
+#map tspan.text{	
+	font-weight:100;
+	font-size: 7px;
+	cursor: default;
+	stroke:none;
+	fill: #662382;
+	text-rendering: geometricprecision;
+	}
+
+.rect-color{
+	fill: white;
+	
+}
+
+path.clickMap{
+	fill: #FFDEAD;
+}
+
+path.clickMap:hover{
+	fill: #F4A460;
+}
+
+.map-cam-icon{
+	
+	transform:    scale(.8) translate(62px,96px); 
+ -moz-transform:  scale(.8) translate(62px,96px);
+ -webkit-transform:scale(.8)translate(62px,96px); 
+ -o-transform:    scale(.8) translate(40px,60px); 
+ -ms-transform:   scale(.8) translate(40px,60px);
+}
+
+
+.map-fot-icon{
+	transform:    scale(.8) translate(8px,25px); 
+ -moz-transform:  scale(.8) translate(8px,25px);
+ -webkit-transform:scale(.8)translate(8px,25px); 
+ -o-transform:    scale(.8) translate(8px,25px); 
+ -ms-transform:   scale(.8) translate(8px,25px);
+}
+
+
+
+/*------name-ic-transform----------*/
+.name-lygansk, .name-dnipro, .name-zaporizhzhia, .name-krym, .name-poltava, .name-harkiv, .name-volyn, .name-donetsk{
+		display:none;
+
+}
+
+.name-kyiv{
+	transform:translate(265px,68px); 
+	-moz-transform:translate(265px,68px);
+	-webkit-transform:translate(265px,68px); 
+	-o-transform:translate(265px,68px); 
+	-ms-transform:translate(265px,68px);
+}
+
+.name-lygansk{
+	transform:translate(440px,100px); 
+	-moz-transform:translate(440px,100px);
+	-webkit-transform:translate(440px,100px); 
+	-o-transform:translate(440px,100px); 
+	-ms-transform:translate(440px,100px);
+}
+
+.name-dnipro{
+	transform:translate(356px,126px); 
+	-moz-transform:translate(356px,126px);
+	-webkit-transform:translate(356px,126px); 
+	-o-transform:translate(356px,126px); 
+	-ms-transform:translate(356px,126px);
+}
+
+.name-zaporizhzhia{
+	transform:translate(370px,166px); 
+	-moz-transform:translate(370px,166px);
+	-webkit-transform:translate(370px,166px); 
+	-o-transform:translate(370px,166px); 
+	-ms-transform:translate(370px,166px);
+}
+
+.name-krym{
+	transform:translate(345px,235px); 
+	-moz-transform:translate(345px,235px);
+	-webkit-transform:translate(345px,235px); 
+	-o-transform:translate(345px,235px); 
+	-ms-transform:translate(345px,235px);
+}
+
+.name-vinnitsa{
+	transform:translate(218px,113px); 
+	-moz-transform:translate(218px,113px);
+	-webkit-transform:translate(218px,113px); 
+	-o-transform:translate(218px,113px); 
+	-ms-transform:translate(218px,113px);
+}
+
+.name-khmelnytskyi{
+	transform:translate(190px,85px); 
+	-moz-transform:translate(190px,85px);
+	-webkit-transform:translate(190px,85px); 
+	-o-transform:translate(190px,85px); 
+	-ms-transform:translate(190px,85px);
+}
+
+
+.name-frankivsk{
+	transform:translate(130px,110px); 
+	-moz-transform:translate(130px,110px);
+	-webkit-transform:translate(130px,110px); 
+	-o-transform:translate(130px,110px); 
+	-ms-transform:translate(130px,110px);
+}
+
+.name-lviv{
+	transform:translate(124px,70px); 
+	-moz-transform:translate(124px,70px);
+	-webkit-transform:translate(124px,70px); 
+	-o-transform:translate(124px,70px); 
+	-ms-transform:translate(124px,70px);
+}
+
+.name-poltava{
+	display:none;
+	transform:translate(327px,80px); 
+	-moz-transform:translate(327px,80px);
+	-webkit-transform:translate(327px,80px); 
+	-o-transform:translate(327px,80px); 
+	-ms-transform:translate(327px,80px);
+}
+
+.name-odesa{
+	transform:translate(255px,175px); 
+	-moz-transform:translate(255px,175px);
+	-webkit-transform:translate(255px,175px); 
+	-o-transform:translate(255px,175px); 
+	-ms-transform:translate(255px,175px);
+}
+
+.name-harkiv{
+	transform:translate(390px,85px); 
+	-moz-transform:translate(390px,85px);
+	-webkit-transform:translate(390px,85px); 
+	-o-transform:translate(390px,85px); 
+	-ms-transform:translate(390px,85px);
+}
+
+.name-zhytomyr{
+	transform:translate(218px,43px); 
+	-moz-transform:translate(218px,43px);
+	-webkit-transform:translate(218px,43px); 
+	-o-transform:translate(218px,43px); 
+	-ms-transform:translate(218px,43px);
+}
+
+.name-rivne{
+	transform:translate(187px,32px); 
+	-moz-transform:translate(187px,32px);
+	-webkit-transform:translate(187px,32px); 
+	-o-transform:translate(187px,32px); 
+	-ms-transform:translate(187px,32px);
+}
+
+.name-volyn{
+	transform:translate(148px,24px); 
+	-moz-transform:translate(148px,24px);
+	-webkit-transform:translate(148px,24px); 
+	-o-transform:translate(148px,24px); 
+	-ms-transform:translate(148px,24px);
+}
+
+.name-сherkassy{
+	transform:translate(276px,105px); 
+	-moz-transform:translate(276px,105px);
+	-webkit-transform:translate(276px,105px); 
+	-o-transform:translate(276px,105px); 
+	-ms-transform:translate(276px,105px);
+}
+
+.name-kirovograd{
+	transform:translate(306px,125px); 
+	-moz-transform:translate(306px,125px);
+	-webkit-transform:translate(306px,125px); 
+	-o-transform:translate(306px,125px); 
+	-ms-transform:translate(306px,125px);
+}
+
+.name-donetsk{
+	transform:translate(418px,141px); 
+	-moz-transform:translate(418px,141px);
+	-webkit-transform:translate(418px,141px); 
+	-o-transform:translate(418px,141px); 
+	-ms-transform:translate(418px,141px);
+}
+
+.name-chernivtsi{
+	transform:translate(162px,124px); 
+	-moz-transform:translate(162px,124px);
+	-webkit-transform:translate(162px,124px); 
+	-o-transform:translate(162px,124px); 
+	-ms-transform:translate(162px,124px);
+}
+/*------name-ic-transform----------*/
+
+/*------map-ic-transform----------*/
+.cam-ic, .fot-ic{
+	fill:#662382;
+}
+
+.cam-ic:hover, .fot-ic:hover{
+	fill:#D2691E;
+
+}
+.lygansk-cam-ic, .dnipro-cam-ic, .zaporizhzhia-cam-ic, .krym-cam-ic, .poltava-cam-ic, .harkiv-cam-ic, .volyn-cam-ic, .donetsk-cam-ic, .lygansk-fot-ic, .dnipro-fot-ic, .zaporizhzhia-fot-ic, .krym-fot-ic, .poltava-fot-ic, .harkiv-fot-ic, .volyn-fot-ic, .donetsk-fot-ic{
+		display:none;
+
+}
+
+
+.kyiv-cam-ic{
+	transform:translate(185px,-77px); 
+	-moz-transform:translate(185px,-77px);
+	-webkit-transform:translate(185px,-77px); 
+	-o-transform:translate(185px,-77px); 
+	-ms-transform:translate(185px,-77px);
+}
+
+.kyiv-fot-ic{
+	transform:translate(239px,-34px); 
+	-moz-transform:translate(239px,-34px);
+	-webkit-transform:translate(239px,-34px); 
+	-o-transform:translate(239px,-34px); 
+	-ms-transform:translate(239px,-34px);
+	
+}
+
+.lviv-fot-ic{
+	transform:translate(99px,-34px); 
+	-moz-transform:translate(99px,-34px);
+	-webkit-transform:translate(99px,-34px); 
+	-o-transform:translate(99px,-34px); 
+	-ms-transform:translate(99px,-34px);
+}
+
+.lviv-cam-ic{
+	transform:translate(45px,-77px); 
+	-moz-transform:translate(45px,-77px);
+	-webkit-transform:translate(45px,-77px); 
+	-o-transform:translate(45px,-77px); 
+	-ms-transform:translate(45px,-77px);
+
+}
+
+.odesa-cam-ic{
+	transform:translate(180px,33px); 
+	-moz-transform:translate(180px,33px);
+	-webkit-transform:translate(180px,33px); 
+	-o-transform:translate(180px,33px); 
+	-ms-transform:translate(180px,33px);
+}
+
+.odesa-fot-ic{
+	transform:translate(234px,76px); 
+	-moz-transform:translate(234px,76px);
+	-webkit-transform:translate(234px,76px); 
+	-o-transform:translate(234px,76px); 
+	-ms-transform:translate(234px,76px);
+}
+
+.harkiv-cam-ic{
+	transform:translate(316px,-58px); 
+	-moz-transform:translate(316px,-58px);
+	-webkit-transform:translate(316px,-58px); 
+	-o-transform:translate(316px,-58px); 
+	-ms-transform:translate(316px,-58px);
+}
+
+.harkiv-fot-ic{
+	transform:translate(370px,-15px); 
+	-moz-transform:translate(370px,-15px);
+	-webkit-transform:translate(370px,-15px); 
+	-o-transform:translate(370px,-15px); 
+	-ms-transform:translate(370px,-15px);
+}
+
+.krym-cam-ic{
+	transform:translate(270px,90px); 
+	-moz-transform:translate(270px,90px);
+	-webkit-transform:translate(270px,90px); 
+	-o-transform:translate(270px,90px); 
+	-ms-transform:translate(270px,90px);
+}
+
+.krym-fot-ic{
+	transform:translate(324px,133px); 
+	-moz-transform:translate(324px,133px);
+	-webkit-transform:translate(324px,133px); 
+	-o-transform:translate(324px,133px); 
+	-ms-transform:translate(324px,133px);
+}
+/*
+.zap-fot-ic{
+	transform:translate(40px,60px); 
+	-moz-transform:translate(40px,60px);
+	-webkit-transform:translate(40px,60px); 
+	-o-transform:translate(40px,60px); 
+	-ms-transform:translate(40px,60px);
+}
+*/
+
+.dnipro-cam-ic{
+	transform:translate(279px,-13px); 
+	-moz-transform:translate(279px,-13px);
+	-webkit-transform:translate(279px,-13px); 
+	-o-transform:translate(279px,-13px); 
+	-ms-transform:translate(279px,-13px);
+}
+
+.dnipro-fot-ic{
+	transform:translate(333px,30px); 
+	-moz-transform:translate(333px,30px);
+	-webkit-transform:translate(333px,30px); 
+	-o-transform:translate(333px,30px); 
+	-ms-transform:translate(333px,30px);
+}
+
+.donetsk-cam-ic{
+	transform:translate(341px,1px); 
+	-moz-transform:translate(341px,1px);
+	-webkit-transform:translate(341px,1px); 
+	-o-transform:translate(341px,1px); 
+	-ms-transform:translate(341px,1px);
+}
+
+.donetsk-fot-ic{
+	transform:translate(395px,44px); 
+	-moz-transform:translate(395px,44px);
+	-webkit-transform:translate(395px,44px); 
+	-o-transform:translate(395px,44px); 
+	-ms-transform:translate(395px,44px);
+}
+
+.zaporizhzhia-cam-ic{
+	transform:translate(292px,28px); 
+	-moz-transform:translate(292px,28px);
+	-webkit-transform:translate(292px,28px); 
+	-o-transform:translate(292px,28px); 
+	-ms-transform:translate(292px,28px);
+}
+
+.zaporizhzhia-fot-ic{
+	transform:translate(346px,71px); 
+	-moz-transform:translate(346px,71px);
+	-webkit-transform:translate(346px,71px); 
+	-o-transform:translate(346px,71px); 
+	-ms-transform:translate(346px,71px);
+}
+
+
+/*
+.zhytomyr-cam-ic{
+	transform:translate(142px,-96px); 
+	-moz-transform:translate(142px,-96px);
+	-webkit-transform:translate(142px,-96px); 
+	-o-transform:translate(142px,-96px); 
+	-ms-transform:translate(142px,-96px);
+}
+*/
+
+.rivne-cam-ic{
+	transform:translate(109px,-107px); 
+	-moz-transform:translate(109px,-107px);
+	-webkit-transform:translate(109px,-107px); 
+	-o-transform:translate(109px,-107px); 
+	-ms-transform:translate(109px,-107px);
+}
+
+.frankivsk-cam-ic{
+	transform:translate(53px,-30px); 
+	-moz-transform:translate(53px,-30px);
+	-webkit-transform:translate(53px,-30px); 
+	-o-transform:translate(53px,-30px); 
+	-ms-transform:translate(53px,-30px);
+
+}
+
+.volyn-cam-ic{
+	transform:translate(71px,-116px); 
+	-moz-transform:translate(71px,-116px);
+	-webkit-transform:translate(71px,-116px); 
+	-o-transform:translate(71px,-116px); 
+	-ms-transform:translate(71px,-116px);
+
+}
+
+.khmelnytskyi-cam-ic{
+	transform:translate(113px,-53px); 
+	-moz-transform:translate(113px,-53px);
+	-webkit-transform:translate(113px,-53px); 
+	-o-transform:translate(113px,-53px); 
+	-ms-transform:translate(113px,-53px);
+
+}
+
+.vinnitsa-cam-ic{
+	transform:translate(143px,-26px); 
+	-moz-transform:translate(143px,-26px);
+	-webkit-transform:translate(143px,-26px); 
+	-o-transform:translate(143px,-26px); 
+	-ms-transform:translate(143px,-26px);
+
+}
+
+.сherkassy-cam-ic{
+	transform:translate(199px,-34px); 
+	-moz-transform:translate(199px,-34px);
+	-webkit-transform:translate(199px,-34px); 
+	-o-transform:translate(199px,-34px); 
+	-ms-transform:translate(199px,-34px);
+}
+
+.kirovograd-cam-ic{
+	transform:translate(231px,-14px); 
+	-moz-transform:translate(231px,-14px);
+	-webkit-transform:translate(231px,-14px); 
+	-o-transform:translate(231px,-14px); 
+	-ms-transform:translate(231px,-14px);
+}
+
+.chernivtsi-cam-ic{
+	transform:translate(83px,-16px); 
+	-moz-transform:translate(83px,-16px);
+	-webkit-transform:translate(83px,-16px); 
+	-o-transform:translate(83px,-16px); 
+	-ms-transform:translate(83px,-16px);
+}
+/*------map-ic-transform----------*/
+
+/*------popUp-open----------*/
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 0px;
+  width:auto;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+
+.white-popup p{
+	padding: 10px;
+}
+
+.white-popup h3{
+	padding: 10px;
+}
+
+/*
+.mfp-ajax-holder{
+	z-index: 999999 !important;
+	width: 80% ;
+	margin: auto;
+}
+*/
+
+/*
+.mfp-fade.mfp-bg {
+  opacity: 0;
+.form_title 
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+*/
+
+/*------popUp-close----------*/
+
+/* end map styles */
+
+.new-window_content{
+	position: relative;
+}
+
+.threesixty {
+	width: 50%;
+	height: 300px;
+}
+
+.cont-wind {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: calc(50% - 200px);
+	left: -moz-calc(50% - 200px);
+	left: -o-calc(50% - 200px);
+	left: -webkit-calc(50% - 200px);
+}
+.cont-wind .product { /*конфлікт з  класом container*/
+	/* position: absolute;
+	top: 50%;
+	left: 50%; */
+
+	width: 100%;
+	/* height: 500px; */
+	text-align: left;
+/* 	z-index: 9999;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%); */
+	vertical-align: top;
 	display: inline-block;
-	padding: 0;
-	font-size: 16px;
 }
 
-.clearfix::after {
-	content: "";
-	overflow: hidden;
-	display: table;
-	clear: both;
-}
-/* end of main styles */
 
-/* main-section styles */
-#main {
-}
-
-.main_section {
-	background:
-	url(../img/top-window.png) center center no-repeat,
-	url(../img/top-wrap.jpg) center center no-repeat;
-	height: 100vh;
+.activenav {
+	background: aqua;
+}	
+/* header style */
+/*
+header {
+	z-index: 99999;
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	background: rgba(0,0,0,.5);
 }
 
-.main_container {
-	background: none;
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+nav {
+	height:42px;
+	position:relative;
 }
 
-.main_img {
-	width: 80%;
-	max-width: 500px;
-	margin: 5% 0%;
+#logo {
+	position:fixed;
+	top:0;
+	left:30px;
 }
 
-/* .title-cities {
-	width: 70%;
-	max-width: 700px;
-	margin: 0 auto;
-	padding-top: 2%;
-	font-size: 1.5em;
+#menu {
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
-.title-cities::after {
-	content: "";
-	background: url(../pic/top-bottom-line.png) center center no-repeat;
-	width: 421px;
-	height: 72px;
-	display: block;
-	margin: 0 auto;
-} */
-
-.main-description {
-	font-size: 1.2em;
+#menu li{
+	float:left;
+	display:block;
+	list-style: none;
+	margin-right: 10px;
+	padding: 5px 10px;
+	background: #ccc;
+	
 }
 
-.main-description::before {
-	content: "";
-	background: url(../pic/top-bottom-line.png) center center no-repeat;
-	width: 421px;
-	height: 72px;
-	display: block;
-	margin: 0 auto;
-}
-/* end of main-section styles */
-/* benefits-section styles */
-.title-description {
-	width: 90%;
-	max-width: 700px;
-	margin: 0 auto;
-}
+#menu li a{
+		position:relative;
+}	
+*/
 
-.benefits_list {
-	list-style-type: none;
-	font-size: 0;
-	margin: 0px -6px;
-	padding: 0;
-}
+/* end header style */
 
-.benefits_item {
-	margin: 40px 0 0 40px;
-	border: 4px solid #662382;
-	display: inline-block;
-	width: 180px;
-	padding: 1% 0;
+/*---------sandwich-menu-------*/
+/*
+.toggle_mnu {
+	display: none;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 99999999;
+	background: grey;
 	cursor: pointer;
 }
-
-.benefits_item:hover {
-	border: 4px solid #B58AC7;
-}
-
-.benefits_item-text {
-	background-color: #ffffff;
-	font-size: 16px;
-	padding: 5% 26% 5% 0;
-	margin-left: -30px;
-	text-align: left;
-	position: relative;
-}
-
-.benefits_item-text::before {
-	content: "";
-	width: 75px;
-	height: 75px;
-	background-image: url('../pic/benefits.png');
-	position: absolute;
-	top: -13px;
-	right: 3px;
+  
+.toggle_mnu span {
 	display: block;
 }
 
-.benefits_item-text:hover::before {
-	background-image: url('../pic/benefits-hover.png');
+.sandwich {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 8px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 200;
 }
 
-.benefits_item-text__garanty {
-	background-position: 0 0;
-}
-.benefits_item-text__professional::before {
-	background-position: -260px 0;
-}
-.benefits_item-text__color::before {
-	background-position: -520px 0;
-}
-.benefits_item-text__texture::before {
-	background-position: -772px 0;
-}
-.benefits_item-text__forms::before {
-	background-position: 0 -150px;
-}
-.benefits_item-text__years::before {
-	background-position: -260px -150px;
-}
-.benefits_item-text__energo::before {
-	background-position: -514px -152px;
-}
-.benefits_item-text__db::before {
-	background-position: -776px -152px;
-}
-/* end of benefits-section styles */
-/* old-window-section styles */
-#old-window {
-	background:
-	url(../pic/veter.png) center center no-repeat,
-	url(../pic/veter_rotate.png) center center no-repeat,
-	url(../pic/dots.png),
-	url(../img/old-window_wrap.jpg) center center no-repeat;
+.sw-topper {
+	position: relative;
+	top: 0;
+	width: 28px;
+	height: 3px;
+	background: white;
+	border: none;
+	border-radius: 4px;
+	-webkit-transition: -webkit-transform 0.5s, top 0.2s;
+	transition: transform 0.5s, top 0.2s;
+	display: block;
 }
 
-.old-window__content {
-	background: url(../pic/old-window.png) center center no-repeat;
+.sw-bottom {
+	position: relative;
+	width: 28px;
+	height: 3px;
+	top: 6.6px;
+	background: white;
+	border: none;
+	border-radius: 4px;
+	-webkit-transition: -webkit-transform 0.5s, top 0.2s;
+	transition: transform 0.5s, top 0.2s;
+	-webkit-transition-delay: 0.2s, 0s;
+	transition-delay: 0.2s, 0s;
+}
+
+.sw-footer {
+	position: relative;
+	width: 28px;
+	height: 3px;
+	top: 13.5px;
+	background: white;
+	border: none;
+	border-radius: 4px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.sandwich.active .sw-topper {
+	top: 9px;
+	-webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sandwich.active .sw-bottom {
+	top: 6px;
+	-webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sandwich.active .sw-footer {
+	opacity: 0;
+	top: 0;
+	-webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+*/
+/*---------end of sandwich-menu-------*/
+
+/*---------scroll-top------*/
+#back-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	left: auto;
+	z-index: 999999999;
+	background-color: rgba(248, 248, 248, 0.72);
+	border-radius: 100%;
+	padding: 10px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s;
+}
+
+#back-top a {
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/up-arrow.svg');
 	background-size: contain;
-	font-weight: 700;
-	width: 95%;
-	max-width: 800px;
-	margin: 5% auto 0;
-}
-
-.old-window_list__left {
-	float: left;
-	width: 25%;
-	text-align: right;
-}
-
-.old-window_list__right {
-	float: right;
-	width: 25%;
-	text-align: left;
-}
-
-.old-window_item__left,
-.old-window_item__right
- {
-	padding: 10% 0;
-}
-/* end of old-window-section styles */
-/* new-window-section styles */
-.new-window_titleblock {
-	padding-left: 30px;
-	max-width: 650px;
-	margin: 0 auto;
-	padding-top: 5%;
-}
-
-.new-window_leftblock {
-	float: left;
-}
-
-.new-window_title {
-	border: 4px solid #662382;
-	/* width: 300px; */
-	padding: 5px 0;
-	margin: 0;
-}
-
-.new-window_title-text {
-	background-color: #ffffff;
-	font-size: 1.3em;
-	padding: 15px 20px;
-	margin-left: -30px;
-	margin-right: 0;
-	text-align: left;
-}
-
-.new-window_title-text span {
-	font-weight: 700;
-	font-family: 'Philosopher', sans-serif;
-	font-size: 1.7em;
-	padding: 0;
-	margin: 0;
-}
-
-.new-window_price {
-	position: relative;
-	margin: 5% 0;
-	padding: 0 0 0 35px;
-	text-align: left;
-	line-height: 1.4em;
-	color: #662382;
-}
-
-.new-window_price::before {
-	position: absolute;
+	cursor: pointer;
 	display: block;
-	content: "";
-	top: 0;
-	left: 0;
-	width: 30px;
-	height: 30px;
-	background-image: url(../pic/price_item.png);
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+ 	text-decoration: none;
 }
 
-.new-window_price span {
-	font-style: italic;
-}
+/* #back-top:hover {
+	background-color: rgba(248, 248, 248, 1);
+} */
+/*--------end-scroll-top------*/
 
-.b {
-	font-weight: 700;
-}
+/*--------media------*/
+/*
 
-.new-window_rightblock {
-	float: right;
-	text-align: left;
-	font-size: 1.5em;
-	position: relative;
-	padding-left: 20px;
-	margin-top: 3%;
-}
+@media screen and (max-width:820px) {
+	nav ul li a{
+		display: block;
+	}
 
-.new-window_rightblock::before {
-	position: absolute;
-	display: block;
-	content: "";
-	width: 4px;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: #662382;
+	.menu {
+		display: none;
+	}
+	
+	#logo{
+		display:none;
+	}
+	
+	
+	
+	.toggle_mnu {
+		display: block;
+	}
+	
+	.trust-exp {
+		display: block;
+	}
+	
 }
+*/
 
-.new-window_rightblock span {
-	font-weight: 700;
-}
+/*--------end-media------*/
 
-.new-window_list {
-	/* font-weight: 700; */
-	width: 95%;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-.new-window_image {
-	float: left;
-	width: 40%;
-}
-
-.new-window_list__1 {
-	float: left;
-	width: 25%;
-	text-align: right;
-}
-
-.new-window_list__1 .window_list_item {
-	text-align: right;
-}
-
-.new-window_list__2 {
-	float: right;
-	width: 25%;
-	text-align: left;
-}
-
-.window_list_item {
-	margin: 10% 0;
-	position: relative;
-	padding: 0 8px;
-	width: 200px;
-}
-
-.window_list_item::before {
-	position: absolute;
-	display: block;
-	background-color: #e6e6e6;
-	width: 4px;
-	height: 100%;
-	top: 0;
-	left: 0;
-	content: "";
-}
-
-.new-window_list__1 .window_list_item::before {
-	left: 100%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(1) {
-	margin-left: 30%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(2) {
-	margin-left: 15%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(4) {
-	margin-left: 15%;
-}
-
-.new-window_list__1 .window_list_item:nth-child(5) {
-	margin-left: 30%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(1) {
-	margin-left: -30%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(2) {
-	margin-left: -15%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(4) {
-	margin-left: -15%;
-}
-
-.new-window_list__2 .window_list_item:nth-child(5) {
-	margin-left: -30%;
-}
-
-.new-window_more-options {
-	text-align: right;
-}
-
-.more-options_item {
-	color: #662382;
-	font-size: 1em;
-	font-weight: 700;
-	text-align: right;
-	display: block;
-	text-decoration: underline;
-	line-height: 1.5em;
-	padding: 0;
-	margin: 0;
-}
-
-.more-options_item:hover {
-	color: #b400ff;
-	text-decoration: underline;
-}
-
-.new-window_more-options .more-options_item:nth-child(1) {
-	margin-top: 10px;
-	position: relative;
-	padding-left: 25px;
-	display: inline-block;
-}
-
-.new-window_more-options .more-options_item:nth-child(1)::before {
-	content: '';
-	display: block;
-	width: 20px;
-	height: 20px;
-	background-image: url(../pic/download.svg);
-	-webkit-background-size: contain;
-	     -o-background-size: contain;
-	        background-size: contain;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.new-window_more-options .more-options_item:nth-child(1):hover::before {
-	background-image: url(../pic/download-hover.svg);
-}
-
-.read-more_wrap {
-	background: url(../img/luvin-light-big.jpg) no-repeat;
-	-webkit-background-size: contain;
-	     -o-background-size: contain;
-	        background-size: contain;
-	padding-top: 8%;
-	margin: 0;
-}
-
-.read-more_title {
-	font-size: 1.5em;
-	text-align: left;
-	margin: 0;
-	padding-bottom: 2%;
-}
-
-.read-more_description {
-	width: 70%;
-}
-
-.read-more_description p {
-	text-align: left;
-	padding-bottom: 10px;
-}
-/* end of new-window-section styles */

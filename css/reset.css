@@ -27,14 +27,14 @@ img {
 }
 
 a {
-	color: #12c;
+	color: #662382;
 	text-decoration: none;
 }
 
-a:hover {
-	color: #12c;
+/* a:hover {
+	color: rgba(118, 30, 133, 0.51);
 	text-decoration: none;
-}
+} */
 
 a:visited, 
 a:active {
@@ -66,17 +66,26 @@ input,
 select, 
 textarea {
 	display: block;
-	border:  1px solid #666;
+	border:  1px solid #faab1b;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
 	font-family: serif;
-	outline: none;
 	vertical-align: top;
     box-sizing:  border-box;
+    outline: none;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 textarea {
 	resize: none;
 	overflow-x: hidden;
 	overflow-y: auto;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
 }
 
 sub, sup {
